@@ -37,12 +37,14 @@ module.exports = function (context, data) {
          * the pull request for commenting, so...we're skipping that for now.
          */
         if (target_url.match(/PR-(\d+)/)) {
+            context.log('Matched on ' + target_url);
             https.get(target_url, function(r) {
                 /*
                 * This URL is more useful, something like:
                 *  https://ci.jenkins.io/blue/organizations/jenkins/Infra%2Fjenkins-infra/detail/PR-898/1/pipeline
                 */
                 const blueocean_url = url.parse(r.responseUrl);
+                context.log('The "real" url we\'re working with is: ' + r.responseUrl);
 
                 /* At this point url_parts can be joined back together to form the
                  * full and proper URL for fetching the logs:
@@ -54,6 +56,8 @@ module.exports = function (context, data) {
                 if (parts) {
                     let pull_request = parts[1];
                     let run = parts[2];
+                    context.log('Processing for pull request ' + pull_request);
+
                     let path_parts = blueocean_url.pathname.split('/')
                     /* Mangle that URL! */
                     let spliced = path_parts.splice(path_parts.length - 2, 2, 'runs', run, 'log');
