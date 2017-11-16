@@ -73,8 +73,8 @@ module.exports = function (context, data) {
             let lines = logData.split('\n');
 
             /* Chop it down if it's too big. */
-            if (lines.length > 100) {
-                lines = lines.slice(lines.length - 100);
+            if (lines.length > 50) {
+                lines = lines.slice(lines.length - 50);
             }
 
             github.issues.createComment({
