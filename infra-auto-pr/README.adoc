@@ -1,0 +1,5 @@
+= Infra auto-pr
+
+This Azure Function exists to automatically create a pull request from the
+link:https://github.com/jenkins-infra/jenkins-infra[jenkins-infra]
+`staging` branch to the `production` branch whenever something is merged.

@@ -1,0 +1,22 @@
+{
+  "name": "infra-auto-pr",
+  "version": "0.0.1",
+  "description": "Infrastructure auto PR creator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkins-infra/community-functions.git"
+  },
+  "author": "R Tyler Croy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenkins-infra/community-functions/issues"
+  },
+  "homepage": "https://github.com/jenkins-infra/community-functions#readme",
+  "dependencies": {
+    "github": "^12.0.2"
+  }
+}
