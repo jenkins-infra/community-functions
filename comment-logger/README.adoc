@@ -1,0 +1,5 @@
+= Comment Logger
+
+This Azure Function is meant to receive a
+link:https://developer.github.com/v3/activity/events/types/#statusevent[GitHub Status event]
+and add the last bit of the Pipeline log to the pull request.
