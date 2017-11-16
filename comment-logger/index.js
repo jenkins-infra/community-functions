@@ -5,7 +5,6 @@ module.exports = function (context, data) {
 
     const event_type = context.req.headers['x-github-event'];
     let github = new GithubApi();
-    let finishUp = false;
 
     context.log('GitHub Webhook triggered!', event_type);
 
@@ -16,8 +15,8 @@ module.exports = function (context, data) {
     });
 
     /* Read more about status events:
-        *  https://developer.github.com/v3/activity/events/types/#statusevent
-        */
+    *  https://developer.github.com/v3/activity/events/types/#statusevent
+    */
     if (('status' == event_type) &&
         ((data.state == 'failure') || (data.state == 'error'))) {
 
@@ -39,12 +38,12 @@ module.exports = function (context, data) {
         if (target_url.match(/PR-(\d+)/)) {
             context.log('Matched on ' + target_url);
             https.get(target_url, function(r) {
+                context.log('The "real" url we\'re working with is: ' + r.responseUrl);
                 /*
                 * This URL is more useful, something like:
                 *  https://ci.jenkins.io/blue/organizations/jenkins/Infra%2Fjenkins-infra/detail/PR-898/1/pipeline
                 */
                 const blueocean_url = url.parse(r.responseUrl);
-                context.log('The "real" url we\'re working with is: ' + r.responseUrl);
 
                 /* At this point url_parts can be joined back together to form the
                  * full and proper URL for fetching the logs:
@@ -92,17 +91,13 @@ module.exports = function (context, data) {
             }).on('error', function(e) {
                 context.log('Failed to process URI: ' + target_url + ' due to: ' + e.message);
                 context.done();
-            })
+            });
         }
         else {
-            finishUp = true;
+            context.done();
         }
     }
     else {
-        finishUp = true;
-    }
-
-    if (finishUp) {
         context.done();
     }
 };
