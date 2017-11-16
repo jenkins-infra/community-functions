@@ -83,8 +83,7 @@ module.exports = function (context, data) {
                     }).on('error', function(e) {
                         context.log('Failed to fetch the log data for: ' + logs_url + ' due to: ' + e.message);
                         context.done();
-                    })
-.
+                    });
                 }
             }).on('error', function(e) {
                 context.log('Failed to process URI: ' + target_url + ' due to: ' + e.message);
