@@ -1,9 +1,8 @@
 // Please visit http://go.microsoft.com/fwlink/?LinkID=761099&clcid=0x409 for more information on settting up Github Webhooks
 module.exports = function (context, data) {
-    context.log('GitHub Webhook triggered!', data.name);
-
     const GithubApi = require('github');
     const event_type = context.req.headers['x-github-event'];
+    context.log('GitHub Webhook triggered!', event_type);
 
     let github = new GithubApi();
 
