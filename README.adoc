@@ -1,0 +1,3 @@
+= Azure Functions for Community Automation
+
+link:https://docs.microsoft.com/en-us/azure/azure-functions/[Azure Functions]
