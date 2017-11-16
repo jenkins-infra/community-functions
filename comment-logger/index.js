@@ -16,7 +16,7 @@ module.exports = function (context, data) {
     /* Read more about status events:
      *  https://developer.github.com/v3/activity/events/types/#statusevent
      */
-    if ((data.state != 'failure') || (data.state != 'error')) {
+    if (!((data.state == 'failure') || (data.state == 'error'))) {
         context.done();
         return;
     }
