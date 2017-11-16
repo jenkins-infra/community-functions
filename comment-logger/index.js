@@ -75,7 +75,7 @@ module.exports = function (context, data) {
         let path_parts = blueocean_url.pathname.split('/');
         /* Mangle that URL! */
         let spliced = path_parts.splice(path_parts.length - 2, 2, 'runs', run, 'log');
-        const logs_url =- 'https://' + blueocean_url.host + spliced.join('/');
+        const logs_url = 'https://' + blueocean_url.host + spliced.join('/');
         context.log('Grabbing logs from: ' + logs_url);
 
         https.get(logs_url, function(l) {
