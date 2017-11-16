@@ -25,7 +25,7 @@ module.exports = function (context, data) {
                 /* Create a pull request automatically from staging to
                  * production
                  */
-                const description = 'This is an automated pull request to deploy changes to production';
+                const description = 'This is an [automated pull request](https://github.com/jenkins-infra/community-functions/tree/master/infra-auto-pr) to deploy changes to production';
 
                 github.pullRequests.create({
                     owner: 'jenkins-infra',
