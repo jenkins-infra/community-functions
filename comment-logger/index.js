@@ -41,7 +41,10 @@ module.exports = function (context, data) {
      * and will be a pain in the ass to translate from a commit status to
      * the pull request for commenting, so...we're skipping that for now.
      */
-    if (!target_url.match(/PR-(\d+)/)) {
+    let matches = target_url.match(/PR-(\d+)/);
+    let pull_request = matches[1];
+
+    if (!pull_request) {
         context.done();
         return;
     }
