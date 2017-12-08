@@ -9,6 +9,6 @@ package-lock.json: package.json
 	../node npm install
 
 clean:
-	rm -rf node_modules
+	rm -rf node_modules package-lock.json
 
 .PHONY: all check clean depends

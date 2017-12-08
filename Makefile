@@ -3,7 +3,10 @@ PROJECTS=analytics-bouncer infra-auto-pr comment-logger
 all: check
 	$(foreach project, $(PROJECTS), $(MAKE) -C $(project) $@ || exit 1;)
 
-check:
+check: depends
+	$(foreach project, $(PROJECTS), $(MAKE) -C $(project) $@ || exit 1;)
+
+depends:
 	$(foreach project, $(PROJECTS), $(MAKE) -C $(project) $@ || exit 1;)
 
 clean:
@@ -11,5 +14,4 @@ clean:
 	$(foreach project, $(PROJECTS), $(MAKE) -C $(project) $@;)
 
 
-.PHONY:
-	all check clean
+.PHONY: all check clean depends
