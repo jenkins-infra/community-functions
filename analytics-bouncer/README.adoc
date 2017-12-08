@@ -1,0 +1,5 @@
+= Analytics Bouncer
+
+This simple Azure Function allows server-side rate-limiting of metrics coming
+from existing Blue Ocean installations. In the future this may also sink
+metrics data directly into an Azure-based data store.
