@@ -52,11 +52,17 @@ module.exports = function(context, req) {
     keenApi.recordEvents(events, (err, res) => {
         if (err) {
             context.log('Error sending Keen request', err);
+            context.res = {
+                status: 500,
+                body: err
+            };
         }
-        context.res = {
-            status: 200,
-            body: util.format('Sent %d events to Keen', count)
-        };
+        else {
+            context.res = {
+                status: 200,
+                body: util.format('Sent %d events to Keen', count)
+            };
+        }
         context.done()
     });
 };

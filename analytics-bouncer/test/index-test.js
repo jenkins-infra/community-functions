@@ -73,5 +73,21 @@ describe('Analytics bouncer', () => {
             assert(ctx.done.called);
             assert.equal(ctx.res.body, 'Sent 2 events to Keen');
         });
+
+        it('should return a 500 when Keen errors', () => {
+            simple.mock(keen,
+                'recordEvents',
+                (events, cb) => { cb(true, null); }
+            );
+
+            fun(ctx, {
+                trackRequests: [blueOceanEvent, blueOceanEvent]
+            });
+
+            assert.equal(keen.recordEvents.callCount, 1);
+
+            assert.equal(ctx.res.status, 500);
+            assert(ctx.done.called);
+        });
     });
 });
