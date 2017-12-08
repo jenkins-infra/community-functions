@@ -1,3 +1,25 @@
 = Azure Functions for Community Automation
 
+This repository contains a number of deployed (from the `master` branch)
 link:https://docs.microsoft.com/en-us/azure/azure-functions/[Azure Functions]
+to perform various duties within the Jenkins project.
+
+
+== Make targets
+
+=== all
+
+Catch-all, generally is just going to run the `check` target, and any other
+specific packaging requirements a function may have.
+
+=== check
+
+Runs the tests for the given function.
+
+=== depends
+
+Installs the link:https://nodejs.org[Node] dependencies for the given function.
+
+=== clean
+
+Removes `node_modules/` and any other temporary state files.
