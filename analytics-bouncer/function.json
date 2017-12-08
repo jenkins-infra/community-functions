@@ -4,6 +4,7 @@
       "type": "httpTrigger",
       "direction": "in",
       "authLevel": "anonymous",
+      "webHookType": "genericJson",
       "name": "req"
     },
     {
