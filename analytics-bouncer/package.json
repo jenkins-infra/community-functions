@@ -16,9 +16,11 @@
     "url": "https://github.com/jenkins-infra/community-functions/issues"
   },
   "homepage": "https://github.com/jenkins-infra/community-functions#readme",
-  "dependencies": {
-    "keen-tracking": "^1.4.0",
+  "devDependencies": {
     "mocha": "^4.0.1",
     "simple-mock": "^0.8.0"
+  },
+  "dependencies": {
+    "keen-tracking": "^1.4.0"
   }
 }

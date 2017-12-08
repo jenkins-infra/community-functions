@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#
+# Simple wrapper script for running a consistent nodejs version via Docker
+
+tty --quiet
+if [ $? -eq 0 ]; then
+    TTY="-ti"
+fi;
+
+echo "> ${PWD}"
+
+exec docker run --rm ${TTY} \
+    -u $(id -u):$(id -g) \
+    -v $PWD:$PWD \
+    -w $PWD \
+    $(printenv | grep -i \^azure | awk '{ print "-e", $1 }') \
+    $(printenv | grep -i \^twitter | awk '{ print "-e", $1 }') \
+    node:alpine $@
