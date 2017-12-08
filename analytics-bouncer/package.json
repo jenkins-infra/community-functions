@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jenkins-infra/community-functions#readme",
   "dependencies": {
     "keen-tracking": "^1.4.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "simple-mock": "^0.8.0"
   }
 }
