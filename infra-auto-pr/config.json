@@ -1,0 +1,7 @@
+{
+    "reporterEnabled": "tap,xunit",
+    "xunitReporterOptions": {
+        "output": "xunit-custom.xml"
+    }
+}
+

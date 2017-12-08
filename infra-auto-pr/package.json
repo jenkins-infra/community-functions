@@ -4,7 +4,7 @@
   "description": "Infrastructure auto PR creator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R mocha-multi-reporters"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,11 @@
     "url": "https://github.com/jenkins-infra/community-functions/issues"
   },
   "homepage": "https://github.com/jenkins-infra/community-functions#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "mocha-multi-reporters": "^1.1.7",
+    "simple-mock": "^0.8.0"
+  },
   "dependencies": {
     "github": "^12.0.2"
   }

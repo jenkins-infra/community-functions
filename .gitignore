@@ -58,3 +58,5 @@ typings/
 .env
 
 *.sw*
+xunit.xml
+package-lock.json
