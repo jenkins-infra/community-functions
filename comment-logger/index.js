@@ -81,10 +81,12 @@ module.exports = function (context, data) {
                     owner: data.repository.owner.login,
                     repo: data.repository.name,
                     number: pull_request,
-                    body: 'The context from the [Jenkins Pipeline run](' + target_url + ') is:\n' +
+                    body: 'Build failed; the context from the [latest run](' + target_url + ') is:\n' +
+                            '<details><summary>Expand to view</summary>\n\n' + // Extra newline required within <details> tag
                             '```\n' +
                             lines.join('\n') +
                             '\n```\n' +
+                            '</details>\n' +
                             '[Powered by the Comment Logger](https://github.com/jenkins-infra/community-functions/tree/master/comment-logger)'
             });
 
