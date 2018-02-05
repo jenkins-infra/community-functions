@@ -81,9 +81,11 @@ module.exports = function (context, data) {
                     owner: data.repository.owner.login,
                     repo: data.repository.name,
                     number: pull_request,
-                    body: 'The context from the [Jenkins Pipeline run](' + target_url + ') is:\n```\n'
-                            + lines.join('\n') + '\n```\n' +
-                            '[powered by the Comment Logger](https://github.com/jenkins-infra/community-functions/tree/master/comment-logger)'
+                    body: 'The context from the [Jenkins Pipeline run](' + target_url + ') is:\n' +
+                            '```\n' +
+                            lines.join('\n') +
+                            '\n```\n' +
+                            '[Powered by the Comment Logger](https://github.com/jenkins-infra/community-functions/tree/master/comment-logger)'
             });
 
             context.done();
