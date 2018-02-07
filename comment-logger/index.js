@@ -86,7 +86,7 @@ module.exports = function (context, data) {
                             '```\n' +
                             lines.join('\n') +
                             '\n```\n' +
-                            '</details>\n' +
+                            '</details>\n\n' + // Extra newline required after, too
                             '[Powered by the Comment Logger](https://github.com/jenkins-infra/community-functions/tree/master/comment-logger)'
             });
 
