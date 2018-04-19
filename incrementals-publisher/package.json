@@ -1,0 +1,25 @@
+{
+  "name": "incrementals-publisher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkins-infra/community-functions.git"
+  },
+  "author": "R Tyler Croy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenkins-infra/community-functions/issues"
+  },
+  "homepage": "https://github.com/jenkins-infra/community-functions#readme",
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "github": "^14.0.0"
+  }
+}
