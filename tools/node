@@ -14,5 +14,6 @@ exec docker run --rm ${TTY} \
     -v $PWD:$PWD \
     -w $PWD \
     $(printenv | grep -i \^azure | awk '{ print "-e", $1 }') \
+    $(printenv | grep -i \^github | awk '{ print "-e", $1 }') \
     $(printenv | grep -i \^twitter | awk '{ print "-e", $1 }') \
-    node:alpine $@
+    node:8-alpine $@
