@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/jenkins-infra/community-functions#readme",
   "devDependencies": {
-    "mocha": "^5.1.1"
+    "mocha": "^5.1.1",
+    "simple-mock": "^0.8.0"
   },
   "dependencies": {
-    "github": "^14.0.0"
+    "@octokit/rest": "^15.2.6",
+    "node-fetch": "^2.1.2"
   }
 }

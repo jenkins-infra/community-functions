@@ -1,0 +1,40 @@
+= Incremental Build Publisher
+
+
+This Azure Function is responsible for bouncing incrementally built (see
+link:https://github.com/jenkinsci/jep/tree/master/jep/305[JEP-305]) core and
+plugin artifacts into the incrementals Maven repository (see
+link:https://github.com/jenkins-infra/iep/tree/master/iep-009[IEP-9]).
+
+
+== Environment Variables
+
+|===
+| Variable | Description
+
+| `GITHUB_TOKEN`
+| A GitHub OAuth/Personal Access Token which can be used for GitHub API queries
+
+| `JENKINS_HOST`
+| A Jenkins instance (defaults to `https://ci.jenkins.io`) to which URLs are
+expected to confirm.
+
+| `INCREMENTAL_URL`
+| A Maven repository which should be treated as the incrementals destination,
+defaults to `https://repo.jenkins-ci.org/incrementals/`
+
+|===
+
+== Valid Requests
+
+This Function only supports one kind of request, and is expected to only be
+called by the `buildPlugin()` step or other Jenkins Pipelines which are
+publishing incrementally built artifacts into Artifactory.
+
+[source,json]
+----
+{
+  "build_url" : "https://ci.jenkins.io/job/structs-plugin/job/PR-36/3/
+}
+----
+
