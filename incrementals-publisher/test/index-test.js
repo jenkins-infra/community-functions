@@ -15,27 +15,18 @@ describe('Handling incremental publisher webhook events', () => {
   };
 
   describe('without parameters', () => {
+    let data = {
+      body: {}
+    };
     it('should run without any parameters', () => {
-      fun(ctx, {});
+      fun(ctx, data);
       assertCalledDone(ctx);
     });
 
     it('should return a 400', () => {
-      fun(ctx, {});
+      fun(ctx, data);
       assert.equal(ctx.res.status, 400);
       assertCalledDone(ctx);
-    });
-  });
-
-  describe('with a valid payload', () => {
-    let data = {
-      build_url: 'https://ci.jenkins.io/job/structs-plugin/job/PR-36/3/'
-    };
-
-    it('should return a 201 on success', () => {
-      fun(ctx, data);
-      assertCalledDone(ctx);
-      assert.equal(ctx.res.status, 201);
     });
   });
 });
