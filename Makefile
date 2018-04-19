@@ -10,7 +10,12 @@ depends:
 	$(foreach project, $(PROJECTS), $(MAKE) -C $(project) $@ || exit 1;)
 
 run:
-	docker run --net host --rm -ti -v $PWD:$PWD -w $PWD rtyler/azure-functions func start
+	docker run --net host --rm -ti \
+		-e GITHUB_TOKEN=$$GITHUB_TOKEN \
+		-e METADATA_URL=$$METADATA_URL \
+		-e ARCHIVE_URL=$$ARCHIVE_URL \
+		-v $(PWD):$(PWD) -w $(PWD) \
+		rtyler/azure-functions func start
 
 clean:
 	rm -rf node_modules
