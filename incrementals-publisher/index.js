@@ -36,7 +36,7 @@ module.exports = async (context, data) => {
   const buildUrl = data.body.build_url;
   /* If we haven't received any valid data, just bail early
    */
-  if (!buildUrl) {
+  if ((!buildUrl) || (!buildUrl.match(JENKINS_HOST))) {
     context.res = {
       status: 400,
       body: 'The incrementals-publisher invocation was poorly formed and missing attributes'
