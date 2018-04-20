@@ -14,6 +14,7 @@ run:
 		-e GITHUB_TOKEN=$$GITHUB_TOKEN \
 		-e METADATA_URL=$$METADATA_URL \
 		-e ARCHIVE_URL=$$ARCHIVE_URL \
+		-e ARTIFACTORY_KEY=$$ARTIFACTORY_KEY \
 		-v $(PWD):$(PWD) -w $(PWD) \
 		rtyler/azure-functions func start
 

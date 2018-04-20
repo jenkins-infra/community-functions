@@ -13,7 +13,7 @@ const pipeline = require('./lib/pipeline');
 const github   = require('./lib/github');
 
 const JENKINS_HOST     = process.env.JENKINS_HOST || 'https://ci.jenkins.io';
-const INCREMENTAL_URL  = process.env.INCREMENTAL_URL || 'https://repo.jenkins-ci.org/snapshots/'
+const INCREMENTAL_URL  = process.env.INCREMENTAL_URL || 'https://repo.jenkins-ci.org/incrementals/'
 const ARTIFACTORY_KEY  = process.env.ARTIFACTORY_KEY || 'invalid-key';
 const TEMP_ARCHIVE_DIR = path.join(os.tmpdir(), 'incrementals-');
 const mktemp           = util.promisify(fs.mkdtemp);
