@@ -7,6 +7,7 @@ plugin artifacts into the incrementals Maven repository (see
 link:https://github.com/jenkins-infra/iep/tree/master/iep-009[IEP-9]).
 
 
+[[env]]
 == Environment Variables
 
 |===
@@ -58,3 +59,21 @@ publishing incrementally built artifacts into Artifactory.
 }
 ----
 
+
+
+== Testing
+
+Unit tests can simply be run by executing `make check` in this directory.
+
+For acceptance testing, please set the appropriate <<env>> in a terminal and
+then execute `make run` in the repository root directory.
+
+Once the Azure Functions container has come online, requests can be sent to the
+Function, for example:
+
+[source,bash]
+----
+curl -v -H 'Content-Type: application/json' \
+    --data '{"build_url":"http://localhost:8080/job/dumb/3/artifact/archive.zip"}' \
+    -XPUT http://localhost:7071/api/incrementals-publisher
+----
