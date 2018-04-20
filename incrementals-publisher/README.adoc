@@ -23,6 +23,9 @@ expected to confirm.
 | A Maven repository which should be treated as the incrementals destination,
 defaults to `https://repo.jenkins-ci.org/incrementals/`
 
+| `ARTIFACTORY_KEY`
+| An Artifactory user's API key
+
 |===
 
 === Optional/Development Variables
