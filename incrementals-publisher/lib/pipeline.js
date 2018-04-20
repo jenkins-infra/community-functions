@@ -20,7 +20,7 @@ module.exports = {
       }
 
       if (action._class == 'hudson.plugins.git.util.BuildData') {
-        response.remote_url = action.remoteUrls[0];
+        response.remoteUrl = action.remoteUrls[0];
       }
     });
 

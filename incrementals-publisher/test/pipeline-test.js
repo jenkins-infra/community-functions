@@ -58,7 +58,7 @@ describe('The Pipeline helpers', () => {
 
     it('should return the right remote_url', () => {
       const value = pipeline.processMetadata(metadata);
-      assert.equal(value.remote_url, "https://github.com/jglick/structs-plugin.git");
+      assert.equal(value.remoteUrl, "https://github.com/jglick/structs-plugin.git");
     });
   });
 
