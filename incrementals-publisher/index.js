@@ -36,7 +36,7 @@ module.exports = async (context, data) => {
   const buildUrl = data.body.build_url;
   /* If we haven't received any valid data, just bail early
    */
-  if ((!buildUrl) || (!buildUrl.match(JENKINS_HOST))) {
+  if ((!buildUrl) || (!buildUrl.startsWith(JENKINS_HOST))) {
     context.res = {
       status: 400,
       body: 'The incrementals-publisher invocation was poorly formed and missing attributes'
@@ -52,7 +52,7 @@ module.exports = async (context, data) => {
    * The first step is to take the buildUrl and fetch some metadata about this
    * specific Pipeline Run
    */
-  let metdata_url = pipeline.getApiUrl(buildUrl);
+  let metdataUrl = pipeline.getApiUrl(buildUrl);
   if (process.env.METADATA_URL) {
     metadataUrl = process.env.METADATA_URL;
     context.log.info('Using an override for the metadata URL:', metadataUrl);
@@ -79,8 +79,8 @@ module.exports = async (context, data) => {
   let repoInfo = pipeline.getRepoFromUrl(metadata.remoteUrl);
 
   if (!github.commitExists(repoInfo.owner, repoInfo.repo, metadata.hash)) {
-    context.log.error('This request was using a commit which does not exist on GitHub!', commit);
-    return failRequest(context, 'Could not find commit');
+    context.log.error('This request was using a commit which does not exist, or was ambiguous, on GitHub!', metadata);
+    return failRequest(context, 'Could not find commit (non-existant or ambiguous)');
   }
 
   /*
@@ -123,7 +123,7 @@ module.exports = async (context, data) => {
    * Finally, we can upload to Artifactory
    */
 
-  const upload = await fetch(INCREMENTAL_URL,
+  const upload = await fetch(util.format('%s/archive.zip', INCREMENTAL_URL),
     {
       headers: {
         'X-Explode-Archive' : true,
@@ -133,7 +133,7 @@ module.exports = async (context, data) => {
       method: 'PUT',
       body: fs.createReadStream(archivePath)
   });
-  context.log.info('Uploaded', upload);
+  context.log.info('Upload status', upload);
 
   context.res = {
     status: upload.status,

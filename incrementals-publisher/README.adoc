@@ -14,18 +14,18 @@ link:https://github.com/jenkins-infra/iep/tree/master/iep-009[IEP-9]).
 | Variable | Description
 
 | `GITHUB_TOKEN`
-| A GitHub OAuth/Personal Access Token which can be used for GitHub API queries
+| A GitHub OAuth/Personal Access Token which can be used for GitHub API queries, ideally also has access to set the `repo.status` permission.
 
 | `JENKINS_HOST`
 | A Jenkins instance (defaults to `https://ci.jenkins.io`) to which URLs are
-expected to confirm.
+expected to conform.
 
 | `INCREMENTAL_URL`
 | A Maven repository which should be treated as the incrementals destination,
 defaults to `https://repo.jenkins-ci.org/incrementals/`
 
 | `ARTIFACTORY_KEY`
-| An Artifactory user's API key
+| An Artifactory user's API key (from the link:https://repo.jenkins-ci.org/webapp/#/profile[user profile in Artifactory])
 
 | `PERMISSIONS_URL`
 | A URL pointing to the generated repository-permissions-updater output,
@@ -59,6 +59,9 @@ publishing incrementally built artifacts into Artifactory.
 }
 ----
 
+This URL is expected to be the value of a `BUILD_URL` environment variable from
+Jenkins.
+
 
 
 == Testing
@@ -75,5 +78,5 @@ Function, for example:
 ----
 curl -v -H 'Content-Type: application/json' \
     --data '{"build_url":"http://localhost:8080/job/dumb/3/artifact/archive.zip"}' \
-    -XPUT http://localhost:7071/api/incrementals-publisher
+    http://localhost:7071/api/incrementals-publisher
 ----
