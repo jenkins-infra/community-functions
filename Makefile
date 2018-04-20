@@ -15,6 +15,7 @@ run:
 		-e METADATA_URL=$$METADATA_URL \
 		-e ARCHIVE_URL=$$ARCHIVE_URL \
 		-e ARTIFACTORY_KEY=$$ARTIFACTORY_KEY \
+		-e PERMISSIONS_URL=$$PERMISSIONS_URL \
 		-v $(PWD):$(PWD) -w $(PWD) \
 		rtyler/azure-functions func start
 
