@@ -52,7 +52,7 @@ module.exports = async (context, data) => {
    * The first step is to take the buildUrl and fetch some metadata about this
    * specific Pipeline Run
    */
-  let metdataUrl = pipeline.getApiUrl(buildUrl);
+  let metadataUrl = pipeline.getApiUrl(buildUrl);
   if (process.env.METADATA_URL) {
     metadataUrl = process.env.METADATA_URL;
     context.log.info('Using an override for the metadata URL:', metadataUrl);
