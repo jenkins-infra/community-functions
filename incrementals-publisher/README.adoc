@@ -76,7 +76,5 @@ Function, for example:
 
 [source,bash]
 ----
-curl -v -H 'Content-Type: application/json' \
-    --data '{"build_url":"http://localhost:8080/job/dumb/3/artifact/archive.zip"}' \
-    http://localhost:7071/api/incrementals-publisher
+curl -i -d '{"build_url":"http://localhost:8080/job/dumb/3/"}' http://localhost:7071/api/incrementals-publisher
 ----

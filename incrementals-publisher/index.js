@@ -28,7 +28,6 @@ const failRequest = (context, body) => {
     status: 500,
     body: body || 'Unknown error'
   };
-  context.done();
 };
 
 
@@ -36,13 +35,16 @@ module.exports = async (context, data) => {
   const buildUrl = data.body.build_url;
   /* If we haven't received any valid data, just bail early
    */
-  if ((!buildUrl) || (!buildUrl.startsWith(JENKINS_HOST))) {
+  if (!buildUrl) {
     context.res = {
       status: 400,
-      body: 'The incrementals-publisher invocation was poorly formed and missing attributes'
+      body: 'The incrementals-publisher invocation was missing the build_url attribute'
     };
-    context.done();
     return;
+  }
+  if (!buildUrl.startsWith(JENKINS_HOST)) {
+    context.log.error('Misplaced build_url', buildUrl, JENKINS_HOST);
+    return failRequest(context, 'This build_url is not supported');
   }
   // Starting some async operations early which we will need later
   let tmpDir = mktemp(TEMP_ARCHIVE_DIR);
@@ -72,15 +74,14 @@ module.exports = async (context, data) => {
 
   if ( (!metadata.hash) || (!metadata.remoteUrl)) {
     context.log.error('Unable to retrieve a hash or remote_url');
-    context.done();
-    return;
+    return failRequest(context, 'Unable to retrieve a hash or remote_url');
   }
 
   let repoInfo = pipeline.getRepoFromUrl(metadata.remoteUrl);
 
   if (!github.commitExists(repoInfo.owner, repoInfo.repo, metadata.hash)) {
     context.log.error('This request was using a commit which does not exist, or was ambiguous, on GitHub!', metadata);
-    return failRequest(context, 'Could not find commit (non-existant or ambiguous)');
+    return failRequest(context, 'Could not find commit (non-existent or ambiguous)');
   }
 
   /*
@@ -114,7 +115,7 @@ module.exports = async (context, data) => {
   perms = await perms;
   if (perms.status != 200) {
     context.log.error('Failed to get our permissions', perms);
-    return failRequest(context, 'Failed to retriev permissions');
+    return failRequest(context, 'Failed to retrieve permissions');
   }
   const repoPath = util.format('%s/%s', repoInfo.owner, repoInfo.repo);
   const verified = await permissions.verify(repoPath, archivePath, perms);

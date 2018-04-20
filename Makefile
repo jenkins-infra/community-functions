@@ -16,6 +16,8 @@ run:
 		-e ARCHIVE_URL=$$ARCHIVE_URL \
 		-e ARTIFACTORY_KEY=$$ARTIFACTORY_KEY \
 		-e PERMISSIONS_URL=$$PERMISSIONS_URL \
+		-e JENKINS_HOST=$$JENKINS_HOST \
+		-e INCREMENTAL_URL=$$INCREMENTAL_URL \
 		-v $(PWD):$(PWD) -w $(PWD) \
 		rtyler/azure-functions func start
 
