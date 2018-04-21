@@ -23,3 +23,7 @@ Installs the link:https://nodejs.org[Node] dependencies for the given function.
 === clean
 
 Removes `node_modules/` and any other temporary state files.
+
+=== run
+
+Runs interactively inside a container, for local development and acceptance testing.

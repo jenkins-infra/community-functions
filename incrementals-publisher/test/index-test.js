@@ -7,26 +7,20 @@ describe('Handling incremental publisher webhook events', () => {
   let data = {
     body: {}
   };
-  let assertCalledDone = (context) => {
-    assert(context.done.called);
-  };
 
   beforeEach(() => {
       simple.mock(ctx, 'log', (...args) => { /* console.log(args); */ });
-      simple.mock(ctx, 'done', () => {});
   });
   afterEach(() => { simple.restore() });
 
   describe('without parameters', () => {
     it('should run without any parameters', () => {
       fun(ctx, data);
-      assertCalledDone(ctx);
     });
 
     it('should return a 400', () => {
       fun(ctx, data);
       assert.equal(ctx.res.status, 400);
-      assertCalledDone(ctx);
     });
   });
 
@@ -38,7 +32,6 @@ describe('Handling incremental publisher webhook events', () => {
     it('should return a 400', () => {
       fun(ctx, data);
       assert.equal(ctx.res.status, 400);
-      assertCalledDone(ctx);
     });
   });
 });
