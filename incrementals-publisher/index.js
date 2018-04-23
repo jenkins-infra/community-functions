@@ -54,33 +54,41 @@ module.exports = async (context, data) => {
    * The first step is to take the buildUrl and fetch some metadata about this
    * specific Pipeline Run
    */
-  let metadataUrl = pipeline.getApiUrl(buildUrl);
-  if (process.env.METADATA_URL) {
-    metadataUrl = process.env.METADATA_URL;
-    context.log.info('Using an override for the metadata URL:', metadataUrl);
-  }
-  let metadata = await fetch(metadataUrl);
+  let buildMetadata = await fetch(process.env.BUILD_METADATA_URL || pipeline.getBuildApiUrl(buildUrl));
 
-  if (metadata.status != 200) {
-    context.log.error('Failed to fetch Pipeline metadata', metadata.body);
+  if (buildMetadata.status !== 200) {
+    context.log.error('Failed to fetch Pipeline build metadata', buildMetadata);
   }
-  metadata = await metadata.json();
+  let buildMetadataJSON = await buildMetadata.json();
 
-  if (!metadata) {
-    context.log.error('I was unable to parse any JSON metadata', metadata);
+  if (!buildMetadataJSON) {
+    context.log.error('I was unable to parse any build JSON metadata', buildMetadata);
     return failRequest(context);
   }
-  metadata = pipeline.processMetadata(metadata);
+  let buildMetadataParsed = pipeline.processBuildMetadata(buildMetadataJSON);
 
-  if ( (!metadata.hash) || (!metadata.remoteUrl)) {
-    context.log.error('Unable to retrieve a hash or remote_url');
-    return failRequest(context, 'Unable to retrieve a hash or remote_url');
+  if (!buildMetadataParsed.hash) {
+    context.log.error('Unable to retrieve a hash or pullHash', buildMetadataJSON);
+    return failRequest(context, 'Unable to retrieve a hash or pullHash');
   }
 
-  let repoInfo = pipeline.getRepoFromUrl(metadata.remoteUrl);
+  let folderMetadata = await fetch(process.env.FOLDER_METADATA_URL || pipeline.getFolderApiUrl(buildUrl));
+  if (folderMetadata.status !== 200) {
+    context.log.error('Failed to fetch Pipeline folder metadata', folderMetadata);
+  }
+  let folderMetadataJSON = await folderMetadata.json();
+  if (!folderMetadataJSON) {
+    context.log.error('I was unable to parse any folder JSON metadata', folderMetadata);
+    return failRequest(context);
+  }
+  let folderMetadataParsed = pipeline.processFolderMetadata(folderMetadataJSON);
+  if (!folderMetadataParsed.owner || !folderMetadataParsed.repo) {
+    context.log.error('Unable to retrieve an owner or repo', folderMetadataJSON);
+    return failRequest(context, 'Unable to retrieve an owner or repo');
+  }
 
-  if (!github.commitExists(repoInfo.owner, repoInfo.repo, metadata.hash)) {
-    context.log.error('This request was using a commit which does not exist, or was ambiguous, on GitHub!', metadata);
+  if (!github.commitExists(folderMetadataParsed.owner, folderMetadataParsed.repo, buildMetadataParsed.hash)) {
+    context.log.error('This request was using a commit which does not exist, or was ambiguous, on GitHub!', buildMetadataParsed.hash);
     return failRequest(context, 'Could not find commit (non-existent or ambiguous)');
   }
 
@@ -88,7 +96,7 @@ module.exports = async (context, data) => {
    * Once we have some data about the Pipeline, we can fetch the actual
    * `archive.zip` which has all the right data within it
    */
-  let archiveUrl = pipeline.getArchiveUrl(buildUrl);
+  let archiveUrl = pipeline.getArchiveUrl(buildUrl, buildMetadataParsed.hash);
   if (process.env.ARCHIVE_URL) {
     archiveUrl = process.env.ARCHIVE_URL;
     context.log.info('Using an override for the archive URL:', archiveUrl);
@@ -113,18 +121,18 @@ module.exports = async (context, data) => {
    * the repository-permissions-updater results
    */
   perms = await perms;
-  if (perms.status != 200) {
+  if (perms.status !== 200) {
     context.log.error('Failed to get our permissions', perms);
     return failRequest(context, 'Failed to retrieve permissions');
   }
-  const repoPath = util.format('%s/%s', repoInfo.owner, repoInfo.repo);
+  const repoPath = util.format('%s/%s', folderMetadataParsed.owner, folderMetadataParsed.repo);
   const verified = await permissions.verify(repoPath, archivePath, perms);
 
   /*
    * Finally, we can upload to Artifactory
    */
 
-  const upload = await fetch(util.format('%s/archive.zip', INCREMENTAL_URL),
+  const upload = await fetch(util.format('%sarchive.zip', INCREMENTAL_URL),
     {
       headers: {
         'X-Explode-Archive' : true,

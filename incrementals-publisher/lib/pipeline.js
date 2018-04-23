@@ -5,22 +5,18 @@ const { URL } = require('url');
 
 module.exports = {
   /*
-   * processMetadata takes in a JSON object expected to be returned by JSON API
+   * takes in a JSON object expected to be returned by JSON API
    * requests to Jenkins such as:
-   *  https://ci.jenkins.io/job/structs-plugin/job/PR-36/3/api/json?tree=actions[revision[hash,pullHash],remoteUrls]
-   * 
-   * @return Object containing a `hash` and `remote_url` property
+   * https://ci.jenkins.io/job/structs-plugin/job/PR-36/3/api/json?tree=actions[revision[hash,pullHash]]
+   *
+   * @return Object containing a `hash` property
    */
-  processMetadata: (metadata) => {
+  processBuildMetadata: (metadata) => {
     let response = {};
 
     metadata.actions.forEach((action) => {
-      if (action._class == 'jenkins.scm.api.SCMRevisionAction') {
-        response.hash = action.revision.hash;
-      }
-
-      if (action._class == 'hudson.plugins.git.util.BuildData') {
-        response.remoteUrl = action.remoteUrls[0];
+      if (action._class === 'jenkins.scm.api.SCMRevisionAction') {
+        response.hash = action.revision.hash || action.revision.pullHash;
       }
     });
 
@@ -31,8 +27,34 @@ module.exports = {
    * Return a generated API URL for fetching specific commit information for
    * this Pipeline
    */
-  getApiUrl: (build_url) => {
-    return build_url + 'api/json?tree=actions[revision[hash,pullHash],remoteUrls]';
+  getBuildApiUrl: (build_url) => {
+    return build_url + 'api/json?tree=actions[revision[hash,pullHash]]';
+  },
+
+  /*
+   * takes in a JSON object expected to be returned by JSON API
+   * requests to Jenkins such as:
+   * https://ci.jenkins.io/job/structs-plugin/api/json?tree=sources[source[repoOwner,repository]]
+   *
+   * @return Object containing `owner` and `repo` properties
+   */
+  processFolderMetadata: (metadata) => {
+    let response = {};
+
+    metadata.sources.forEach((source) => {
+      response.owner = source.source.repoOwner;
+      response.repo = source.source.repository;
+    });
+
+    return response;
+  },
+
+  /*
+   * Return a generated API URL for fetching repository information for
+   * this Pipeline
+   */
+  getFolderApiUrl: (build_url) => {
+    return build_url + '../../../api/json?tree=sources[source[repoOwner,repository]]';
   },
 
   /*
