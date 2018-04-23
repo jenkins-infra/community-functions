@@ -141,6 +141,23 @@ module.exports = async (context, data) => {
   }
   context.log.info('Archive entries', entries);
 
+  const pom = entries.find(entry => entry.endsWith('.pom'));
+  if (!pom) {
+    context.log.error('No POM');
+    return failRequest(context, 'No POM');
+  }
+  context.log.info('Found a POM', pom);
+  const pomURL = INCREMENTAL_URL + pom;
+  const check = await fetch(pomURL);
+  if (check.status === 200) {
+    context.log.info('Already exists');
+    context.res = {
+      status: 200,
+      body: 'Already deployed, not attempting to redeploy: ' + pomURL + '\n'
+    };
+    return;
+  }
+
   /*
    * Finally, we can upload to Artifactory
    */
