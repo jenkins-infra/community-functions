@@ -13,7 +13,7 @@ const github      = require('./lib/github');
 const pipeline    = require('./lib/pipeline');
 const permissions = require('./lib/permissions');
 
-const JENKINS_HOST     = process.env.JENKINS_HOST || 'https://ci.jenkins.io';
+const JENKINS_HOST     = process.env.JENKINS_HOST || 'https://ci.jenkins.io/';
 const INCREMENTAL_URL  = process.env.INCREMENTAL_URL || 'https://repo.jenkins-ci.org/incrementals/'
 const ARTIFACTORY_KEY  = process.env.ARTIFACTORY_KEY || 'invalid-key';
 

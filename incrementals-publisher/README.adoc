@@ -17,7 +17,7 @@ link:https://github.com/jenkins-infra/iep/tree/master/iep-009[IEP-9]).
 | A GitHub OAuth/Personal Access Token which can be used for GitHub API queries, ideally also has access to set the `repo.status` permission.
 
 | `JENKINS_HOST`
-| A Jenkins instance (defaults to `https://ci.jenkins.io`) to which URLs are
+| A Jenkins instance (defaults to `https://ci.jenkins.io/`) to which URLs are
 expected to conform.
 
 | `INCREMENTAL_URL`
