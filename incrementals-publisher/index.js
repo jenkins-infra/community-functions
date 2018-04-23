@@ -123,13 +123,9 @@ module.exports = async (context, data) => {
     return failRequest(context, 'Failed to retrieve permissions');
   }
   const repoPath = util.format('%s/%s', folderMetadataParsed.owner, folderMetadataParsed.repo);
-  const verified = await permissions.verify(repoPath, archivePath, perms);
-  verified((path) => {
-    context.log.info('Found entry', path);
-  }, (err) => {
-    context.log.error(err);
-    return failRequest(context, err);
-  });
+  let entries = [];
+  const verified = await permissions.verify(repoPath, archivePath, entries, perms);
+  context.log.info('TODO success', entries);
 
   /*
    * Finally, we can upload to Artifactory
