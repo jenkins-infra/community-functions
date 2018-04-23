@@ -151,10 +151,10 @@ module.exports = async (context, data) => {
       method: 'PUT',
       body: fs.createReadStream(archivePath)
   });
-  context.log.info('Upload status', upload);
+  context.log.info('Upload status', upload.status, await upload.text());
 
   context.res = {
     status: upload.status,
-    body: 'Response from Artifactory: ' + upload.statusText
+    body: 'Response from Artifactory: ' + upload.statusText + '\n'
   };
 };
