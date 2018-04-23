@@ -105,6 +105,7 @@ module.exports = async (context, data) => {
 
   const archive = await fetch(archiveUrl)
     .then((res) => {
+      context.log.info('Response headers', res.headers);
       const dest = fs.createWriteStream(archivePath, { autoClose: true });
       res.body.pipe(dest);
       return archivePath;
@@ -124,8 +125,14 @@ module.exports = async (context, data) => {
   }
   const repoPath = util.format('%s/%s', folderMetadataParsed.owner, folderMetadataParsed.repo);
   let entries = [];
+  context.log.info('Downloaded file size', fs.statSync(archivePath).size);
+  /*
+  var waitTill = new Date(new Date().getTime() + 5000);
+  while(waitTill > new Date()){}
+  context.log.info('File size 5s later', fs.statSync(archivePath).size);
+  */
   const verified = await permissions.verify(repoPath, archivePath, entries, perms);
-  context.log.info('TODO success', entries);
+  context.log.info('Archive entries', entries);
 
   /*
    * Finally, we can upload to Artifactory
