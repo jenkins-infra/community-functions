@@ -103,15 +103,13 @@ module.exports = async (context, data) => {
   context.log.info('Prepared a temp dir for the archive', tmpDir);
   const archivePath = path.join(tmpDir, 'archive.zip');
 
-  const archive = await fetch(archiveUrl)
+  await fetch(archiveUrl)
     .then((res) => {
       context.log.info('Response headers', res.headers);
-      const dest = fs.createWriteStream(archivePath, { autoClose: true });
-      res.body.pipe(dest);
-      return archivePath;
+      res.body.pipe(fs.createWriteStream(archivePath)).on('close', () => {context.log.info('Closed; now the file size is', fs.statSync(archivePath).size)});
     })
     .catch(err => context.log.error(err));
-  context.log.info('Downloaded', archiveUrl, archive);
+  context.log.info('Downloaded', archiveUrl, archivePath);
 
 
   /*
@@ -126,11 +124,6 @@ module.exports = async (context, data) => {
   const repoPath = util.format('%s/%s', folderMetadataParsed.owner, folderMetadataParsed.repo);
   let entries = [];
   context.log.info('Downloaded file size', fs.statSync(archivePath).size);
-  /*
-  var waitTill = new Date(new Date().getTime() + 5000);
-  while(waitTill > new Date()){}
-  context.log.info('File size 5s later', fs.statSync(archivePath).size);
-  */
   const verified = await permissions.verify(repoPath, archivePath, entries, perms);
   context.log.info('Archive entries', entries);
 
