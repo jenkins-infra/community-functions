@@ -21,6 +21,8 @@ module.exports = {
     * doing any work with it if it's somehow not published.
     */
     const commit = await github.repos.getCommit({owner, repo, sha});
+    // Here is where you could port https://github.com/jglick/incrementals-downstream-publisher/blob/10073f484d35edc3928f7808419c81a6eb48df62/src/main/java/io/jenkins/tools/incrementals_downstream_publisher/Main.java#L107-L111
+    // so as to print information about commit signatures, or even enforce them.
     return !!commit;
   },
 };
