@@ -25,4 +25,13 @@ module.exports = {
     // so as to print information about commit signatures, or even enforce them.
     return !!commit;
   },
+
+  createStatus: async (owner, repo, sha, target_url) => {
+    let github = new GitHubApi();
+    github.authenticate({
+      type: 'oauth',
+      token: GITHUB_TOKEN
+    });
+    return await github.repos.createStatus({owner, repo, sha, state: 'success', target_url, description: 'Deployed to Incrementals.', context: 'continuous-integration/jenkins/incrementals'});
+  }
 };

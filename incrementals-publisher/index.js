@@ -184,4 +184,7 @@ module.exports = async (context, data) => {
     status: upload.status,
     body: 'Response from Artifactory: ' + upload.statusText + '\n'
   };
+
+  const result = await github.createStatus(folderMetadataParsed.owner, folderMetadataParsed.repo, buildMetadataParsed.hash, pomURL);
+  context.log.info('Tried to create GitHub status', result);
 };
