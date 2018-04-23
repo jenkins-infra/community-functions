@@ -103,12 +103,22 @@ module.exports = async (context, data) => {
   context.log.info('Prepared a temp dir for the archive', tmpDir);
   const archivePath = path.join(tmpDir, 'archive.zip');
 
+  let done = false;
   await fetch(archiveUrl)
     .then((res) => {
       context.log.info('Response headers', res.headers);
-      res.body.pipe(fs.createWriteStream(archivePath)).on('close', () => {context.log.info('Closed; now the file size is', fs.statSync(archivePath).size)});
+      res.body.pipe(fs.createWriteStream(archivePath)).on('close', () => done = true);
     })
     .catch(err => context.log.error(err));
+  function sleep(ms){
+    return new Promise(resolve => {
+        setTimeout(resolve, ms)
+    })
+  };
+  while (!done) {
+    context.log.info('Downloading…');
+    await sleep(1000);
+  }
   context.log.info('Downloaded', archiveUrl, archivePath);
 
 
