@@ -32,6 +32,9 @@ defaults to `https://repo.jenkins-ci.org/incrementals/`
 defaults to
 `https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github.index.json`
 
+| `JENKINS_AUTH`
+| A `username:password` or `username:apiToken` authentication to Jenkins. Optional.
+
 |===
 
 === Optional/Development Variables

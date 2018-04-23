@@ -16,6 +16,7 @@ const permissions = require('./lib/permissions');
 const JENKINS_HOST     = process.env.JENKINS_HOST || 'https://ci.jenkins.io/';
 const INCREMENTAL_URL  = process.env.INCREMENTAL_URL || 'https://repo.jenkins-ci.org/incrementals/'
 const ARTIFACTORY_KEY  = process.env.ARTIFACTORY_KEY || 'invalid-key';
+const JENKINS_AUTH     = process.env.JENKINS_AUTH;
 
 const TEMP_ARCHIVE_DIR = path.join(os.tmpdir(), 'incrementals-');
 const mktemp           = util.promisify(fs.mkdtemp);
@@ -50,11 +51,16 @@ module.exports = async (context, data) => {
   let tmpDir = mktemp(TEMP_ARCHIVE_DIR);
   let perms = permissions.fetch();
 
+  const jenkinsOpts = {};
+  if (JENKINS_AUTH) {
+    jenkinsOpts.headers = {'Authorization': 'Basic ' + new Buffer(JENKINS_AUTH, 'utf8').toString('base64')};
+  }
+
   /*
    * The first step is to take the buildUrl and fetch some metadata about this
    * specific Pipeline Run
    */
-  let buildMetadata = await fetch(process.env.BUILD_METADATA_URL || pipeline.getBuildApiUrl(buildUrl));
+  let buildMetadata = await fetch(process.env.BUILD_METADATA_URL || pipeline.getBuildApiUrl(buildUrl), jenkinsOpts);
 
   if (buildMetadata.status !== 200) {
     context.log.error('Failed to fetch Pipeline build metadata', buildMetadata);
@@ -72,7 +78,7 @@ module.exports = async (context, data) => {
     return failRequest(context, 'Unable to retrieve a hash or pullHash');
   }
 
-  let folderMetadata = await fetch(process.env.FOLDER_METADATA_URL || pipeline.getFolderApiUrl(buildUrl));
+  let folderMetadata = await fetch(process.env.FOLDER_METADATA_URL || pipeline.getFolderApiUrl(buildUrl), jenkinsOpts);
   if (folderMetadata.status !== 200) {
     context.log.error('Failed to fetch Pipeline folder metadata', folderMetadata);
   }
@@ -104,7 +110,7 @@ module.exports = async (context, data) => {
   const archivePath = path.join(tmpDir, 'archive.zip');
 
   let done = false;
-  await fetch(archiveUrl)
+  await fetch(archiveUrl, jenkinsOpts)
     .then((res) => {
       context.log.info('Response headers', res.headers);
       res.body.pipe(fs.createWriteStream(archivePath)).on('close', () => done = true);

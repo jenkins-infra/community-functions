@@ -12,6 +12,7 @@ depends:
 run:
 	docker run --net host --rm -ti \
 		-e GITHUB_TOKEN=$$GITHUB_TOKEN \
+		-e JENKINS_AUTH=$$JENKINS_AUTH \
 		-e BUILD_METADATA_URL=$$BUILD_METADATA_URL \
 		-e FOLDER_METADATA_URL=$$FOLDER_METADATA_URL \
 		-e ARCHIVE_URL=$$ARCHIVE_URL \
