@@ -30,7 +30,7 @@ defaults to `https://repo.jenkins-ci.org/incrementals/`
 | `PERMISSIONS_URL`
 | A URL pointing to the generated repository-permissions-updater output,
 defaults to
-`https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github-index.json`
+`https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github.index.json`
 
 |===
 

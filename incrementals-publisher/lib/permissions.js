@@ -6,7 +6,7 @@ const fetch     = require('node-fetch');
 const StreamZip = require('node-stream-zip');
 const util      = require('util');
 
-const PERMISSIONS_URL = process.env.PERMISSIONS_URL || 'https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github-index.json'
+const PERMISSIONS_URL = process.env.PERMISSIONS_URL || 'https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github.index.json'
 
 module.exports = {
   fetch: () => {
