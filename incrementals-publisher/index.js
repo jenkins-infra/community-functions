@@ -91,16 +91,13 @@ module.exports = async (context, data) => {
     context.log.error('This request was using a commit which does not exist, or was ambiguous, on GitHub!', buildMetadataParsed.hash);
     return failRequest(context, 'Could not find commit (non-existent or ambiguous)');
   }
+  context.log.info('Metadata loaded', folderMetadataParsed.owner, folderMetadataParsed.repo, buildMetadataParsed.hash);
 
   /*
    * Once we have some data about the Pipeline, we can fetch the actual
    * `archive.zip` which has all the right data within it
    */
-  let archiveUrl = pipeline.getArchiveUrl(buildUrl, buildMetadataParsed.hash);
-  if (process.env.ARCHIVE_URL) {
-    archiveUrl = process.env.ARCHIVE_URL;
-    context.log.info('Using an override for the archive URL:', archiveUrl);
-  }
+  let archiveUrl = process.env.ARCHIVE_URL || pipeline.getArchiveUrl(buildUrl, buildMetadataParsed.hash);
 
   tmpDir = await tmpDir;
   context.log.info('Prepared a temp dir for the archive', tmpDir);
@@ -113,7 +110,7 @@ module.exports = async (context, data) => {
       return archivePath;
     })
     .catch(err => context.log.error(err));
-  context.log.info('Should be ready to upload', archive);
+  context.log.info('Downloaded', archiveUrl, archive);
 
 
   /*
@@ -127,6 +124,12 @@ module.exports = async (context, data) => {
   }
   const repoPath = util.format('%s/%s', folderMetadataParsed.owner, folderMetadataParsed.repo);
   const verified = await permissions.verify(repoPath, archivePath, perms);
+  verified((path) => {
+    context.log.info('Found entry', path);
+  }, (err) => {
+    context.log.error(err);
+    return failRequest(context, err);
+  });
 
   /*
    * Finally, we can upload to Artifactory

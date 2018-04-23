@@ -62,7 +62,8 @@ module.exports = {
    * build tooling (consult JEP-305)
    */
   getArchiveUrl: (build_url, hash) => {
-    return build_url + 'artifact/**/*-rc*.' + hash + '/*-rc*.' + hash + '*/*zip*/archive.zip';
+    let shortHash = hash.substring(0, 12);
+    return build_url + 'artifact/**/*-rc*.' + shortHash + '/*-rc*.' + shortHash + '*/*zip*/archive.zip';
   },
 
   /*
