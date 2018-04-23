@@ -135,6 +135,10 @@ module.exports = async (context, data) => {
   let entries = [];
   context.log.info('Downloaded file size', fs.statSync(archivePath).size);
   const verified = await permissions.verify(repoPath, archivePath, entries, perms);
+  if (entries.length === 0) {
+    context.log.error('Empty archive');
+    return failRequest(context, 'No permitted files');
+  }
   context.log.info('Archive entries', entries);
 
   /*
