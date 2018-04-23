@@ -41,10 +41,12 @@ module.exports = {
   processFolderMetadata: (metadata) => {
     let response = {};
 
-    metadata.sources.forEach((source) => {
-      response.owner = source.source.repoOwner;
-      response.repo = source.source.repository;
-    });
+    if (metadata.sources) {
+      metadata.sources.forEach((source) => {
+        response.owner = source.source.repoOwner;
+        response.repo = source.source.repository;
+      });
+    }
 
     return response;
   },
