@@ -64,26 +64,5 @@ module.exports = {
   getArchiveUrl: (build_url, hash) => {
     let shortHash = hash.substring(0, 12);
     return build_url + 'artifact/**/*-rc*.' + shortHash + '/*-rc*.' + shortHash + '*/*zip*/archive.zip';
-  },
-
-  /*
-   * Return the owner and repo name for the given GitHub URL, e.g.
-   * https://github.com/jenkinsci/blueocean-plugin.git would return:
-   *   .owner: jenkinsci
-   *   .repo: blueocean-plugin
-   */
-  getRepoFromUrl: (remote_url) => {
-    const url = new URL(remote_url);
-
-    if (url.hostname != 'github.com') {
-      throw new Error('I only expect URLs from github.com');
-    }
-
-    const parts = url.pathname.match(/^\/([\w'-]+)\/([\w'-]+)(.git)?/);
-
-    return {
-      owner: parts[1],
-      repo: parts[2],
-    };
   }
 };
