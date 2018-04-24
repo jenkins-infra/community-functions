@@ -143,7 +143,11 @@ module.exports = async (context, data) => {
   const verified = await permissions.verify(repoPath, archivePath, entries, perms);
   if (entries.length === 0) {
     context.log.error('Empty archive');
-    return failRequest(context, 'No permitted files');
+    context.res = {
+      status: 200,
+      body: 'Skipping deployment as no artifacts were found with the expected path, typically due to a PR merge build not up to date with its base branch: ' + archiveUrl + '\n'
+    };
+    return;
   }
   context.log.info('Archive entries', entries);
 
