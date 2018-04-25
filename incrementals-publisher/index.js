@@ -47,7 +47,7 @@ module.exports = async (context, data) => {
     context.log.error('Misplaced build_url', buildUrl, JENKINS_HOST);
     return failRequest(context, 'This build_url is not supported');
   }
-  if (!buildUrl.substring(JENKINS_HOST.length).match('(job/[^/]+/)+[0-9]+/')) {
+  if (!buildUrl.substring(JENKINS_HOST.length).match('(job/[^a-zA-Z0-9._-]+/)+[0-9]+/') || buildUrl.includes('/../') || buildUrl.includes('/./')) {
     context.log.error('Malformed build_url', buildUrl);
     return failRequest(context, 'This build_url is malformed');
   }
@@ -65,7 +65,9 @@ module.exports = async (context, data) => {
    * The first step is to take the buildUrl and fetch some metadata about this
    * specific Pipeline Run
    */
-  let buildMetadata = await fetch(process.env.BUILD_METADATA_URL || pipeline.getBuildApiUrl(buildUrl), jenkinsOpts);
+  let buildMetadataUrl = process.env.BUILD_METADATA_URL || pipeline.getBuildApiUrl(buildUrl);
+  context.log.info("Retrieving metadata", buildMetadataUrl)
+  let buildMetadata = await fetch(buildMetadataUrl, jenkinsOpts);
 
   if (buildMetadata.status !== 200) {
     context.log.error('Failed to fetch Pipeline build metadata', buildMetadata);

@@ -44,4 +44,22 @@ describe('Handling incremental publisher webhook events', () => {
       assert.equal(ctx.res.body, 'This build_url is malformed');
     });
   });
+
+  describe('with a bogus build_url', () => {
+    for (let u of [
+        'https://ci.jenkins.io/job/hack?y/123/',
+        'https://ci.jenkins.io/job/hack#y/123/',
+        // There may be legitimate use cases for, say, %20, but validation might be tricky and YAGNI.
+        'https://ci.jenkins.io/job/hack%79/123/',
+        'https://ci.jenkins.io/job/../123/',
+        'https://ci.jenkins.io/job/./123/',
+    ]) {
+      it(u + ' should return a 400', () => {
+        data.body.build_url = u;
+        run();
+        assert.equal(ctx.res.status, 400);
+        assert.equal(ctx.res.body, 'This build_url is malformed');
+      });
+    }
+  });
 });
