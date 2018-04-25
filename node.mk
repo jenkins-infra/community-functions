@@ -5,7 +5,7 @@ check: depends index.js
 
 depends: package-lock.json
 
-package-lock.json:
+package-lock.json: package.json
 	../tools/node npm install
 
 clean:
