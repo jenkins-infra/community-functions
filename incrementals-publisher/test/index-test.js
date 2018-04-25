@@ -3,13 +3,14 @@ const simple = require('simple-mock');
 const fun    = require('../index.js');
 
 describe('Handling incremental publisher webhook events', () => {
-  let ctx = simple.mock();
+  let ctx = {};
   let data = {
     body: {}
   };
 
   beforeEach(() => {
-      simple.mock(ctx, 'log', (...args) => { /* console.log(args); */ });
+      ctx.log = simple.mock();
+      simple.mock(ctx.log, 'error', (...args) => console.log(args));
   });
   afterEach(() => { simple.restore() });
 

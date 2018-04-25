@@ -26,7 +26,7 @@ const mktemp           = util.promisify(fs.mkdtemp);
  */
 const failRequest = (context, body) => {
   context.res = {
-    status: 500,
+    status: 400,
     body: body || 'Unknown error'
   };
 };
@@ -47,6 +47,11 @@ module.exports = async (context, data) => {
     context.log.error('Misplaced build_url', buildUrl, JENKINS_HOST);
     return failRequest(context, 'This build_url is not supported');
   }
+  if (!buildUrl.substring(JENKINS_HOST.length).match('(job/[^/]+/)+[0-9]+/')) {
+    context.log.error('Malformed build_url', buildUrl);
+    return failRequest(context, 'This build_url is malformed');
+  }
+
   // Starting some async operations early which we will need later
   let tmpDir = mktemp(TEMP_ARCHIVE_DIR);
   let perms = permissions.fetch();
