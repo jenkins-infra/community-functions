@@ -33,6 +33,7 @@ const failRequest = (context, body) => {
 
 
 module.exports = async (context, data) => {
+  context.log('Entering function', data);
   const buildUrl = data.body.build_url;
   /* If we haven't received any valid data, just bail early
    */
