@@ -1,12 +1,12 @@
 all: check
 
 check: depends index.js
-	../node npm test
+	../tools/node npm test
 
 depends: package-lock.json
 
-package-lock.json:
-	../node npm install
+package-lock.json: package.json
+	../tools/node npm install
 
 clean:
 	rm -rf node_modules package-lock.json
