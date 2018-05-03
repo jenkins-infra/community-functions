@@ -83,7 +83,11 @@ module.exports = async (context, data) => {
 
   if (!buildMetadataParsed.hash) {
     context.log.error('Unable to retrieve a hash or pullHash', buildMetadataJSON);
-    return failRequest(context, 'Unable to retrieve a hash or pullHash');
+    context.res = {
+      status: 200,
+      body: 'Did not find a Git commit hash associated with this build. Some plugins on ' + JENKINS_HOST + ' may not yet have been updated with JENKINS-50777 REST API enhancements. Skipping deployment.\n'
+    };
+    return;
   }
 
   let folderMetadata = await fetch(process.env.FOLDER_METADATA_URL || pipeline.getFolderApiUrl(buildUrl), jenkinsOpts);
