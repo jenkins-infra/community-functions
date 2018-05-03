@@ -13,13 +13,13 @@ module.exports = {
    */
   processBuildMetadata: (metadata) => {
     let response = {};
-
-    metadata.actions.forEach((action) => {
-      if (action._class === 'jenkins.scm.api.SCMRevisionAction') {
-        response.hash = action.revision.hash || action.revision.pullHash;
-      }
-    });
-
+    if (metadata.actions) {
+      metadata.actions.forEach((action) => {
+        if (action._class === 'jenkins.scm.api.SCMRevisionAction') {
+          response.hash = action.revision.hash || action.revision.pullHash;
+        }
+      });
+    }
     return response;
   },
 

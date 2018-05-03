@@ -48,7 +48,7 @@ module.exports = async (context, data) => {
     context.log.error('Misplaced build_url', buildUrl, JENKINS_HOST);
     return failRequest(context, 'This build_url is not supported');
   }
-  if (!buildUrl.substring(JENKINS_HOST.length).match('(job/[a-zA-Z0-9._-]+/)+[0-9]+/') || buildUrl.includes('/../') || buildUrl.includes('/./')) {
+  if (!buildUrl.substring(JENKINS_HOST.length).match('^(job/[a-zA-Z0-9._-]+/)+[0-9]+/$') || buildUrl.includes('/../') || buildUrl.includes('/./')) {
     context.log.error('Malformed build_url', buildUrl);
     return failRequest(context, 'This build_url is malformed');
   }

@@ -53,6 +53,7 @@ describe('Handling incremental publisher webhook events', () => {
         'https://ci.jenkins.io/job/hack%79/123/',
         'https://ci.jenkins.io/job/../123/',
         'https://ci.jenkins.io/job/./123/',
+        'https://ci.jenkins.io/job/ok/123//',
     ]) {
       it(u + ' should return a 400', () => {
         data.body.build_url = u;
