@@ -11,6 +11,7 @@ module.exports = {
   commitExists: async (owner, repo, sha) => {
     let github = new GitHubApi();
     /* The function must have this Application Setting already created */
+    // TODO a failure here results in UnhandledPromiseRejectionWarning but the function continues
     github.authenticate({
       type: 'oauth',
       token: GITHUB_TOKEN
