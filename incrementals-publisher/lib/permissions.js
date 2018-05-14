@@ -41,11 +41,17 @@ module.exports = {
             const scm = result.project.scm[0];
             const url = scm.url[0];
             const tag = scm.tag[0];
-            log.info('Parsed %s with url=%s tag=%s', entry.name, url, tag);
+            const groupId = result.project.groupId[0];
+            const artifactId = result.project.artifactId[0];
+            const version = result.project.version[0];
+            log.info('Parsed %s with url=%s tag=%s GAV=%s:%s:%s', entry.name, url, tag, groupId, artifactId, version);
+            const expectedPath = groupId.replace(/[.]/g, '/') + '/' + artifactId + '/' + version + '/' + artifactId + '-' + version + '.pom';
             if (tag !== hash) {
               reject('Wrong commit hash in /project/scm/tag');
             } else if (!url.match('^https?://github[.]com/' + owner + '/' + repo + '([.]git)?(/.*)?$')) {
               reject('Wrong URL in /project/scm/url');
+            } else if (expectedPath !== entry.name) {
+              reject(util.format('Wrong GAV: %s vs. %s', expectedPath, entry.name));
             }
           });
         }
