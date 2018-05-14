@@ -5,6 +5,7 @@
 const fetch     = require('node-fetch');
 const StreamZip = require('node-stream-zip');
 const util      = require('util');
+const xml2js    = require('xml2js');
 
 const PERMISSIONS_URL = process.env.PERMISSIONS_URL || 'https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github.index.json'
 
@@ -13,7 +14,7 @@ module.exports = {
     return fetch(PERMISSIONS_URL);
   },
 
-  verify: (target, archive, entries, permsResponse) => {
+  verify: (log, target, archive, entries, permsResponse, owner, repo, hash) => {
     return new Promise(async (resolve, reject) => {
       const permissions = await permsResponse.json();
       const applicable = permissions[target];
@@ -33,6 +34,20 @@ module.exports = {
         });
         if (!ok) {
           reject(util.format('No permissions for %s', entry.name));
+        }
+        if (entry.name.endsWith('.pom')) {
+          const pomXml = zip.entryDataSync(entry.name);
+          xml2js.parseString(pomXml, (err, result) => {
+            const scm = result.project.scm[0];
+            const url = scm.url[0];
+            const tag = scm.tag[0];
+            log.info('Parsed %s with url=%s tag=%s', entry.name, url, tag);
+            if (tag !== hash) {
+              reject('Wrong commit hash in /project/scm/tag');
+            } else if (!url.match('^https?://github[.]com/' + owner + '/' + repo + '([.]git)?(/.*)?$')) {
+              reject('Wrong URL in /project/scm/url');
+            }
+          });
         }
       });
 

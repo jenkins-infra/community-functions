@@ -152,7 +152,7 @@ module.exports = async (context, data) => {
   const repoPath = util.format('%s/%s', folderMetadataParsed.owner, folderMetadataParsed.repo);
   let entries = [];
   context.log.info('Downloaded file size', fs.statSync(archivePath).size);
-  const verified = await permissions.verify(repoPath, archivePath, entries, perms);
+  const verified = await permissions.verify(context.log, repoPath, archivePath, entries, perms, folderMetadataParsed.owner, folderMetadataParsed.repo, buildMetadataParsed.hash);
   if (entries.length === 0) {
     context.log.error('Empty archive');
     context.res = {
