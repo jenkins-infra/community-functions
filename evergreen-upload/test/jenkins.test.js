@@ -4,9 +4,13 @@ const fs = require('fs');
 const Jenkins = require('../lib/jenkins');
 
 describe('Jenkins integration', () => {
+  const context = {
+    log: () => { }
+  };
+
   describe('commitFromData', () => {
     beforeEach(() => {
-      this.j = new Jenkins();
+      this.j = new Jenkins(context);
     });
     it('should throw without data', () => {
       expect(() => {

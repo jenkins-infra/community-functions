@@ -9,7 +9,8 @@ const commitApiUrl = '/api/json?tree=actions[revision[hash,pullHash]]';
 const artifactUrl  = '/artifact/services/ingest.json';
 
 class Jenkins {
-  constructor() {
+  constructor(context) {
+    this.context = context;
   }
 
   getHttpHeaders() {
@@ -46,6 +47,7 @@ class Jenkins {
 
     data.actions.forEach((action) => {
       if (action._class == 'hudson.plugins.git.util.BuildData') {
+        this.context.log(action);
         commit = action.buildsByBranchName.master.revision.SHA1;
       }
     });

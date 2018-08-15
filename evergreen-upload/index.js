@@ -51,7 +51,7 @@ module.exports = async (context, data) => {
 
     context.log('Valid request, fetching information');
 
-    const jenkins = new Jenkins();
+    const jenkins = new Jenkins(context);
     const ingest = await jenkins.fetchIngest();
     const commit = await jenkins.fetchCommitData();
 
