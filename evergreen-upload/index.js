@@ -13,6 +13,7 @@ const EVERGREEN_ENDPOINT = process.env.EVERGREEN_ENDPOINT || 'https://evergreen.
 
 module.exports = async (context, data) => {
     const event_type = context.req.headers['x-github-event'];
+    context.log('Entering function with data:', data);
     context.log('GitHub Webhook triggered!', event_type);
     let github = context.github || new GithubApi();
 
