@@ -33,8 +33,8 @@ module.exports = async (context, data) => {
     /*
      * Only support deploying merges into the master branch
      */
-    if (('refs/heads/master' != data.ref) ||
-        (data.repository.full_name != 'jenkins-infra/evergreen')) {
+    if (('refs/heads/master' != data.body.ref) ||
+        (data.body.repository.full_name != 'jenkins-infra/evergreen')) {
         context.res = {
           status: 400,
           body: 'Incorrect branch and repository information',
