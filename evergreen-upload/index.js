@@ -21,6 +21,10 @@ module.exports = async (context, data) => {
      *  https://developer.github.com/v3/activity/events/types/#pushevent
      */
     if (event_type != 'push') {
+        context.res = {
+          status: 400,
+          body: 'Invalid event type',
+        };
         context.done();
         return;
     }
@@ -30,6 +34,10 @@ module.exports = async (context, data) => {
      */
     if (('refs/heads/master' != data.ref) ||
         (data.repository.full_name != 'jenkins-infra/evergreen')) {
+        context.res = {
+          status: 400,
+          body: 'Incorrect branch and repository information',
+        };
         context.done();
         return;
     }
@@ -66,5 +74,13 @@ module.exports = async (context, data) => {
           body: `Uploaded ${commit} to ${EVERGREEN_ENDPOINT}`,
         };
         context.done();
-      });
+      })
+      .catch((err) => {
+        context.log.error(err);
+        context.res = {
+          status: 500,
+          body: err,
+        };
+        context.done();
+      })
 };
