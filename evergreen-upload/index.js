@@ -40,6 +40,8 @@ module.exports = async (context, data) => {
             token: process.env.GITHUB_TOKEN
     });
 
+    context.log('Valid request, fetching information');
+
     const jenkins = new Jenkins();
     const ingest = await jenkins.fetchIngest();
     const commit = await jenkins.fetchCommitData();
@@ -59,6 +61,10 @@ module.exports = async (context, data) => {
         },
       }).then((res) => {
         context.log(res);
+        context.res = {
+          status: 200,
+          body: `Uploaded ${commit} to ${EVERGREEN_ENDPOINT}`,
+        };
         context.done();
       });
 };
