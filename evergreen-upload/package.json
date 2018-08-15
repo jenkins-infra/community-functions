@@ -1,0 +1,27 @@
+{
+  "name": "evergreen-upload",
+  "version": "1.0.0",
+  "description": "Azure Function for uploading an Evergreen ingest.json to evergreen.jenkins.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkins-infra/community-functions.git"
+  },
+  "author": "R Tyler Croy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenkins-infra/community-functions/issues"
+  },
+  "homepage": "https://github.com/jenkins-infra/community-functions#readme",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "github": "^14.0.0",
+    "request-promise": "^4.2.2",
+    "winston": "^3.0.0"
+  }
+}

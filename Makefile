@@ -1,4 +1,4 @@
-PROJECTS=analytics-bouncer infra-auto-pr comment-logger incrementals-publisher
+PROJECTS=analytics-bouncer infra-auto-pr comment-logger incrementals-publisher evergreen-upload
 
 all: check
 	$(foreach project, $(PROJECTS), $(MAKE) -C $(project) $@ || exit 1;)
