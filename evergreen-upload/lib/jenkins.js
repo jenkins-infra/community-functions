@@ -24,6 +24,7 @@ class Jenkins {
   async fetchCommitData() {
     const data = await request({
       uri: `${EVERGREEN_PIPELINE_URL}${commitApiUrl}`,
+      type: json,
       headers: this.getHttpHeaders()
     });
     return this.commitFromData(data);
