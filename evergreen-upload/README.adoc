@@ -1,0 +1,9 @@
+= evergreen-upload
+
+
+This webhook-based Azure Function is responsible for taking a built
+`ingest.json` from
+link:https://github.com/jenkins-infra/evergreen[jenkins-infra/evergreen] and
+uploading it to the Evergreen backend service layer, effectively kicking off
+the upgrade process for evergreen-clients.
+
