@@ -20,7 +20,7 @@
     "jest": "^23.5.0"
   },
   "dependencies": {
-    "github": "^14.0.0",
+    "@octokit/rest": "^15.9.6",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "winston": "^3.0.0"

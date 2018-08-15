@@ -6,11 +6,12 @@
  * https://issues.jenkins-ci.org/browse/JENKINS-52762
  */
 
+const Jenkins    = require('./lib/jenkins');
+const GithubApi = require('@octokit/rest');
+
 const EVERGREEN_ENDPOINT = process.env.EVERGREEN_ENDPOINT || 'https://evergreen.jenkins.io';
-const Jenkins = require('./lib/jenkins');
 
 module.exports = async (context, data) => {
-    const GithubApi = require('github');
     const event_type = context.req.headers['x-github-event'];
     context.log('GitHub Webhook triggered!', event_type);
     let github = context.github || new GithubApi();
