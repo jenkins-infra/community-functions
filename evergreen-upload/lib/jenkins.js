@@ -5,7 +5,7 @@ const request = require('request-promise');
 const JENKINS_AUTH           = process.env.JENKINS_AUTH;
 const EVERGREEN_PIPELINE_URL = process.env.EVERGREEN_PIPELINE_URL || 'https://ci.jenkins.io/job/Infra/job/evergreen/job/master/lastSuccessfulBuild';
 
-const commitApiUrl = '/api/json?tree=actions[revision[hash,pullHash]]';
+const commitApiUrl = '/api/json'
 const artifactUrl  = '/artifact/services/ingest.json';
 
 class Jenkins {
@@ -25,6 +25,7 @@ class Jenkins {
   async fetchCommitData() {
     const data = await request({
       uri: `${EVERGREEN_PIPELINE_URL}${commitApiUrl}`,
+      qa: 'tree=actions[revision[hash,pullHash]]',
       json: true,
       headers: this.getHttpHeaders()
     });
@@ -47,7 +48,6 @@ class Jenkins {
 
     data.actions.forEach((action) => {
       if (action._class == 'hudson.plugins.git.util.BuildData') {
-        this.context.log(action);
         commit = action.buildsByBranchName.master.revision.SHA1;
       }
     });
