@@ -6,8 +6,9 @@
  * https://issues.jenkins-ci.org/browse/JENKINS-52762
  */
 
-const Jenkins    = require('./lib/jenkins');
+const Jenkins   = require('./lib/jenkins');
 const GithubApi = require('@octokit/rest');
+const request   = require('request-promise');
 
 const EVERGREEN_ENDPOINT = process.env.EVERGREEN_ENDPOINT || 'https://evergreen.jenkins.io';
 
