@@ -35,7 +35,8 @@ class Jenkins {
   async fetchIngest() {
     return await request({
       uri: `${EVERGREEN_PIPELINE_URL}${artifactUrl}`,
-      headers: this.getHttpHeaders()
+      headers: this.getHttpHeaders(),
+      json: true
     });
   }
 
