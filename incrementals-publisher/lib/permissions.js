@@ -38,8 +38,17 @@ module.exports = {
         if (entry.name.endsWith('.pom')) {
           const pomXml = zip.entryDataSync(entry.name);
           xml2js.parseString(pomXml, (err, result) => {
+            if (!result.project.scm) {
+              reject(util.format('Missing <scm> section in %s', entry.name));
+            }
             const scm = result.project.scm[0];
+            if (!scm.url) {
+              reject(util.format('Missing <url> section in <scm> of %s', entry.name));
+            }
             const url = scm.url[0];
+            if (!scm.tag) {
+              reject(util.format('Missing <tag> section in <scm> of %s', entry.name));
+            }
             const tag = scm.tag[0];
             const groupId = result.project.groupId[0];
             const artifactId = result.project.artifactId[0];

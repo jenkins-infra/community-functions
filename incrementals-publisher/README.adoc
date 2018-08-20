@@ -33,7 +33,7 @@ defaults to
 `https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github.index.json`
 
 | `JENKINS_AUTH`
-| A `username:password` or `username:apiToken` authentication to Jenkins. Optional.
+| A `username:password` or `username:apiToken` authentication to Jenkins. link:https://ci.jenkins.io/me/configure[API Token]
 
 |===
 
