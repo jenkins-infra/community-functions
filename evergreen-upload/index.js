@@ -58,7 +58,8 @@ module.exports = async (context, data) => {
 
     context.log(`Preparing ingest for commit ${commit}`);
 
-    return request({
+    try {
+      const response = await request({
         uri: `${EVERGREEN_ENDPOINT}/update`,
         method: 'POST',
         json: true,
@@ -69,20 +70,21 @@ module.exports = async (context, data) => {
           commit: commit,
           manifest: ingest,
         },
-      }).then((res) => {
-        context.log(res);
-        context.res = {
-          status: 200,
-          body: `Uploaded ${commit} to ${EVERGREEN_ENDPOINT}`,
-        };
-        context.done();
-      })
-      .catch((err) => {
-        context.log.error(err);
-        context.res = {
-          status: 500,
-          body: err,
-        };
-        context.done();
-      })
+      });
+      context.log(res);
+      context.res = {
+        status: 200,
+        body: `Uploaded ${commit} to ${EVERGREEN_ENDPOINT}`,
+      };
+      context.done();
+      return;
+    } catch (err) {
+      context.log.error(err);
+      context.res = {
+        status: 500,
+        body: err,
+      };
+      context.done();
+      return;
+    }
 };
