@@ -12,7 +12,7 @@ const request   = require('request-promise');
 
 const EVERGREEN_ENDPOINT = process.env.EVERGREEN_ENDPOINT || 'https://evergreen.jenkins.io';
 
-module.exports = async (context, data) => {
+module.exports = (context, data) => {
     const event_type = context.req.headers['x-github-event'];
     context.log('Entering function with data:', data);
     context.log('GitHub Webhook triggered!', event_type);
