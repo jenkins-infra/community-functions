@@ -58,5 +58,10 @@ module.exports = async (context, data) => {
     const commit = await jenkins.fetchCommitData();
 
     context.log(`Preparing ingest for commit ${commit}`);
-    return Evergreen.create(context, commit, ingest);
+
+    const commits = Evergreen.findRelevantCommits(data.body);
+    const tasks = commits.map(c => Evergreen.taint(context, c));
+    return Promise.all(tasks).then(() => {
+      return Evergreen.create(context, commit, ingest);
+    });
 };
