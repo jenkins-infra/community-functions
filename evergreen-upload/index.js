@@ -7,6 +7,7 @@
  */
 
 const Jenkins   = require('./lib/jenkins');
+const Evergreen = require('./lib/evergreen');
 const GithubApi = require('@octokit/rest');
 const request   = require('request-promise');
 
@@ -58,33 +59,9 @@ module.exports = async (context, data) => {
 
     context.log(`Preparing ingest for commit ${commit}`);
 
-    try {
-      const response = await request({
-        uri: `${EVERGREEN_ENDPOINT}/update`,
-        method: 'POST',
-        json: true,
-        headers: {
-          'Authorization' : process.env.EVERGREEN_AUTH,
-        },
-        body: {
-          commit: commit,
-          manifest: ingest,
-        },
-      });
-      context.log(res);
-      context.res = {
-        status: 200,
-        body: `Uploaded ${commit} to ${EVERGREEN_ENDPOINT}`,
-      };
-      context.done();
-      return;
-    } catch (err) {
-      context.log.error(err);
-      context.res = {
-        status: 500,
-        body: err,
-      };
-      context.done();
-      return;
-    }
+    const commits = Evergreen.findRelevantCommits(data.body);
+    const tasks = commits.map(c => Evergreen.taint(context, c));
+    return Promise.all(tasks).then(() => {
+      return Evergreen.create(context, commit, ingest);
+    });
 };
