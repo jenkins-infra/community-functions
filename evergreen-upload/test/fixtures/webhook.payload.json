@@ -1,0 +1,264 @@
+{
+  "ref": "refs/heads/master",
+  "before": "57597e9ddca0a85906e7ca4f70b74df37aa62262",
+  "after": "f6a652f459546f93a76305b23f8ca15d5911e6b0",
+  "created": false,
+  "deleted": false,
+  "forced": false,
+  "base_ref": null,
+  "compare": "https://github.com/jenkins-infra/evergreen/compare/57597e9ddca0...f6a652f45954",
+  "commits": [
+    {
+      "id": "f61ef7de1f505f6f90a39159b6ae4785d4c51248",
+      "tree_id": "b638033fb70b5679b0871e3ca7cb675a379657d1",
+      "distinct": true,
+      "message": "Lower log level from error to debug",
+      "timestamp": "2018-09-10T12:03:59+02:00",
+      "url": "https://github.com/jenkins-infra/evergreen/commit/f61ef7de1f505f6f90a39159b6ae4785d4c51248",
+      "author": {
+        "name": "Baptiste Mathus",
+        "email": "batmat@batmat.net",
+        "username": "batmat"
+      },
+      "committer": {
+        "name": "Baptiste Mathus",
+        "email": "batmat@batmat.net",
+        "username": "batmat"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "distribution/client/src/lib/downloader.js"
+      ]
+    },
+    {
+      "id": "d8aaee640ebdb2255c77f7795a6f90c79176f8c6",
+      "tree_id": "5dd4e8d3fee62fd03566783d03bf64de6c2e157b",
+      "distinct": true,
+      "message": "Change UI publishing log into one-liner\n\nCurrent log is:\n\n```\ndebug: Publishing to the UI: { message:\n   'Fetched /evergreen/jenkins/home/plugins/blueocean.hpi in 3.733ss',\n  timestamp: 1536571673041 }\n```\n\nWhich takes a lot of room and makes the rest harder to visually grep/parse.",
+      "timestamp": "2018-09-10T12:05:09+02:00",
+      "url": "https://github.com/jenkins-infra/evergreen/commit/d8aaee640ebdb2255c77f7795a6f90c79176f8c6",
+      "author": {
+        "name": "Baptiste Mathus",
+        "email": "batmat@batmat.net",
+        "username": "batmat"
+      },
+      "committer": {
+        "name": "Baptiste Mathus",
+        "email": "batmat@batmat.net",
+        "username": "batmat"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "distribution/client/src/lib/ui.js"
+      ]
+    },
+    {
+      "id": "f6a652f459546f93a76305b23f8ca15d5911e6b0",
+      "tree_id": "dc1eaa21bffe7f2c3b0941e37391d0c42ed56901",
+      "distinct": true,
+      "message": "Merge pull request #233 from batmat/logging-small-improvement\n\nReduce log level + one-line-ify UI.publish log",
+      "timestamp": "2018-09-10T10:31:58-04:00",
+      "url": "https://github.com/jenkins-infra/evergreen/commit/f6a652f459546f93a76305b23f8ca15d5911e6b0",
+      "author": {
+        "name": "Mandie Smith",
+        "email": "mandie@houseofgnomes.net",
+        "username": "mandie722"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "username": "web-flow"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "distribution/client/src/lib/downloader.js",
+        "distribution/client/src/lib/ui.js"
+      ]
+    }
+  ],
+  "head_commit": {
+    "id": "f6a652f459546f93a76305b23f8ca15d5911e6b0",
+    "tree_id": "dc1eaa21bffe7f2c3b0941e37391d0c42ed56901",
+    "distinct": true,
+    "message": "Merge pull request #233 from batmat/logging-small-improvement\n\nReduce log level + one-line-ify UI.publish log",
+    "timestamp": "2018-09-10T10:31:58-04:00",
+    "url": "https://github.com/jenkins-infra/evergreen/commit/f6a652f459546f93a76305b23f8ca15d5911e6b0",
+    "author": {
+      "name": "Mandie Smith",
+      "email": "mandie@houseofgnomes.net",
+      "username": "mandie722"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "username": "web-flow"
+    },
+    "added": [
+
+    ],
+    "removed": [
+
+    ],
+    "modified": [
+      "distribution/client/src/lib/downloader.js",
+      "distribution/client/src/lib/ui.js"
+    ]
+  },
+  "repository": {
+    "id": 119078647,
+    "node_id": "MDEwOlJlcG9zaXRvcnkxMTkwNzg2NDc=",
+    "name": "evergreen",
+    "full_name": "jenkins-infra/evergreen",
+    "owner": {
+      "name": "jenkins-infra",
+      "email": "infra@lists.jenkins-ci.org",
+      "login": "jenkins-infra",
+      "id": 7422698,
+      "node_id": "MDEyOk9yZ2FuaXphdGlvbjc0MjI2OTg=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7422698?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jenkins-infra",
+      "html_url": "https://github.com/jenkins-infra",
+      "followers_url": "https://api.github.com/users/jenkins-infra/followers",
+      "following_url": "https://api.github.com/users/jenkins-infra/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jenkins-infra/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jenkins-infra/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jenkins-infra/subscriptions",
+      "organizations_url": "https://api.github.com/users/jenkins-infra/orgs",
+      "repos_url": "https://api.github.com/users/jenkins-infra/repos",
+      "events_url": "https://api.github.com/users/jenkins-infra/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jenkins-infra/received_events",
+      "type": "Organization",
+      "site_admin": false
+    },
+    "private": false,
+    "html_url": "https://github.com/jenkins-infra/evergreen",
+    "description": "An automatically self-updating Jenkins distribution",
+    "fork": false,
+    "url": "https://github.com/jenkins-infra/evergreen",
+    "forks_url": "https://api.github.com/repos/jenkins-infra/evergreen/forks",
+    "keys_url": "https://api.github.com/repos/jenkins-infra/evergreen/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/jenkins-infra/evergreen/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/jenkins-infra/evergreen/teams",
+    "hooks_url": "https://api.github.com/repos/jenkins-infra/evergreen/hooks",
+    "issue_events_url": "https://api.github.com/repos/jenkins-infra/evergreen/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/jenkins-infra/evergreen/events",
+    "assignees_url": "https://api.github.com/repos/jenkins-infra/evergreen/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/jenkins-infra/evergreen/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/jenkins-infra/evergreen/tags",
+    "blobs_url": "https://api.github.com/repos/jenkins-infra/evergreen/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/jenkins-infra/evergreen/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/jenkins-infra/evergreen/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/jenkins-infra/evergreen/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/jenkins-infra/evergreen/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/jenkins-infra/evergreen/languages",
+    "stargazers_url": "https://api.github.com/repos/jenkins-infra/evergreen/stargazers",
+    "contributors_url": "https://api.github.com/repos/jenkins-infra/evergreen/contributors",
+    "subscribers_url": "https://api.github.com/repos/jenkins-infra/evergreen/subscribers",
+    "subscription_url": "https://api.github.com/repos/jenkins-infra/evergreen/subscription",
+    "commits_url": "https://api.github.com/repos/jenkins-infra/evergreen/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/jenkins-infra/evergreen/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/jenkins-infra/evergreen/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/jenkins-infra/evergreen/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/jenkins-infra/evergreen/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/jenkins-infra/evergreen/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/jenkins-infra/evergreen/merges",
+    "archive_url": "https://api.github.com/repos/jenkins-infra/evergreen/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/jenkins-infra/evergreen/downloads",
+    "issues_url": "https://api.github.com/repos/jenkins-infra/evergreen/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/jenkins-infra/evergreen/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/jenkins-infra/evergreen/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/jenkins-infra/evergreen/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/jenkins-infra/evergreen/labels{/name}",
+    "releases_url": "https://api.github.com/repos/jenkins-infra/evergreen/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/jenkins-infra/evergreen/deployments",
+    "created_at": 1516985795,
+    "updated_at": "2018-09-08T16:39:47Z",
+    "pushed_at": 1536589919,
+    "git_url": "git://github.com/jenkins-infra/evergreen.git",
+    "ssh_url": "git@github.com:jenkins-infra/evergreen.git",
+    "clone_url": "https://github.com/jenkins-infra/evergreen.git",
+    "svn_url": "https://github.com/jenkins-infra/evergreen",
+    "homepage": null,
+    "size": 3748,
+    "stargazers_count": 35,
+    "watchers_count": 35,
+    "language": "JavaScript",
+    "has_issues": false,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "forks_count": 12,
+    "mirror_url": null,
+    "archived": false,
+    "open_issues_count": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "forks": 12,
+    "open_issues": 1,
+    "watchers": 35,
+    "default_branch": "master",
+    "stargazers": 35,
+    "master_branch": "master",
+    "organization": "jenkins-infra"
+  },
+  "pusher": {
+    "name": "mandie722",
+    "email": "mandie@houseofgnomes.net"
+  },
+  "organization": {
+    "login": "jenkins-infra",
+    "id": 7422698,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjc0MjI2OTg=",
+    "url": "https://api.github.com/orgs/jenkins-infra",
+    "repos_url": "https://api.github.com/orgs/jenkins-infra/repos",
+    "events_url": "https://api.github.com/orgs/jenkins-infra/events",
+    "hooks_url": "https://api.github.com/orgs/jenkins-infra/hooks",
+    "issues_url": "https://api.github.com/orgs/jenkins-infra/issues",
+    "members_url": "https://api.github.com/orgs/jenkins-infra/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/jenkins-infra/public_members{/member}",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/7422698?v=4",
+    "description": "Repositories owned by the Jenkins project infrastructure team"
+  },
+  "sender": {
+    "login": "mandie722",
+    "id": 1380215,
+    "node_id": "MDQ6VXNlcjEzODAyMTU=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1380215?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mandie722",
+    "html_url": "https://github.com/mandie722",
+    "followers_url": "https://api.github.com/users/mandie722/followers",
+    "following_url": "https://api.github.com/users/mandie722/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mandie722/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mandie722/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mandie722/subscriptions",
+    "organizations_url": "https://api.github.com/users/mandie722/orgs",
+    "repos_url": "https://api.github.com/users/mandie722/repos",
+    "events_url": "https://api.github.com/users/mandie722/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mandie722/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
