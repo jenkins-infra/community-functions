@@ -48,7 +48,43 @@ class Jenkins {
     let commit = null;
 
     data.actions.forEach((action) => {
-      if (action._class == 'hudson.plugins.git.util.BuildData') {
+/*
+  Example:
+    {
+      "_class": "hudson.plugins.git.util.BuildDetails",
+      "build": {
+        "buildNumber": 562,
+        "buildResult": null,
+        "marked": {
+          "SHA1": "60ce43c4a655760bbe4292c203935f793132e4cb",
+          "branch": [
+            {
+              "SHA1": "60ce43c4a655760bbe4292c203935f793132e4cb",
+              "name": "master"
+            }
+          ]
+        },
+        "revision": {
+          "SHA1": "60ce43c4a655760bbe4292c203935f793132e4cb",
+          "branch": [
+            {
+              "SHA1": "60ce43c4a655760bbe4292c203935f793132e4cb",
+              "name": "master"
+            }
+          ]
+        }
+      },
+      "remoteUrls": [
+        "https://github.com/jenkins-infra/evergreen.git"
+      ],
+      "scmName": ""
+    },
+*/
+
+      if ((action._class == 'hudson.plugins.git.util.BuildDetails') &&
+          (action.remoteUrls.includes('https://github.com/jenkins-infra/evergreen.git'))) {
+        commit = action.revision.SHA1;
+      } else if (action._class == 'hudson.plugins.git.util.BuildData') {
         commit = action.buildsByBranchName.master.revision.SHA1;
       }
     });
