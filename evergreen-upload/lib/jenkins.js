@@ -83,7 +83,7 @@ class Jenkins {
 
       if ((action._class == 'hudson.plugins.git.util.BuildDetails') &&
           (action.remoteUrls.includes('https://github.com/jenkins-infra/evergreen.git'))) {
-        commit = action.revision.SHA1;
+        commit = action.build.revision.SHA1;
       } else if (action._class == 'hudson.plugins.git.util.BuildData') {
         commit = action.buildsByBranchName.master.revision.SHA1;
       }
