@@ -159,7 +159,7 @@ module.exports = async (context, data) => {
     context.log.error(err);
     context.res = {
       status: 400,
-      body: "Invalid archive retrieved from Jenkins, perhaps the plugin is not properly incrementalized?\n${err}",
+      body: util.format('Invalid archive retrieved from Jenkins, perhaps the plugin is not properly incrementalized?\n%s from %s', err, archiveUrl),
     };
     return;
   }
