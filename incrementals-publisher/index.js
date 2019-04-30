@@ -152,7 +152,18 @@ module.exports = async (context, data) => {
   const repoPath = util.format('%s/%s', folderMetadataParsed.owner, folderMetadataParsed.repo);
   let entries = [];
   context.log.info('Downloaded file size', fs.statSync(archivePath).size);
-  const verified = await permissions.verify(context.log, repoPath, archivePath, entries, perms, folderMetadataParsed.owner, folderMetadataParsed.repo, buildMetadataParsed.hash);
+  try {
+    const verified = await permissions.verify(context.log, repoPath, archivePath, entries, perms, folderMetadataParsed.owner, folderMetadataParsed.repo, buildMetadataParsed.hash);
+  } catch (err) {
+    context.log.error('Invalid archive');
+    context.log.error(err);
+    context.res = {
+      status: 400,
+      body: "Invalid archive retrieved from Jenkins, perhaps the plugin is not properly incrementalized?\n${err}",
+    };
+    return;
+  }
+  
   if (entries.length === 0) {
     context.log.error('Empty archive');
     context.res = {
