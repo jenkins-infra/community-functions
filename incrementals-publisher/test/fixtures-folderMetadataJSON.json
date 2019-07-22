@@ -1,0 +1,12 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject",
+  "sources": [
+    {
+      "source": {
+        "_class": "org.jenkinsci.plugins.github_branch_source.GitHubSCMSource",
+        "repoOwner": "jenkinsci",
+        "repository": "gitlab-branch-source-plugin"
+      }
+    }
+  ]
+}

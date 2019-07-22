@@ -11,8 +11,7 @@ module.exports = {
   commitExists: async (owner, repo, sha) => {
     let github = new GitHubApi();
     /* The function must have this Application Setting already created */
-    // TODO a failure here results in UnhandledPromiseRejectionWarning but the function continues
-    github.authenticate({
+    await github.authenticate({
       type: 'oauth',
       token: GITHUB_TOKEN
     });
@@ -29,10 +28,10 @@ module.exports = {
 
   createStatus: async (owner, repo, sha, target_url) => {
     let github = new GitHubApi();
-    github.authenticate({
+    await github.authenticate({
       type: 'oauth',
       token: GITHUB_TOKEN
     });
-    return await github.repos.createStatus({owner, repo, sha, state: 'success', target_url, description: 'Deployed to Incrementals.', context: 'continuous-integration/jenkins/incrementals'});
+    return github.repos.createStatus({owner, repo, sha, state: 'success', target_url, description: 'Deployed to Incrementals.', context: 'continuous-integration/jenkins/incrementals'});
   }
 };
