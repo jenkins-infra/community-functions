@@ -38,6 +38,7 @@ describe('Handling incremental publisher webhook events', () => {
     simple.mock(ctx.log, 'info', (...args) => console.log('[INFO]', ...args));
     simple.mock(ctx.log, 'error', (...args) => console.log('[ERROR]', ...args));
     simple.mock(fun.IncrementalsPlugin.prototype, 'downloadFile', async () => path.resolve('./test/fixtures-good-archive.zip'));
+    simple.mock(fun.IncrementalsPlugin.prototype.github, 'commitExists', async () => true );
     simple.mock(fun.IncrementalsPlugin.prototype.github, 'createStatus', async () => true );
     simple.mock(fun.IncrementalsPlugin.prototype, 'uploadToArtifactory', async () => { return {
       status: 200,
