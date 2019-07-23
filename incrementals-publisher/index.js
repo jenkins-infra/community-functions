@@ -145,7 +145,7 @@ class IncrementalsPlugin {
 
     const jenkinsOpts = {};
     if (JENKINS_AUTH) {
-      jenkinsOpts.headers = {'Authorization': 'Basic ' + new Buffer(JENKINS_AUTH, 'utf8').toString('base64')};
+      jenkinsOpts.headers = {'Authorization': 'Basic ' + new Buffer.from(JENKINS_AUTH, 'utf8').toString('base64')};
     }
 
     /*
