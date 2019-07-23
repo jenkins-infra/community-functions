@@ -7,19 +7,33 @@ const fun         = require('../index.js');
 const permissions = require('../lib/permissions');
 
 const urlResults = {
-  'https://ci.jenkins.io/job/Plugins/job/gitlab-branch-source-plugin/view/change-requests/job/PR-7/4/api/json?tree=actions[revision[hash,pullHash]]': {
+  'https://ci.jenkins.io/job/Tools/job/bom/job/PR-22/5/api/json?tree=actions[revision[hash,pullHash]]': {
     status: 200,
-    results: require('./fixtures-processBuildMetadata.json')
+    results: () => {
+      return {
+        actions: [{
+          "_class": "jenkins.scm.api.SCMRevisionAction",
+          "revision": {
+            "_class": "org.jenkinsci.plugins.github_branch_source.PullRequestSCMRevision",
+            "pullHash": "55219da23b98739fa6b793b21b91555b36162856"
+          }
+        }]
+      }
+    }
   },
-  'https://ci.jenkins.io/job/Plugins/job/gitlab-branch-source-plugin/view/change-requests/job/PR-7/4/../../../api/json?tree=sources[source[repoOwner,repository]]': {
+  'https://ci.jenkins.io/job/Tools/job/bom/job/PR-22/5/../../../api/json?tree=sources[source[repoOwner,repository]]': {
     status: 200,
-    results: require('./fixtures-folderMetadataJSON.json')
+    results: () => {
+      return {"_class":"org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject","sources":[{"source":{"_class":"org.jenkinsci.plugins.github_branch_source.GitHubSCMSource","repoOwner":"jenkinsci","repository":"bom"}}]}
+    }
   },
-  'https://fake-repo.jenkins-ci.org/incrementals/io/jenkins/plugins/gitlab-branch-source/0.0.4-rc287.b56548afdc8b/gitlab-branch-source-0.0.4-rc287.b56548afdc8b.pom': {
+  'https://ci.jenkins.io/job/Infra/job/repository-permissions-updater/job/master/lastSuccessfulBuild/artifact/json/github.index.json': {
+    status: 200,
+    results: () => require('./fixtures-permissions.json')
+  },
+  'https://fake-repo.jenkins-ci.org/incrementals/io/jenkins/tools/bom/bom/2.176.1-rc63.55219da23b98/bom-2.176.1-rc63.55219da23b98.pom': {
     status: 404,
-    results: 'Not found'
-    //status: 200,
-    //results: fs.readFileSync(path.resolve('./test/fixtures-good-pom.xml'))
+    results: () => 'Not found'
   }
 }
 
@@ -32,11 +46,26 @@ describe('Handling incremental publisher webhook events', () => {
     ctx.res = {};
     return fun(ctx, data).catch(err => console.log('Caught', err));
   };
+  let asyncFetch = async (url, opts) => {
+    if (!url) {
+      throw new Error('no url provided');
+    }
+    if (!urlResults[url]) {
+      console.warn("Mock URL is not found, fetching real url", url);
+      return fetch(url, opts);
+    }
+    return {
+      status: urlResults[url].status,
+      json: () => { const resultsFunc = urlResults[url].results; return resultsFunc() }
+    };
+  }
 
   beforeEach(() => {
     ctx.log = simple.mock();
-    simple.mock(ctx.log, 'info', (...args) => console.log('[INFO]', ...args));
-    simple.mock(ctx.log, 'error', (...args) => console.log('[ERROR]', ...args));
+    //simple.mock(ctx.log, 'info', (...args) => console.log('[INFO]', ...args));
+    //simple.mock(ctx.log, 'error', (...args) => console.log('[ERROR]', ...args));
+    simple.mock(ctx.log, 'info', () => true);
+    simple.mock(ctx.log, 'error', () => true);
     simple.mock(fun.IncrementalsPlugin.prototype, 'downloadFile', async () => path.resolve('./test/fixtures-good-archive.zip'));
     simple.mock(fun.IncrementalsPlugin.prototype.github, 'commitExists', async () => true );
     simple.mock(fun.IncrementalsPlugin.prototype.github, 'createStatus', async () => true );
@@ -44,16 +73,11 @@ describe('Handling incremental publisher webhook events', () => {
       status: 200,
       statusText: 'Success'
     }; } );
-    simple.mock(fun.IncrementalsPlugin.prototype, 'fetch', async (url, opts) => {
-      if (!urlResults[url]) {
-        console.warn("Mock URL is not found, fetching real url", url);
-        return fetch(url, opts);
-      }
-      return {
-        status: urlResults[url].status,
-        json: () => urlResults[url].results
-      };
-    });
+    simple.mock(fun.IncrementalsPlugin.prototype, 'fetch', asyncFetch);
+    simple.mock(fun.IncrementalsPlugin.prototype.permissions, 'fetch', async () => { return {
+      status: 200,
+      json: async () => require('./fixtures-permissions.json')
+    }});
   });
   afterEach(() => { simple.restore() });
 
@@ -110,15 +134,15 @@ describe('Handling incremental publisher webhook events', () => {
       });
     });
     it('should output an error', async () => {
-      data.body.build_url = 'https://ci.jenkins.io/job/Plugins/job/gitlab-branch-source-plugin/view/change-requests/job/PR-7/4/';
+      data.body.build_url = 'https://ci.jenkins.io/job/Tools/job/bom/job/PR-22/5/';
       await run();
-      assert.equal(ctx.res.body, 'Invalid archive retrieved from Jenkins, perhaps the plugin is not properly incrementalized?\nError: This is my error from https://ci.jenkins.io/job/Plugins/job/gitlab-branch-source-plugin/view/change-requests/job/PR-7/4/artifact/**/*-rc*.b56548afdc8b/*-rc*.b56548afdc8b*/*zip*/archive.zip');
+      assert.equal(ctx.res.body, 'Invalid archive retrieved from Jenkins, perhaps the plugin is not properly incrementalized?\nError: This is my error from https://ci.jenkins.io/job/Tools/job/bom/job/PR-22/5/artifact/**/*-rc*.55219da23b98/*-rc*.55219da23b98*/*zip*/archive.zip');
       assert.equal(ctx.res.status, 400);
     });
   });
   describe('success', () => {
     it('should claim all is a sucess', async () => {
-      data.body.build_url = 'https://ci.jenkins.io/job/Plugins/job/gitlab-branch-source-plugin/view/change-requests/job/PR-7/4/';
+      data.body.build_url = 'https://ci.jenkins.io/job/Tools/job/bom/job/PR-22/5/';
       await run();
       assert.equal(ctx.res.body, 'Response from Artifactory: Success\n');
       assert.equal(ctx.res.status, 200);

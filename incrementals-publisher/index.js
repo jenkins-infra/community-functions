@@ -167,7 +167,6 @@ class IncrementalsPlugin {
     let buildMetadataParsed = this.pipeline.processBuildMetadata(buildMetadataJSON);
 
     if (!buildMetadataParsed.hash) {
-      console.log(JSON.stringify(buildMetadataJSON, null, 4))
       this.context.log.error('Unable to retrieve a hash or pullHash', buildMetadataJSON);
       throw new SuccessRequestError(`Did not find a Git commit hash associated with this build. Some plugins on ${JENKINS_HOST} may not yet have been updated with JENKINS-50777 REST API enhancements. Skipping deployment.\n`)
     }

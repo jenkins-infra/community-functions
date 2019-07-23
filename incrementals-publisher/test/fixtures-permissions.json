@@ -1,0 +1,5266 @@
+{
+    "jenkins-infra/update-center2": [
+        "org/jenkins-ci/update-center2"
+    ],
+    "jenkinsci/BlameSubversion-plugin": [
+        "org/jvnet/hudson/plugins/BlameSubversion"
+    ],
+    "jenkinsci/CFLint-plugin": [
+        "org/jvnet/hudson/plugins/CFLint"
+    ],
+    "jenkinsci/DotCi": [
+        "com/groupon/jenkins-ci/plugins/DotCi"
+    ],
+    "jenkinsci/JiraTestResultReporter-plugin": [
+        "org/jenkins-ci/plugins/JiraTestResultReporter"
+    ],
+    "jenkinsci/Matrix-sorter-plugin": [
+        "org/jenkins-ci/plugins/Matrix-sorter-plugin"
+    ],
+    "jenkinsci/SCTMExecutor-plugin": [
+        "hudson/plugins/sctmexecutor/SCTMExecutor"
+    ],
+    "jenkinsci/SECURITY-144-compat": [
+        "org/jenkins-ci/SECURITY-144-compat"
+    ],
+    "jenkinsci/Surround-SCM-plugin": [
+        "org/jenkins-ci/plugins/Surround-SCM-plugin",
+        "org/jvnet/hudson/plugins/Surround-SCM-plugin"
+    ],
+    "jenkinsci/URLSCM-plugin": [
+        "org/jvnet/hudson/plugins/URLSCM"
+    ],
+    "jenkinsci/absint-a3-plugin": [
+        "org/jenkins-ci/plugins/absint-a3"
+    ],
+    "jenkinsci/absint-astree-plugin": [
+        "org/jenkins-ci/plugins/absint-astree"
+    ],
+    "jenkinsci/accelerated-build-now-plugin": [
+        "org/terracotta/jenkins/plugins/accelerated-build-now-plugin"
+    ],
+    "jenkinsci/acceptance-test-harness": [
+        "org/jenkins-ci/acceptance-test-harness"
+    ],
+    "jenkinsci/accurev-plugin": [
+        "org/jenkins-ci/plugins/accurev"
+    ],
+    "jenkinsci/active-choices-plugin": [
+        "org/biouno/uno-choice"
+    ],
+    "jenkinsci/active-directory-plugin": [
+        "org/jenkins-ci/plugins/active-directory"
+    ],
+    "jenkinsci/acunetix-360-scan-plugin": [
+        "org/jenkins-ci/plugins/acunetix-360-scan"
+    ],
+    "jenkinsci/acunetix-plugin": [
+        "com/acunetix/acunetix"
+    ],
+    "jenkinsci/adaptive-disconnector-plugin": [
+        "org/jenkins-ci/plugins/adaptive-disconnector"
+    ],
+    "jenkinsci/additional-identities-plugin": [
+        "com/cloudbees/jenkins/plugins/additional-identities-plugin"
+    ],
+    "jenkinsci/additional-metrics-plugin": [
+        "org/jenkins-ci/plugins/additional-metrics"
+    ],
+    "jenkinsci/adoptopenjdk-plugin": [
+        "io/jenkins/plugins/adoptopenjdk"
+    ],
+    "jenkinsci/advanced-installer-msi-builder-plugin": [
+        "org/jenkins-ci/plugins/advanced-installer-msi-builder"
+    ],
+    "jenkinsci/agent-loadbalance-plugin": [
+        "com/surenpi/jenkins/agent-loadbalance"
+    ],
+    "jenkinsci/alauda-devops-credentials-provider-plugin": [
+        "io/alauda/jenkins/plugins/alauda-devops-credentials-provider"
+    ],
+    "jenkinsci/alauda-devops-pipeline-plugin": [
+        "com/alauda/jenkins/plugins/alauda-devops-pipeline"
+    ],
+    "jenkinsci/alauda-kubernetes-support-plugin": [
+        "io/alauda/jenkins/plugins/alauda-kubernetes-support"
+    ],
+    "jenkinsci/aliyun-container-service-deploy-plugin": [
+        "org/jenkins-ci/plugins/aliyun-container-service-deploy"
+    ],
+    "jenkinsci/aliyun-oss-uploader-plugin": [
+        "io/jenkins/plugins/aliyun-oss-uploader"
+    ],
+    "jenkinsci/all-changes-plugin": [
+        "org/jenkins-ci/plugins/all-changes"
+    ],
+    "jenkinsci/allure-plugin": [
+        "ru/yandex/qatools/allure/allure-jenkins-plugin"
+    ],
+    "jenkinsci/amazon-ecr-plugin": [
+        "com/cloudbees/jenkins/plugins/amazon-ecr"
+    ],
+    "jenkinsci/amazon-ecs-plugin": [
+        "com/cloudbees/jenkins/plugins/amazon-ecs"
+    ],
+    "jenkinsci/analysis-collector-plugin": [
+        "org/jvnet/hudson/plugins/analysis-collector"
+    ],
+    "jenkinsci/analysis-config-plugin": [
+        "org/jvnet/hudson/plugins/analysis-config"
+    ],
+    "jenkinsci/analysis-core-plugin": [
+        "org/jvnet/hudson/plugins/analysis-core"
+    ],
+    "jenkinsci/analysis-model": [
+        "edu/hm/hafner/analysis-model"
+    ],
+    "jenkinsci/analysis-model-api-plugin": [
+        "io/jenkins/plugins/analysis-model-api",
+        "org/jenkins-ci/plugins/analysis-model-api"
+    ],
+    "jenkinsci/analysis-pom-plugin": [
+        "org/jvnet/hudson/plugins/analysis-pom"
+    ],
+    "jenkinsci/analysis-test-plugin": [
+        "org/jvnet/hudson/plugins/analysis-test"
+    ],
+    "jenkinsci/anchor-chain-plugin": [
+        "org/jenkins-ci/plugins/AnchorChain"
+    ],
+    "jenkinsci/anchore-container-scanner-plugin": [
+        "org/jenkins-ci/plugins/anchore-container-scanner"
+    ],
+    "jenkinsci/android-apk-size-watcher-plugin": [
+        "org/jenkins-ci/plugins/android-apk-size-watcher"
+    ],
+    "jenkinsci/android-emulator-plugin": [
+        "org/jenkins-ci/plugins/android-emulator",
+        "org/jvnet/hudson/plugins/android-emulator"
+    ],
+    "jenkinsci/android-lint-plugin": [
+        "org/jvnet/hudson/plugins/android-lint"
+    ],
+    "jenkinsci/android-signing-plugin": [
+        "org/jenkins-ci/plugins/android-signing"
+    ],
+    "jenkinsci/anka-build-plugin": [
+        "org/jenkins-ci/plugins/anka-build"
+    ],
+    "jenkinsci/ansible-plugin": [
+        "org/jenkins-ci/plugins/ansible"
+    ],
+    "jenkinsci/ansible-tower-plugin": [
+        "org/jenkins-ci/plugins/ansible-tower"
+    ],
+    "jenkinsci/ansicolor-plugin": [
+        "org/jenkins-ci/plugins/ansicolor",
+        "org/jvnet/hudson/plugins/ansicolor"
+    ],
+    "jenkinsci/ant-in-workspace-plugin": [
+        "org/jenkins-ci/plugins/ant-in-workspace"
+    ],
+    "jenkinsci/ant-plugin": [
+        "org/jenkins-ci/plugins/ant"
+    ],
+    "jenkinsci/antexec-plugin": [
+        "org/jenkins-ci/plugins/antexec"
+    ],
+    "jenkinsci/antisamy-markup-formatter-plugin": [
+        "org/jenkins-ci/plugins/antisamy-markup-formatter"
+    ],
+    "jenkinsci/any-buildstep-plugin": [
+        "org/jenkins-ci/plugins/any-buildstep"
+    ],
+    "jenkinsci/anything-goes-formatter-plugin": [
+        "org/jenkins-ci/plugins/anything-goes-formatter"
+    ],
+    "jenkinsci/apache-httpcomponents-client-4-api-plugin": [
+        "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
+    ],
+    "jenkinsci/apica-loadtest-plugin": [
+        "com/apica/ApicaLoadtest"
+    ],
+    "jenkinsci/apifortress-plugin": [
+        "com/apifortress/jenkins/apifortress"
+    ],
+    "jenkinsci/app-detector-plugin": [
+        "org/jenkins-ci/plugins/app-detector"
+    ],
+    "jenkinsci/app.io-plugin": [
+        "org/jenkins-ci/plugins/appio"
+    ],
+    "jenkinsci/appaloosa-plugin": [
+        "org/jenkins-ci/plugins/appaloosa-plugin"
+    ],
+    "jenkinsci/appcenter-plugin": [
+        "io/jenkins/plugins/appcenter"
+    ],
+    "jenkinsci/appdynamics-plugin": [
+        "org/jenkins-ci/plugins/appdynamics-dashboard"
+    ],
+    "jenkinsci/appetize-plugin": [
+        "org/jenkins-ci/plugins/appetize"
+    ],
+    "jenkinsci/applatix-plugin": [
+        "com/applatix/jenkins/applatix"
+    ],
+    "jenkinsci/application-director-plugin": [
+        "org/jenkins-ci/plugins/application-director-plugin"
+    ],
+    "jenkinsci/applitools-eyes-plugin": [
+        "org/jenkins-ci/plugins/applitools-eyes"
+    ],
+    "jenkinsci/apprenda-plugin": [
+        "org/jenkins-ci/plugins/apprenda"
+    ],
+    "jenkinsci/appspider-build-scanner-plugin": [
+        "com/rapid7/jenkinsci-appspider-plugin"
+    ],
+    "jenkinsci/appthwack-plugin": [
+        "org/jenkins-ci/plugins/appthwack"
+    ],
+    "jenkinsci/aqua-microscanner-plugin": [
+        "org/jenkins-ci/plugins/aqua-microscanner"
+    ],
+    "jenkinsci/aqua-security-scanner-plugin": [
+        "org/jenkins-ci/plugins/aqua-security-scanner"
+    ],
+    "jenkinsci/aqua-serverless-plugin": [
+        "org/jenkins-ci/plugins/aqua-serverless"
+    ],
+    "jenkinsci/arachni-scanner-plugin": [
+        "org/jenkins-ci/plugins/arachni-scanner"
+    ],
+    "jenkinsci/arestocats-plugin": [
+        "org/jenkins-ci/plugins/arestocats"
+    ],
+    "jenkinsci/argus-notifier-plugin": [
+        "org/jenkins-ci/plugins/argus-notifier"
+    ],
+    "jenkinsci/artifact-diff-plugin": [
+        "org/jenkins-ci/plugins/artifact-diff-plugin"
+    ],
+    "jenkinsci/artifact-manager-s3-plugin": [
+        "io/jenkins/plugins/artifact-manager-s3"
+    ],
+    "jenkinsci/artifact-promotion-plugin": [
+        "org/jenkins-ci/plugins/artifact-promotion"
+    ],
+    "jenkinsci/artifactdeployer-plugin": [
+        "org/jenkins-ci/plugins/artifactdeployer"
+    ],
+    "jenkinsci/artifactory-plugin": [
+        "org/jenkins-ci/plugins/artifactory",
+        "org/jvnet/hudson/plugins/artifactory"
+    ],
+    "jenkinsci/asakusa-satellite-plugin": [
+        "org/codefirst/jenkins/asakusasatellite/asakusa-satellite-plugin"
+    ],
+    "jenkinsci/assembla-plugin": [
+        "org/jenkins-ci/plugins/assembla"
+    ],
+    "jenkinsci/assertthat-bdd-jira-plugin": [
+        "io/jenkins/plugins/assertthat-bdd-jira"
+    ],
+    "jenkinsci/associated-files-plugin": [
+        "org/jenkinsci/plugins/associated-files"
+    ],
+    "jenkinsci/async-http-client-plugin": [
+        "org/jenkins-ci/plugins/async-http-client",
+        "org/jenkinsci/plugins/async-http-client"
+    ],
+    "jenkinsci/async-job-plugin": [
+        "org/jenkins-ci/plugins/async-job"
+    ],
+    "jenkinsci/atlassian-jira-software-cloud-plugin": [
+        "com/atlassian/jira/software/cloud/jenkins/atlassian-jira-software-cloud"
+    ],
+    "jenkinsci/audit-log-plugin": [
+        "io/jenkins/plugins/audit-log"
+    ],
+    "jenkinsci/audit-trail-plugin": [
+        "org/jenkins-ci/plugins/audit-trail"
+    ],
+    "jenkinsci/audit2db-plugin": [
+        "org/jenkins-ci/plugins/audit2db"
+    ],
+    "jenkinsci/authentication-tokens-plugin": [
+        "org/jenkins-ci/plugins/authentication-tokens"
+    ],
+    "jenkinsci/authorize-project-plugin": [
+        "org/jenkins-ci/plugins/authorize-project"
+    ],
+    "jenkinsci/autoaction-step-plugin": [
+        "io/jenkins/plugins/autoaction-step"
+    ],
+    "jenkinsci/avatar-plugin": [
+        "net/hurstfrost/jenkins/avatar"
+    ],
+    "jenkinsci/aws-batch-plugin": [
+        "org/jenkins-ci/plugins/aws-batch"
+    ],
+    "jenkinsci/aws-beanstalk-publisher-plugin": [
+        "org/jenkins-ci/plugins/aws-beanstalk-publisher-plugin"
+    ],
+    "jenkinsci/aws-bucket-credentials-plugin": [
+        "uk/co/stevegal/aws-bucket-credentials"
+    ],
+    "jenkinsci/aws-cloudwatch-logs-publisher-plugin": [
+        "org/jenkins-ci/plugins/aws-cloudwatch-logs-publisher"
+    ],
+    "jenkinsci/aws-codebuild-plugin": [
+        "com/amazonaws/aws-codebuild"
+    ],
+    "jenkinsci/aws-codecommit-jobs-plugin": [
+        "org/jenkins-ci/plugins/aws-codecommit-jobs"
+    ],
+    "jenkinsci/aws-codecommit-trigger-plugin": [
+        "org/jenkins-ci/plugins/aws-codecommit-trigger"
+    ],
+    "jenkinsci/aws-codedeploy-plugin": [
+        "com/amazonaws/codedeploy"
+    ],
+    "jenkinsci/aws-codepipeline-plugin": [
+        "com/amazonaws/aws-codepipeline"
+    ],
+    "jenkinsci/aws-credentials-plugin": [
+        "org/jenkins-ci/plugins/aws-credentials"
+    ],
+    "jenkinsci/aws-device-farm-plugin": [
+        "org/jenkins-ci/plugins/aws-device-farm"
+    ],
+    "jenkinsci/aws-global-configuration-plugin": [
+        "io/jenkins/plugins/aws-global-configuration"
+    ],
+    "jenkinsci/aws-java-sdk-plugin": [
+        "org/jenkins-ci/plugins/aws-java-sdk"
+    ],
+    "jenkinsci/aws-lambda-plugin": [
+        "org/jenkins-ci/plugins/aws-lambda"
+    ],
+    "jenkinsci/aws-parameter-store-plugin": [
+        "org/jenkins-ci/plugins/aws-parameter-store"
+    ],
+    "jenkinsci/aws-sam-plugin": [
+        "io/jenkins/plugins/aws-sam"
+    ],
+    "jenkinsci/aws-secrets-manager-credentials-provider-plugin": [
+        "io/jenkins/plugins/aws-secrets-manager-credentials-provider"
+    ],
+    "jenkinsci/aws-sqs-plugin": [
+        "io/relution/jenkins/aws-sqs"
+    ],
+    "jenkinsci/awseb-deployment-plugin": [
+        "br/com/ingenieux/jenkins/plugins/awseb-deployment-plugin"
+    ],
+    "jenkinsci/azure-acs-plugin": [
+        "org/jenkins-ci/plugins/azure-acs"
+    ],
+    "jenkinsci/azure-ad-plugin": [
+        "org/jenkins-ci/plugins/azure-ad"
+    ],
+    "jenkinsci/azure-app-service-plugin": [
+        "org/jenkins-ci/plugins/azure-app-service"
+    ],
+    "jenkinsci/azure-artifact-manager-plugin": [
+        "org/jenkins-ci/plugins/azure-artifact-manager"
+    ],
+    "jenkinsci/azure-batch-parallel-plugin": [
+        "com/microsoft/azurebatch/azure-batch-parallel"
+    ],
+    "jenkinsci/azure-cli-plugin": [
+        "org/jenkins-ci/plugins/azure-cli"
+    ],
+    "jenkinsci/azure-commons-plugin": [
+        "org/jenkins-ci/plugins/azure-commons"
+    ],
+    "jenkinsci/azure-container-agents-plugin": [
+        "org/jenkins-ci/plugins/azure-container-agents"
+    ],
+    "jenkinsci/azure-container-registry-tasks-plugin": [
+        "org/jenkins-ci/plugins/azure-container-registry-tasks"
+    ],
+    "jenkinsci/azure-credentials-plugin": [
+        "org/jenkins-ci/plugins/azure-credentials"
+    ],
+    "jenkinsci/azure-dev-spaces-plugin": [
+        "org/jenkins-ci/plugins/azure-dev-spaces"
+    ],
+    "jenkinsci/azure-event-grid-notifier-plugin": [
+        "org/jenkins-ci/plugins/azure-event-grid-notifier"
+    ],
+    "jenkinsci/azure-function-plugin": [
+        "org/jenkins-ci/plugins/azure-function"
+    ],
+    "jenkinsci/azure-iot-edge-plugin": [
+        "org/jenkins-ci/plugins/azure-iot-edge"
+    ],
+    "jenkinsci/azure-keyvault-plugin": [
+        "org/jenkins-ci/plugins/azure-keyvault"
+    ],
+    "jenkinsci/azure-publishersettings-credentials-plugin": [
+        "org/jenkins-ci/plugins/azure-publishersettings-credentials"
+    ],
+    "jenkinsci/azure-slave-plugin": [
+        "org/jenkins-ci/plugins/azure-slave-plugin"
+    ],
+    "jenkinsci/azure-vm-agents-plugin": [
+        "org/jenkins-ci/plugins/azure-vm-agents"
+    ],
+    "jenkinsci/azure-vmss-plugin": [
+        "org/jenkins-ci/plugins/azure-vmss"
+    ],
+    "jenkinsci/backlog-plugin": [
+        "org/jenkins-ci/plugins/backlog",
+        "org/jvnet/hudson/plugins/backlog"
+    ],
+    "jenkinsci/backup-jobs-plugin": [
+        "jenkins/ci/plugins/backup/backup-interrupt-plugin"
+    ],
+    "jenkinsci/backup-plugin": [
+        "org/jvnet/hudson/plugins/backup"
+    ],
+    "jenkinsci/badge-plugin": [
+        "org/jenkins-ci/plugins/badge"
+    ],
+    "jenkinsci/bart-plugin": [
+        "org/jenkins-ci/plugins/bart"
+    ],
+    "jenkinsci/basic-branch-build-strategies-plugin": [
+        "org/jenkins-ci/plugins/basic-branch-build-strategies"
+    ],
+    "jenkinsci/batch-task-plugin": [
+        "org/jenkins-ci/plugins/batch-task"
+    ],
+    "jenkinsci/bazaar-plugin": [
+        "org/jenkins-ci/plugins/bazaar",
+        "org/jvnet/hudson/plugins/bazaar"
+    ],
+    "jenkinsci/beagle-security-plugin": [
+        "io/jenkins/plugins/beagle-security"
+    ],
+    "jenkinsci/beaker-builder-plugin": [
+        "org/jenkins-ci/plugins/beaker-builder"
+    ],
+    "jenkinsci/bearychat-plugin": [
+        "org/jenkins-ci/plugins/bearychat"
+    ],
+    "jenkinsci/beer-plugin": [
+        "org/jenkins-ci/plugins/beer"
+    ],
+    "jenkinsci/behave-testresults-publisher-plugin": [
+        "net/jenkins/behave-testresults-publisher"
+    ],
+    "jenkinsci/benchmark-evaluator-plugin": [
+        "io/jenkins/plugins/benchmark-evaluator"
+    ],
+    "jenkinsci/benchmark-plugin": [
+        "org/jenkins-ci/plugins/benchmark"
+    ],
+    "jenkinsci/bigpanda-plugin": [
+        "org/jenkins-ci/plugins/bigpanda-jenkins"
+    ],
+    "jenkinsci/bitbucket-approval-filter-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-approval-filter"
+    ],
+    "jenkinsci/bitbucket-approve-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-approve"
+    ],
+    "jenkinsci/bitbucket-branch-source-plugin": [
+        "org/jenkins-ci/plugins/cloudbees-bitbucket-branch-source"
+    ],
+    "jenkinsci/bitbucket-build-status-notifier-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-build-status-notifier"
+    ],
+    "jenkinsci/bitbucket-filter-project-trait-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-filter-project-trait"
+    ],
+    "jenkinsci/bitbucket-oauth-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-oauth"
+    ],
+    "jenkinsci/bitbucket-plugin": [
+        "org/jenkins-ci/plugins/bitbucket"
+    ],
+    "jenkinsci/bitbucket-pullrequest-builder-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-pullrequest-builder"
+    ],
+    "jenkinsci/bitbucket-push-and-pull-request-plugin": [
+        "io/jenkins/plugins/bitbucket-push-and-pull-request"
+    ],
+    "jenkinsci/bitkeeper-plugin": [
+        "org/jenkins-ci/plugins/bitkeeper"
+    ],
+    "jenkinsci/blackduck-detect-plugin": [
+        "com/blackducksoftware/integration/blackduck-detect"
+    ],
+    "jenkinsci/blackduck-hub-plugin": [
+        "com/blackducksoftware/integration/blackduck-hub"
+    ],
+    "jenkinsci/blazemeter-plugin": [
+        "com/blazemeter/plugins/BlazeMeterJenkinsPlugin"
+    ],
+    "jenkinsci/blink1-plugin": [
+        "org/jenkins-ci/plugins/blink1"
+    ],
+    "jenkinsci/blitz_io-plugin": [
+        "io/blitz/blitz_io-jenkins"
+    ],
+    "jenkinsci/block-build-final-project-plugin": [
+        "org/jenkins-ci/plugins/block-build-final-project"
+    ],
+    "jenkinsci/block-queued-job-plugin": [
+        "org/jenkins-ci/plugins/block-queued-job"
+    ],
+    "jenkinsci/block-same-builds-plugin": [
+        "org/jenkins-ci/plugins/block-same-builds"
+    ],
+    "jenkinsci/blueocean-autofavorite-plugin": [
+        "org/jenkins-ci/plugins/blueocean-autofavorite"
+    ],
+    "jenkinsci/blueocean-display-url-plugin": [
+        "org/jenkins-ci/plugins/blueocean-display-url"
+    ],
+    "jenkinsci/blueocean-maven-plugin": [
+        "io/jenkins/blueocean/blueocean-maven-plugin"
+    ],
+    "jenkinsci/blueocean-plugin": [
+        "io/jenkins/blueocean/blueocean",
+        "io/jenkins/blueocean/blueocean-bitbucket-pipeline",
+        "io/jenkins/blueocean/blueocean-commons",
+        "io/jenkins/blueocean/blueocean-config",
+        "io/jenkins/blueocean/blueocean-core-js",
+        "io/jenkins/blueocean/blueocean-dashboard",
+        "io/jenkins/blueocean/blueocean-events",
+        "io/jenkins/blueocean/blueocean-executor-info",
+        "io/jenkins/blueocean/blueocean-git-pipeline",
+        "io/jenkins/blueocean/blueocean-github-pipeline",
+        "io/jenkins/blueocean/blueocean-i18n",
+        "io/jenkins/blueocean/blueocean-jira",
+        "io/jenkins/blueocean/blueocean-jwt",
+        "io/jenkins/blueocean/blueocean-parent",
+        "io/jenkins/blueocean/blueocean-personalization",
+        "io/jenkins/blueocean/blueocean-pipeline-api-impl",
+        "io/jenkins/blueocean/blueocean-pipeline-editor",
+        "io/jenkins/blueocean/blueocean-pipeline-scm-api",
+        "io/jenkins/blueocean/blueocean-rest",
+        "io/jenkins/blueocean/blueocean-rest-impl",
+        "io/jenkins/blueocean/blueocean-web",
+        "io/jenkins/blueocean/jenkins-design-language"
+    ],
+    "jenkinsci/blueocean-test-ssh-server": [
+        "io/jenkins/blueocean/blueocean-test-ssh-server"
+    ],
+    "jenkinsci/bmc-rpd-plugin": [
+        "RPD/bmc-rpd"
+    ],
+    "jenkinsci/bom": [
+        "io/jenkins/tools/bom/bom",
+        "io/jenkins/tools/bom/parent"
+    ],
+    "jenkinsci/boot-clj-plugin": [
+        "org/jenkins-ci/plugins/boot-clj"
+    ],
+    "jenkinsci/bouncycastle-api-plugin": [
+        "org/jenkins-ci/plugins/bouncycastle-api"
+    ],
+    "jenkinsci/brakeman-plugin": [
+        "org/jenkins-ci/plugins/brakeman",
+        "org/jvnet/hudson/plugins/brakeman"
+    ],
+    "jenkinsci/branch-api-plugin": [
+        "org/jenkins-ci/plugins/branch-api"
+    ],
+    "jenkinsci/browser-axis-plugin": [
+        "org/jenkins-ci/plugins/browser-axis-plugin"
+    ],
+    "jenkinsci/browserstack-integration-plugin": [
+        "com/browserstack/browserstack-integration",
+        "org/jenkins-ci/plugins/browserstack-integration"
+    ],
+    "jenkinsci/btc-embeddedplatform-plugin": [
+        "com/btc/ep/btc-embeddedplatform"
+    ],
+    "jenkinsci/buckminster-plugin": [
+        "org/jenkins-ci/plugins/buckminster",
+        "org/jvnet/hudson/plugins/buckminster"
+    ],
+    "jenkinsci/buddycloud-plugin": [
+        "org/jenkins-ci/ruby-plugins/buddycloud"
+    ],
+    "jenkinsci/bugzilla-plugin": [
+        "org/jvnet/hudson/plugins/bugzilla"
+    ],
+    "jenkinsci/build-alias-setter-plugin": [
+        "org/jenkins-ci/plugins/build-alias-setter"
+    ],
+    "jenkinsci/build-blocker-plugin": [
+        "org/jenkins-ci/plugins/build-blocker-plugin"
+    ],
+    "jenkinsci/build-cause-run-condition-plugin": [
+        "org/jenkins-ci/plugins/build-cause-run-condition"
+    ],
+    "jenkinsci/build-configurator-plugin": [
+        "com/amcbridge/build-configurator",
+        "com/amcbridge/build-configurator-parent",
+        "com/amcbridge/build-configurator-server"
+    ],
+    "jenkinsci/build-env-propagator-plugin": [
+        "org/jenkins-ci/plugins/build-env-propagator"
+    ],
+    "jenkinsci/build-environment-plugin": [
+        "org/jenkins-ci/plugins/build-environment"
+    ],
+    "jenkinsci/build-failure-analyzer-plugin": [
+        "com/sonyericsson/jenkins/plugins/bfa/build-failure-analyzer"
+    ],
+    "jenkinsci/build-flow-plugin": [
+        "com/cloudbees/plugins/build-flow-plugin"
+    ],
+    "jenkinsci/build-history-metrics-plugin": [
+        "org/jenkins-ci/plugins/build-history-metrics-plugin"
+    ],
+    "jenkinsci/build-keeper-plugin": [
+        "org/jenkins-ci/plugins/build-keeper-plugin"
+    ],
+    "jenkinsci/build-line-plugin": [
+        "org/jenkins-ci/plugins/build-line"
+    ],
+    "jenkinsci/build-metrics-plugin": [
+        "org/jenkins-ci/plugins/build-metrics"
+    ],
+    "jenkinsci/build-name-setter-plugin": [
+        "org/jenkins-ci/plugins/build-name-setter"
+    ],
+    "jenkinsci/build-node-column-plugin": [
+        "org/jenkins-ci/plugins/build-node-column"
+    ],
+    "jenkinsci/build-notifications-plugin": [
+        "tools/devnull/build-notifications"
+    ],
+    "jenkinsci/build-pipeline-plugin": [
+        "org/jenkins-ci/plugins/build-pipeline-plugin"
+    ],
+    "jenkinsci/build-publisher-plugin": [
+        "org/jenkins-ci/plugins/build-publisher"
+    ],
+    "jenkinsci/build-steps-from-json-plugin": [
+        "com/spcow/plugins/build-steps-from-json"
+    ],
+    "jenkinsci/build-symlink-plugin": [
+        "io/jenkins/plugins/build-symlink"
+    ],
+    "jenkinsci/build-time-blame-plugin": [
+        "org/jenkins-ci/plugins/build-time-blame"
+    ],
+    "jenkinsci/build-timeout-plugin": [
+        "org/jenkins-ci/plugins/build-timeout"
+    ],
+    "jenkinsci/build-timestamp-plugin": [
+        "org/jenkins-ci/plugins/build-timestamp"
+    ],
+    "jenkinsci/build-token-root-plugin": [
+        "org/jenkins-ci/plugins/build-token-root"
+    ],
+    "jenkinsci/build-token-trigger-plugin": [
+        "org/jenkins-ci/plugins/build-token-trigger"
+    ],
+    "jenkinsci/build-user-vars-plugin": [
+        "org/jenkins-ci/plugins/build-user-vars-plugin"
+    ],
+    "jenkinsci/build-view-column-plugin": [
+        "org/jenkins-ci/plugins/build-view-column"
+    ],
+    "jenkinsci/build-with-parameters-plugin": [
+        "org/jenkins-ci/plugins/build-with-parameters"
+    ],
+    "jenkinsci/buildcoin-plugin": [
+        "com/buildcoin/plugins/jenkins/buildcoin-plugin"
+    ],
+    "jenkinsci/buildcontext-capture-plugin": [
+        "org/jenkins-ci/plugins/buildcontext-capture"
+    ],
+    "jenkinsci/buildflow-extensions-plugin": [
+        "org/jenkins-ci/plugins/build-flow-extensions-plugin"
+    ],
+    "jenkinsci/buildgraph-view-plugin": [
+        "org/jenkins-ci/plugins/buildgraph-view"
+    ],
+    "jenkinsci/buildheroes-plugin": [
+        "org/jenkins-ci/plugins/buildheroes"
+    ],
+    "jenkinsci/buildresult-trigger-plugin": [
+        "org/jenkins-ci/plugins/buildresult-trigger"
+    ],
+    "jenkinsci/buildrotator-plugin": [
+        "org/jenkins-ci/plugins/buildrotator"
+    ],
+    "jenkinsci/buildtriggerbadge-plugin": [
+        "org/jenkins-ci/plugins/buildtriggerbadge"
+    ],
+    "jenkinsci/builton-column-plugin": [
+        "org/jenkins-ci/plugins/built-on-column"
+    ],
+    "jenkinsci/bulk-builder-plugin": [
+        "org/jvnet/hudson/plugins/bulk-builder"
+    ],
+    "jenkinsci/bumblebee-plugin": [
+        "org/jenkins-ci/plugins/bumblebee"
+    ],
+    "jenkinsci/bytecode-compatibility-transformer": [
+        "org/jenkins-ci/bytecode-compatibility-transformer",
+        "org/jenkins-ci/main/bct/bct-integration-tests",
+        "org/jenkins-ci/main/bct/bct-parent-pom",
+        "org/jenkins-ci/main/bct/bct-test-client",
+        "org/jenkins-ci/main/bct/bct-test-v1",
+        "org/jenkins-ci/main/bct/bct-test-v2"
+    ],
+    "jenkinsci/byteguard-build-actions-plugin": [
+        "io/jenkins/plugins/byteguard-build-actions"
+    ],
+    "jenkinsci/ca-apm-plugin": [
+        "org/jenkins-ci/plugins/ca-apm",
+        "org/jenkins-ci/plugins/ca-apm/ca-apm-api",
+        "org/jenkins-ci/plugins/ca-apm/ca-apm-core",
+        "org/jenkins-ci/plugins/ca-apm/ca-apm-default-strategy",
+        "org/jenkins-ci/plugins/ca-apm/ca-apm-dist",
+        "org/jenkins-ci/plugins/ca-apm/ca-apm-parent"
+    ],
+    "jenkinsci/ca-service-virtualization-plugin": [
+        "io/jenkins/plugins/ca-service-virtualization"
+    ],
+    "jenkinsci/cachet-gating-plugin": [
+        "org/jenkins-ci/plugins/cachet-gating"
+    ],
+    "jenkinsci/calendar-view-plugin": [
+        "io/jenkins/plugins/calendar-view"
+    ],
+    "jenkinsci/caliper-ci-plugin": [
+        "com/brianfromoregon/caliper-ci"
+    ],
+    "jenkinsci/call-remote-job-plugin": [
+        "org/ukiuni/callOtherJenkins/call-remote-job-plugin"
+    ],
+    "jenkinsci/campfire-plugin": [
+        "org/jenkins-ci/plugins/campfire"
+    ],
+    "jenkinsci/capability-annotation": [
+        "io/jenkins/blueocean/rest/annotation/capability-annotation"
+    ],
+    "jenkinsci/capitomcat-plugin": [
+        "org/jenkins-ci/ruby-plugins/capitomcat"
+    ],
+    "jenkinsci/caroline-plugin": [
+        "org/jvnet/hudson/plugins/caroline"
+    ],
+    "jenkinsci/cas-plugin": [
+        "org/jenkins-ci/plugins/cas-plugin"
+    ],
+    "jenkinsci/castecho-plugin": [
+        "io/jenkins/plugins/castecho"
+    ],
+    "jenkinsci/catalogic-ecx-plugin": [
+        "com/catalogic/ecxjenkins/catalogic-ecx"
+    ],
+    "jenkinsci/categorized-view-plugin": [
+        "org/jenkins-ci/plugins/categorized-view"
+    ],
+    "jenkinsci/cccc-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/cccc"
+    ],
+    "jenkinsci/ccm-plugin": [
+        "org/jvnet/hudson/plugins/ccm"
+    ],
+    "jenkinsci/cctray-xml-plugin": [
+        "org/jenkins-ci/plugins/cctray-xml"
+    ],
+    "jenkinsci/cerberus-testing-plugin": [
+        "org/jenkins-ci/plugins/cerberus-testing"
+    ],
+    "jenkinsci/change-assembly-version-plugin": [
+        "org/jenkinsci/plugins/change-assembly-version-plugin"
+    ],
+    "jenkinsci/changelog-history-plugin": [
+        "org/jenkins-ci/plugins/changelog-history",
+        "org/jvnet/hudson/plugins/changelog-history"
+    ],
+    "jenkinsci/changes-since-last-success-plugin": [
+        "org/jenkins-ci/plugins/changes-since-last-success"
+    ],
+    "jenkinsci/chatter-notifier-plugin": [
+        "org/jenkins-ci/plugins/chatter-notifier"
+    ],
+    "jenkinsci/chatwork-plugin": [
+        "com/vexus2/jenkins/chatwork/chatwork",
+        "org/jenkins-ci/plugins/chatwork"
+    ],
+    "jenkinsci/checkmarx-plugin": [
+        "com/checkmarx/jenkins/checkmarx"
+    ],
+    "jenkinsci/checkstyle-plugin": [
+        "org/jvnet/hudson/plugins/checkstyle"
+    ],
+    "jenkinsci/chef-cookbook-pipeline-plugin": [
+        "io/chef/jenkins-ci/plugins/chef-cookbook-pipeline"
+    ],
+    "jenkinsci/chef-identity-plugin": [
+        "org/jenkins-ci/plugins/chef-identity"
+    ],
+    "jenkinsci/chef-plugin": [
+        "org/jenkins-ci/ruby-plugins/chef"
+    ],
+    "jenkinsci/chef-tracking-plugin": [
+        "org/jenkins-ci/plugins/chef-tracking"
+    ],
+    "jenkinsci/chosen-plugin": [
+        "org/jenkins-ci/plugins/chosen"
+    ],
+    "jenkinsci/chosen-views-tabbar": [
+        "org/jenkins-ci/plugins/chosen-views-tabbar"
+    ],
+    "jenkinsci/chrome-frame-plugin": [
+        "org/jenkins-ci/plugins/chrome-frame-plugin"
+    ],
+    "jenkinsci/chromedriver-plugin": [
+        "org/jenkins-ci/plugins/chromedriver"
+    ],
+    "jenkinsci/chroot-plugin": [
+        "org/jenkins-ci/plugins/chroot"
+    ],
+    "jenkinsci/chucknorris-plugin": [
+        "org/jvnet/hudson/plugins/chucknorris"
+    ],
+    "jenkinsci/ci-game-plugin": [
+        "org/jenkins-ci/plugins/ci-game",
+        "org/jvnet/hudson/plugins/ci-game"
+    ],
+    "jenkinsci/ci-skip-plugin": [
+        "org/jenkins-ci/ruby-plugins/ci-skip"
+    ],
+    "jenkinsci/ci-with-toad-devops-toolkit-plugin": [
+        "io/jenkins/plugins/ci-with-toad-devops-toolkit"
+    ],
+    "jenkinsci/ci-with-toad-edge-plugin": [
+        "org/jenkins-ci/plugins/ci-with-toad-edge"
+    ],
+    "jenkinsci/cifs-plugin": [
+        "org/jenkins-ci/plugins/cifs",
+        "org/jvnet/hudson/plugins/cifs"
+    ],
+    "jenkinsci/cisco-spark-notifier-plugin": [
+        "org/jenkins-ci/plugins/cisco-spark-notifier"
+    ],
+    "jenkinsci/cisco-spark-plugin": [
+        "org/jenkins-ci/plugins/cisco-spark"
+    ],
+    "jenkinsci/claim-plugin": [
+        "org/jenkins-ci/plugins/claim"
+    ],
+    "jenkinsci/clamav-plugin": [
+        "org/jenkins-ci/plugins/clamav"
+    ],
+    "jenkinsci/clang-scanbuild-plugin": [
+        "jenkins/plugins/clangscanbuild/clang-scanbuild-plugin"
+    ],
+    "jenkinsci/clearcase-plugin": [
+        "org/jenkins-ci/plugins/clearcase",
+        "org/jvnet/hudson/plugins/clearcase"
+    ],
+    "jenkinsci/clearcase-release-plugin": [
+        "org/jvnet/hudson/plugins/clearcase-release"
+    ],
+    "jenkinsci/clearcase-ucm-api-plugin": [
+        "net/praqma/clearcase-ucm-api"
+    ],
+    "jenkinsci/clearcase-ucm-baseline-plugin": [
+        "org/jvnet/hudson/plugins/clearcase-ucm-baseline"
+    ],
+    "jenkinsci/clearcase-ucm-plugin": [
+        "org/jenkins-ci/plugins/clearcase-ucm-plugin"
+    ],
+    "jenkinsci/clever-cloud-plugin": [
+        "io/jenkins/plugins/clever-cloud"
+    ],
+    "jenkinsci/cli-commander-plugin": [
+        "org/jenkins-ci/plugins/cli-commander"
+    ],
+    "jenkinsci/clif-performance-testing-plugin": [
+        "org/jenkins-ci/plugins/clif-performance-testing"
+    ],
+    "jenkinsci/cloud-stats-plugin": [
+        "org/jenkins-ci/plugins/cloud-stats"
+    ],
+    "jenkinsci/cloudbees-credentials-plugin": [
+        "com/cloudbees/jenkins/plugins/cloudbees-credentials"
+    ],
+    "jenkinsci/cloudbees-deployer-plugin": [
+        "org/jenkins-ci/plugins/cloudbees-deployer-plugin"
+    ],
+    "jenkinsci/cloudbees-devoptics-enabler-plugin": [
+        "org/jenkins-ci/plugins/cloudbees-devoptics-enabler"
+    ],
+    "jenkinsci/cloudbees-disk-usage-simple-plugin": [
+        "org/jenkins-ci/plugins/cloudbees-disk-usage-simple"
+    ],
+    "jenkinsci/cloudbees-enterprise-plugins-plugin": [
+        "org/jenkins-ci/plugins/cloudbees-enterprise-plugins"
+    ],
+    "jenkinsci/cloudbees-folder-plugin": [
+        "org/jenkins-ci/plugins/cloudbees-folder"
+    ],
+    "jenkinsci/cloudbees-jenkins-advisor-plugin": [
+        "org/jenkins-ci/plugins/cloudbees-jenkins-advisor"
+    ],
+    "jenkinsci/cloudbees-plugin-gateway": [
+        "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
+    ],
+    "jenkinsci/cloudbees-registration-plugin": [
+        "com/cloudbees/jenkins/plugins/cloudbees-registration"
+    ],
+    "jenkinsci/cloudcoreo-deploytime-plugin": [
+        "com/cloudcoreo/plugins/cloudcoreo-deploytime"
+    ],
+    "jenkinsci/cloudshare-docker-plugin": [
+        "org/jenkins-ci/plugins/cloudshare-docker"
+    ],
+    "jenkinsci/cloudshell-sandbox-plugin": [
+        "org/jenkins-ci/plugins/cloudshell-sandbox"
+    ],
+    "jenkinsci/cloudtest-plugin": [
+        "com/soasta/jenkins/cloudtest"
+    ],
+    "jenkinsci/clover-plugin": [
+        "org/jenkins-ci/plugins/clover"
+    ],
+    "jenkinsci/cloverphp-plugin": [
+        "org/jenkins-ci/plugins/cloverphp"
+    ],
+    "jenkinsci/cmakebuilder-plugin": [
+        "hudson/plugins/cmake/cmakebuilder",
+        "org/jenkins-ci/plugins/cmakebuilder"
+    ],
+    "jenkinsci/cmvc-plugin": [
+        "org/jenkins-ci/plugins/cmvc"
+    ],
+    "jenkinsci/cobertura-plugin": [
+        "org/jenkins-ci/plugins/cobertura",
+        "org/jvnet/hudson/plugins/cobertura"
+    ],
+    "jenkinsci/code-coverage-api-plugin": [
+        "io/jenkins/plugins/code-coverage-api"
+    ],
+    "jenkinsci/codebeamer-result-trend-updater-plugin": [
+        "org/jenkins-ci/plugins/codebeamer-result-trend-updater"
+    ],
+    "jenkinsci/codebeamer-xunit-importer-plugin": [
+        "org/jenkins-ci/plugins/codebeamer-xunit-importer"
+    ],
+    "jenkinsci/codebeamer-xunit-uploader-plugin": [
+        "org/jenkins-ci/plugins/codebeamer-xunit-uploader"
+    ],
+    "jenkinsci/codebuilder-cloud-plugin": [
+        "dev/lsegal/jenkins/codebuilder-cloud"
+    ],
+    "jenkinsci/codecommit-url-helper-plugin": [
+        "br/com/ingenieux/jenkins/plugins/codecommit-url-helper"
+    ],
+    "jenkinsci/codecover-plugin": [
+        "org/jenkins-ci/plugins/codecover"
+    ],
+    "jenkinsci/codedx-plugin": [
+        "org/jenkins-ci/plugins/codedx"
+    ],
+    "jenkinsci/codefresh-plugin": [
+        "org/jenkins-ci/plugins/codefresh"
+    ],
+    "jenkinsci/codescan-plugin": [
+        "com/villagechief/codescan/jenkins/codescan"
+    ],
+    "jenkinsci/codescanner-plugin": [
+        "org/jvnet/hudson/plugins/codescanner"
+    ],
+    "jenkinsci/codescene-plugin": [
+        "org/jenkins-ci/plugins/codescene"
+    ],
+    "jenkinsci/codesonar-plugin": [
+        "org/jenkins-ci/plugins/codesonar"
+    ],
+    "jenkinsci/coding-webhook-plugin": [
+        "org/jenkins-ci/plugins/coding-webhook"
+    ],
+    "jenkinsci/collabnet-automic-deploy-plugin": [
+        "org/jenkins-ci/plugins/collabnet-automic-deploy"
+    ],
+    "jenkinsci/collabnet-plugin": [
+        "org/jenkins-ci/plugins/collabnet"
+    ],
+    "jenkinsci/collapsing-console-sections-plugin": [
+        "org/jenkins-ci/plugins/collapsing-console-sections"
+    ],
+    "jenkinsci/command-launcher-plugin": [
+        "org/jenkins-ci/plugins/command-launcher"
+    ],
+    "jenkinsci/comments-remover-plugin": [
+        "com/ste/comments-remover"
+    ],
+    "jenkinsci/compact-columns-plugin": [
+        "org/jenkins-ci/plugins/compact-columns",
+        "org/jvnet/hudson/plugins/compact-columns"
+    ],
+    "jenkinsci/compatibility-action-storage-plugin": [
+        "org/jenkins-ci/plugins/compatibility-action-storage"
+    ],
+    "jenkinsci/composer-security-checker-plugin": [
+        "org/jenkins-ci/plugins/composer-security-checker"
+    ],
+    "jenkinsci/compound-slaves-plugin": [
+        "ru/yandex/jenkins/plugins/compound-slaves/compound-slaves"
+    ],
+    "jenkinsci/compress-artifacts-plugin": [
+        "org/jenkins-ci/plugins/compress-artifacts"
+    ],
+    "jenkinsci/compress-buildlog-plugin": [
+        "org/jenkins-ci/plugins/compress-buildlog"
+    ],
+    "jenkinsci/computer-queue-plugin": [
+        "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
+    ],
+    "jenkinsci/compuware-common-configuration-plugin": [
+        "com/compuware/jenkins/compuware-common-configuration"
+    ],
+    "jenkinsci/compuware-ispw-operations-plugin": [
+        "com/compuware/jenkins/compuware-ispw-operations"
+    ],
+    "jenkinsci/compuware-scm-downloader-plugin": [
+        "com/compuware/jenkins/compuware-scm-downloader"
+    ],
+    "jenkinsci/compuware-topaz-for-total-test-plugin": [
+        "com/compuware/jenkins/compuware-topaz-for-total-test"
+    ],
+    "jenkinsci/compuware-topaz-utilities-plugin": [
+        "com/compuware/jenkins/compuware-topaz-utilities"
+    ],
+    "jenkinsci/compuware-xpediter-code-coverage-plugin": [
+        "com/compuware/jenkins/compuware-xpediter-code-coverage"
+    ],
+    "jenkinsci/concordionpresenter-plugin": [
+        "org/jenkins-ci/plugins/concordionpresenter"
+    ],
+    "jenkinsci/concurrent-login-plugin": [
+        "hudson/plugins/concurrent_login/concurrent-login-plugin"
+    ],
+    "jenkinsci/conditional-buildstep-plugin": [
+        "org/jenkins-ci/plugins/conditional-buildstep"
+    ],
+    "jenkinsci/config-autorefresh-plugin": [
+        "org/jenkins-ci/plugins/config-autorefresh-plugin"
+    ],
+    "jenkinsci/config-driven-pipeline-plugin": [
+        "org/jenkins-ci/plugins/config-driven-pipeline"
+    ],
+    "jenkinsci/config-file-provider-plugin": [
+        "org/jenkins-ci/plugins/config-file-provider"
+    ],
+    "jenkinsci/config-rotator-plugin": [
+        "net/praqma/config-rotator"
+    ],
+    "jenkinsci/configuration-as-code-groovy-plugin": [
+        "io/jenkins/plugins/configuration-as-code-groovy"
+    ],
+    "jenkinsci/configuration-as-code-plugin": [
+        "io/jenkins/configuration-as-code",
+        "io/jenkins/configuration-as-code/configuration-as-code-support",
+        "io/jenkins/configuration-as-code/integrations",
+        "io/jenkins/configuration-as-code/parent",
+        "io/jenkins/configuration-as-code/snakeyaml",
+        "org/jenkins-ci/plugins/configuration-as-code"
+    ],
+    "jenkinsci/configuration-as-code-secret-ssm-plugin": [
+        "com/bambora/jenkins/plugin/casc/secrets/ssm/configuration-as-code-secret-ssm"
+    ],
+    "jenkinsci/configurationslicing-plugin": [
+        "org/jenkins-ci/plugins/configurationslicing",
+        "org/jvnet/hudson/plugins/configurationslicing"
+    ],
+    "jenkinsci/configure-job-column-plugin": [
+        "org/jenkins-ci/plugins/configure-job-column-plugin"
+    ],
+    "jenkinsci/confluence-publisher-plugin": [
+        "org/jenkins-ci/plugins/confluence-publisher"
+    ],
+    "jenkinsci/cons3rt-plugin": [
+        "org/jenkins-ci/plugins/cons3rt"
+    ],
+    "jenkinsci/console-badge-plugin": [
+        "me/noroutine/jenkins/plugin/console-badge"
+    ],
+    "jenkinsci/console-column-plugin": [
+        "org/jenkins-ci/plugins/console-column-plugin"
+    ],
+    "jenkinsci/console-navigation-plugin": [
+        "io/jenkins/plugins/console-navigation"
+    ],
+    "jenkinsci/console-tail-plugin": [
+        "org/jenkins-ci/plugins/console-tail"
+    ],
+    "jenkinsci/consul-kv-builder-plugin": [
+        "org/jenkins-ci/plugins/consul-kv-builder"
+    ],
+    "jenkinsci/consul-plugin": [
+        "com/inneractive/jenkins/plugins/consul"
+    ],
+    "jenkinsci/content-replace-plugin": [
+        "org/jenkins-ci/plugins/content-replace"
+    ],
+    "jenkinsci/continuum-plugin": [
+        "org/jenkins-ci/plugins/continuum"
+    ],
+    "jenkinsci/contrast-continuous-application-security-plugin": [
+        "org/jenkins-ci/plugins/contrast-continuous-application-security"
+    ],
+    "jenkinsci/convert-to-pipeline-plugin": [
+        "org/jenkins-ci/plugins/convert-to-pipeline"
+    ],
+    "jenkinsci/convertigo-mobile-platform-plugin": [
+        "com/convertigo/jenkins/plugins/convertigo-mobile-platform"
+    ],
+    "jenkinsci/coordinator-plugin": [
+        "org/jenkins-ci/plugins/coordinator"
+    ],
+    "jenkinsci/copado-plugin": [
+        "com/copado/jenkins/copado"
+    ],
+    "jenkinsci/copr-plugin": [
+        "org/fedoraproject/jenkins/plugins/copr"
+    ],
+    "jenkinsci/copy-project-link-plugin": [
+        "hudson/plugins/copyProjectLink/copy-project-link",
+        "org/jenkins-ci/plugins/copy-project-link"
+    ],
+    "jenkinsci/copy-to-slave-plugin": [
+        "org/jenkins-ci/plugins/copy-to-slave",
+        "org/jvnet/hudson/plugins/copy-to-slave"
+    ],
+    "jenkinsci/copyartifact-plugin": [
+        "org/jenkins-ci/plugins/copyartifact",
+        "org/jvnet/hudson/plugins/copyartifact"
+    ],
+    "jenkinsci/cors-filter-plugin": [
+        "org/jenkins-ci/plugins/cors-filter"
+    ],
+    "jenkinsci/couchdb-statistics-plugin": [
+        "org/jenkins-ci/plugins/couchdb-statistics"
+    ],
+    "jenkinsci/countjobs-viewstabbar-plugin": [
+        "ws/albors/countjobs-viewstabbar"
+    ],
+    "jenkinsci/covcomplplot-plugin": [
+        "org/jenkins-ci/plugins/covcomplplot"
+    ],
+    "jenkinsci/coverity-plugin": [
+        "org/jenkins-ci/plugins/coverity"
+    ],
+    "jenkinsci/cppcheck-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/cppcheck",
+        "org/jenkins-ci/plugins/cppcheck"
+    ],
+    "jenkinsci/cppncss-plugin": [
+        "org/jenkins-ci/plugins/cppncss",
+        "org/jvnet/hudson/plugins/cppncss"
+    ],
+    "jenkinsci/cpptest-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/cpptest"
+    ],
+    "jenkinsci/crap4j-plugin": [
+        "org/jenkins-ci/plugins/crap4j"
+    ],
+    "jenkinsci/create-and-run-job-trigger-plugin": [
+        "org/jenkins-ci/plugins/create-and-run-job-trigger"
+    ],
+    "jenkinsci/create-fingerprint-plugin": [
+        "org/jenkins-ci/plugins/create-fingerprint"
+    ],
+    "jenkinsci/createjobadvanced-plugin": [
+        "org/jenkins-ci/plugins/createjobadvanced"
+    ],
+    "jenkinsci/credentials-binding-plugin": [
+        "org/jenkins-ci/plugins/credentials-binding"
+    ],
+    "jenkinsci/credentials-plugin": [
+        "org/jenkins-ci/plugins/credentials"
+    ],
+    "jenkinsci/crittercism-dsym-plugin": [
+        "org/jenkins-ci/plugins/crittercism-dsym"
+    ],
+    "jenkinsci/cron-shelve-plugin": [
+        "org/jenkins-ci/plugins/cron-shelve"
+    ],
+    "jenkinsci/cron_column-plugin": [
+        "org/jenkins-ci/plugins/cron_column"
+    ],
+    "jenkinsci/crossbrowsertesting-plugin": [
+        "org/jenkins-ci/plugins/crossbrowsertesting"
+    ],
+    "jenkinsci/crowd-plugin": [
+        "com/ds/tools/hudson/crowd"
+    ],
+    "jenkinsci/crowd2-plugin": [
+        "org/jenkins-ci/plugins/crowd2"
+    ],
+    "jenkinsci/crx-content-package-deployer-plugin": [
+        "org/jenkins-ci/plugins/crx-content-package-deployer"
+    ],
+    "jenkinsci/cryptomove-plugin": [
+        "io/jenkins/plugins/cryptomove"
+    ],
+    "jenkinsci/cucumber-living-documentation-plugin": [
+        "org/jenkins-ci/plugins/cucumber-living-documentation"
+    ],
+    "jenkinsci/cucumber-performance-plugin": [
+        "com/castlemon/hudson/cucumber-perf"
+    ],
+    "jenkinsci/cucumber-reports-plugin": [
+        "net/masterthought/jenkins/cucumber-reports"
+    ],
+    "jenkinsci/cucumber-slack-notifier-plugin": [
+        "org/jenkins-ci/plugins/cucumber-slack-notifier"
+    ],
+    "jenkinsci/cucumber-testresult-plugin": [
+        "org/jenkins-ci/plugins/cucumber-testresult-plugin"
+    ],
+    "jenkinsci/cucumber-trend-report-plugin": [
+        "trends/cucumber-trends-report"
+    ],
+    "jenkinsci/curseforge-publisher-plugin": [
+        "org/jenkins-ci/plugins/curseforge-publisher"
+    ],
+    "jenkinsci/custom-history-plugin": [
+        "CustomHistory/CustomHistory",
+        "org/jenkins-ci/plugins/CustomHistory"
+    ],
+    "jenkinsci/custom-job-icon-plugin": [
+        "org/jenkins-ci/plugins/custom-job-icon"
+    ],
+    "jenkinsci/custom-tools-plugin": [
+        "com/cloudbees/jenkins/plugins/custom-tools-plugin"
+    ],
+    "jenkinsci/custom-view-tabs-plugin": [
+        "org/jenkins-ci/plugins/custom-view-tabs"
+    ],
+    "jenkinsci/custom-war-packager": [
+        "io/jenkins/tools/custom-war-packager/custom-war-packager-cli",
+        "io/jenkins/tools/custom-war-packager/custom-war-packager-lib",
+        "io/jenkins/tools/custom-war-packager/custom-war-packager-maven-plugin",
+        "io/jenkins/tools/custom-war-packager/parent-pom"
+    ],
+    "jenkinsci/customize-build-now-plugin": [
+        "org/jenkins-ci/plugins/customize-build-now"
+    ],
+    "jenkinsci/customized-build-message-plugin": [
+        "org/jenkins-ci/plugins/customized-build-message"
+    ],
+    "jenkinsci/cvs-plugin": [
+        "org/jenkins-ci/plugins/cvs",
+        "org/jvnet/hudson/plugins/cvs"
+    ],
+    "jenkinsci/cvs-tag-plugin": [
+        "org/jenkins-ci/plugins/cvs-tag"
+    ],
+    "jenkinsci/cygpath-plugin": [
+        "org/jenkins-ci/plugins/cygpath"
+    ],
+    "jenkinsci/cygwin-process-killer-plugin": [
+        "com/synopsys/arc/jenkinsci/plugins/cygwin-process-killer",
+        "org/jenkins-ci/plugins/cygwin-process-killer"
+    ],
+    "jenkinsci/daily-quote-plugin": [
+        "org/jenkins-ci/plugins/daily-quote"
+    ],
+    "jenkinsci/darcs-plugin": [
+        "org/jenkins-ci/plugins/darcs"
+    ],
+    "jenkinsci/dashboard-view-plugin": [
+        "org/jenkins-ci/plugins/dashboard-view",
+        "org/jvnet/hudson/plugins/dashboard-view"
+    ],
+    "jenkinsci/database-drizzle-plugin": [
+        "org/jenkins-ci/plugins/database-drizzle"
+    ],
+    "jenkinsci/database-h2-plugin": [
+        "org/jenkins-ci/plugins/database-h2"
+    ],
+    "jenkinsci/database-mysql-plugin": [
+        "org/jenkins-ci/plugins/database-mysql"
+    ],
+    "jenkinsci/database-plugin": [
+        "org/jenkins-ci/plugins/database"
+    ],
+    "jenkinsci/database-postgresql-plugin": [
+        "org/jenkins-ci/plugins/database-postgresql"
+    ],
+    "jenkinsci/database-sqlite-plugin": [
+        "org/jenkins-ci/plugins/database-sqlite"
+    ],
+    "jenkinsci/datadog-plugin": [
+        "org/datadog/jenkins/plugins/datadog"
+    ],
+    "jenkinsci/datatheorem-mobile-app-security-plugin": [
+        "com/datatheorem/mobileappsecurity/jenkins/plugin/datatheorem-mobile-app-security"
+    ],
+    "jenkinsci/date-parameter-plugin": [
+        "me/leejay/jenkins/date-parameter"
+    ],
+    "jenkinsci/datical-db-plugin": [
+        "com/datical/integration/jenkins/datical-db-plugin"
+    ],
+    "jenkinsci/dbCharts-plugin": [
+        "org/jenkins-ci/plugins/dbCharts",
+        "org/jvnet/hudson/plugins/dbCharts"
+    ],
+    "jenkinsci/dbforge-devops-automation-for-sqlserver-plugin": [
+        "io/jenkins/plugins/dbforge-devops-automation-for-sqlserver"
+    ],
+    "jenkinsci/deadmanssnitch-plugin": [
+        "org/jenkins-ci/plugins/deadmanssnitch"
+    ],
+    "jenkinsci/debian-package-builder-plugin": [
+        "ru/yandex/jenkins/plugins/debuilder/debian-package-builder"
+    ],
+    "jenkinsci/debian-pbuilder-plugin": [
+        "com/rm5248/debian-pbuilder"
+    ],
+    "jenkinsci/deepsecurity-smartcheck-plugin": [
+        "io/jenkins/plugins/deepsecurity-smartcheck"
+    ],
+    "jenkinsci/delete-log-plugin": [
+        "org/jenkins-ci/plugins/delete-log-plugin"
+    ],
+    "jenkinsci/delphix-plugin": [
+        "org/jenkins-ci/plugins/delphix"
+    ],
+    "jenkinsci/delta-cloud-plugin": [
+        "org/jenkins-ci/plugins/delta-cloud"
+    ],
+    "jenkinsci/dependency-analyzer-plugin": [
+        "org/jenkins-ci/plugins/dependencyanalyzer",
+        "org/jvnet/hudson/plugins/dependencyanalyzer"
+    ],
+    "jenkinsci/dependency-check-plugin": [
+        "org/jenkins-ci/plugins/dependency-check-jenkins-plugin"
+    ],
+    "jenkinsci/dependency-queue-plugin": [
+        "org/jenkins-ci/plugins/dependency-queue-plugin"
+    ],
+    "jenkinsci/dependency-track-plugin": [
+        "org/jenkins-ci/plugins/dependency-track"
+    ],
+    "jenkinsci/depgraph-view-plugin": [
+        "org/jenkins-ci/plugins/depgraph-view"
+    ],
+    "jenkinsci/deploy-plugin": [
+        "org/jenkins-ci/plugins/deploy"
+    ],
+    "jenkinsci/deployed-on-column-plugin": [
+        "org/jenkins-ci/plugins/deployed-on-column"
+    ],
+    "jenkinsci/deployer-framework-plugin": [
+        "org/jenkins-ci/plugins/deployer-framework"
+    ],
+    "jenkinsci/deploygate-plugin": [
+        "org/jenkins-ci/plugins/deploygate/deploygate-plugin"
+    ],
+    "jenkinsci/deployhub-plugin": [
+        "com/openmake/deployhub"
+    ],
+    "jenkinsci/deployment-notification-plugin": [
+        "org/jenkins-ci/plugins/deployment-notification"
+    ],
+    "jenkinsci/description-column-plugin": [
+        "org/jenkins-ci/plugins/description-column-plugin"
+    ],
+    "jenkinsci/description-setter-plugin": [
+        "org/jenkins-ci/plugins/description-setter",
+        "org/jvnet/hudson/plugins/description-setter"
+    ],
+    "jenkinsci/deveo-plugin": [
+        "org/jenkins-ci/plugins/deveo"
+    ],
+    "jenkinsci/device-watcher-plugin": [
+        "org/jenkins-ci/plugins/device-watcher"
+    ],
+    "jenkinsci/diagnostics-plugin": [
+        "org/jenkins-ci/plugins/diagnostics"
+    ],
+    "jenkinsci/diawi-upload-plugin": [
+        "org/jenkins-ci/plugins/diawi-upload"
+    ],
+    "jenkinsci/digitalocean-plugin": [
+        "com/dubture/jenkins/digitalocean-plugin"
+    ],
+    "jenkinsci/dimensionsscm-plugin": [
+        "hudson/plugins/dimensionsscm",
+        "org/jenkins-ci/plugins/dimensionsscm"
+    ],
+    "jenkinsci/dingding-json-pusher-plugin": [
+        "com/zintow/dingding-json-pusher"
+    ],
+    "jenkinsci/dingding-notifications-plugin": [
+        "com/ztbsuper/dingding-notifications"
+    ],
+    "jenkinsci/disable-failed-job-plugin": [
+        "org/jenkins-ci/plugins/disable-failed-job"
+    ],
+    "jenkinsci/disable-github-multibranch-status-plugin": [
+        "org/jenkins-ci/plugins/disable-github-multibranch-status"
+    ],
+    "jenkinsci/discard-old-build-plugin": [
+        "jp/shiftinc/jenkins/plugins/discard-old-build"
+    ],
+    "jenkinsci/discord-notifier-plugin": [
+        "nz/co/jammehcow/discord-notifier"
+    ],
+    "jenkinsci/disk-usage-plugin": [
+        "org/jenkins-ci/plugins/disk-usage",
+        "org/jvnet/hudson/plugins/disk-usage"
+    ],
+    "jenkinsci/diskcheck-plugin": [
+        "com/cloudera/diskrecycler/diskcheck",
+        "org/jenkins-ci/plugins/diskcheck"
+    ],
+    "jenkinsci/display-console-output-plugin": [
+        "org/jenkins-ci/plugins/display-console-output"
+    ],
+    "jenkinsci/display-upstream-changes-plugin": [
+        "org/jvnet/hudson/plugins/display-upstream-changes"
+    ],
+    "jenkinsci/display-url-api-plugin": [
+        "org/jenkins-ci/plugins/display-url-api"
+    ],
+    "jenkinsci/distTest-plugin": [
+        "org/jvnet/hudson/plugins/distTest"
+    ],
+    "jenkinsci/docker-build-publish-plugin": [
+        "org/jenkins-ci/plugins/docker-build-publish"
+    ],
+    "jenkinsci/docker-build-step-plugin": [
+        "org/jenkins-ci/plugins/docker-build-step"
+    ],
+    "jenkinsci/docker-commons-plugin": [
+        "org/jenkins-ci/plugins/docker-commons"
+    ],
+    "jenkinsci/docker-compose-build-step-plugin": [
+        "org/jenkins-ci/plugins/docker-compose-build-step"
+    ],
+    "jenkinsci/docker-custom-build-environment-plugin": [
+        "com/cloudbees/jenkins/plugins/docker-custom-build-environment"
+    ],
+    "jenkinsci/docker-fixtures": [
+        "org/jenkins-ci/test/docker-fixtures"
+    ],
+    "jenkinsci/docker-java-api-plugin": [
+        "org/jenkins-ci/plugins/docker-java-api"
+    ],
+    "jenkinsci/docker-plugin": [
+        "com/nirima/docker-plugin",
+        "io/jenkins/docker/docker-plugin"
+    ],
+    "jenkinsci/docker-slaves-plugin": [
+        "io/jenkins/plugins/docker-slaves"
+    ],
+    "jenkinsci/docker-swarm-plugin": [
+        "org/jenkins-ci/plugins/docker-swarm"
+    ],
+    "jenkinsci/docker-traceability-plugin": [
+        "org/jenkins-ci/plugins/docker-java-shaded-traceability",
+        "org/jenkins-ci/plugins/docker-traceability",
+        "org/jenkins-ci/plugins/docker-traceability-api",
+        "org/jenkins-ci/plugins/docker-traceability-parent"
+    ],
+    "jenkinsci/docker-workflow-plugin": [
+        "org/jenkins-ci/plugins/docker-workflow"
+    ],
+    "jenkinsci/dockerhub-notification-plugin": [
+        "org/jenkins-ci/plugins/dockerhub-notification"
+    ],
+    "jenkinsci/doclinks-plugin": [
+        "org/jenkinsci/plugins/doclinks",
+        "org/jvnet/hudson/plugins/doclinks"
+    ],
+    "jenkinsci/doktor-plugin": [
+        "by/dev/madhead/doktor/doktor"
+    ],
+    "jenkinsci/dom4j": [
+        "org/jenkins-ci/dom4j/dom4j",
+        "org/jvnet/hudson/dom4j/dom4j"
+    ],
+    "jenkinsci/dos-trigger-plugin": [
+        "com/tombrus/hudson/dostrigger/dos-trigger",
+        "org/jenkins-ci/plugins/dos-trigger"
+    ],
+    "jenkinsci/downstream-build-cache-plugin": [
+        "com/axis/system/jenkins/plugins/downstream/downstream-build-cache"
+    ],
+    "jenkinsci/downstream-buildview-plugin": [
+        "org/jvnet/hudson/plugins/downstream-buildview"
+    ],
+    "jenkinsci/downstream-ext-plugin": [
+        "org/jenkins-ci/plugins/downstream-ext"
+    ],
+    "jenkinsci/doxygen-plugin": [
+        "org/jenkins-ci/plugins/doxygen"
+    ],
+    "jenkinsci/drmemory-plugin": [
+        "net/praqma/drmemory-plugin"
+    ],
+    "jenkinsci/dropdown-viewstabbar-plugin": [
+        "org/jenkins-ci/plugins/dropdown-viewstabbar-plugin"
+    ],
+    "jenkinsci/drupal-developer-plugin": [
+        "org/jenkins-ci/plugins/drupal-developer"
+    ],
+    "jenkinsci/dry-plugin": [
+        "org/jvnet/hudson/plugins/dry"
+    ],
+    "jenkinsci/dry-run-plugin": [
+        "org/jenkins-ci/plugins/dry-run"
+    ],
+    "jenkinsci/dtkit-plugin": [
+        "org/jenkins-ci/plugins/dtkit-api",
+        "org/jenkins-ci/plugins/dtkit/dtkit-plugin"
+    ],
+    "jenkinsci/dumpling-plugin": [
+        "org/jenkins-ci/plugins/dumpling"
+    ],
+    "jenkinsci/durable-task-plugin": [
+        "org/jenkins-ci/plugins/durable-task"
+    ],
+    "jenkinsci/dynamic-axis-plugin": [
+        "org/jenkins-ci/plugins/dynamic-axis"
+    ],
+    "jenkinsci/dynamic-extended-choice-parameter-plugin": [
+        "com/moded/extendedchoiceparameter/dynamic_extended_choice_parameter"
+    ],
+    "jenkinsci/dynamic-search-view-plugin": [
+        "com/synopsys/arc/jenkinsci/dynamic-search-view"
+    ],
+    "jenkinsci/dynamicparameter-plugin": [
+        "com/seitenbau/jenkins/plugins/dynamicparameter"
+    ],
+    "jenkinsci/dynatrace-plugin": [
+        "org/jenkins-ci/plugins/dynatrace-dashboard"
+    ],
+    "jenkinsci/eagle-tester-plugin": [
+        "com/mobileenerlytics/eagle/tester/eagle-tester"
+    ],
+    "jenkinsci/ease-plugin": [
+        "org/jenkins-ci/plugins/ease-plugin"
+    ],
+    "jenkinsci/easyqa-plugin": [
+        "com/geteasyqa/easyqa"
+    ],
+    "jenkinsci/ec2-cloud-axis-plugin": [
+        "org/jenkins-ci/plugins/ec2-cloud-axis"
+    ],
+    "jenkinsci/ec2-deployment-dashboard": [
+        "org/jenkins-ci/plugins/ec2-deployment-dashboard"
+    ],
+    "jenkinsci/ec2-fleet-plugin": [
+        "com/amazon/jenkins/fleet/ec2-fleet"
+    ],
+    "jenkinsci/ec2-plugin": [
+        "org/jenkins-ci/plugins/ec2"
+    ],
+    "jenkinsci/eclipse-update-site-plugin": [
+        "org/jenkins-ci/plugins/eclipse-update-site"
+    ],
+    "jenkinsci/ecs-publisher-plugin": [
+        "de/eacg/ecs-publisher"
+    ],
+    "jenkinsci/ecutest-plugin": [
+        "de/tracetronic/jenkins/plugins/ecutest"
+    ],
+    "jenkinsci/eggplant-plugin": [
+        "org/jenkins-ci/plugins/eggplant-plugin"
+    ],
+    "jenkinsci/eiffel-broadcaster-plugin": [
+        "com/axis/jenkins/plugins/eiffel/eiffel-broadcaster"
+    ],
+    "jenkinsci/elastest-plugin": [
+        "org/jenkins-ci/plugins/elastest"
+    ],
+    "jenkinsci/elastic-axis-plugin": [
+        "org/jenkins-ci/plugins/elastic-axis"
+    ],
+    "jenkinsci/elasticbox-plugin": [
+        "com/elasticbox/jenkins-ci/plugins/elasticbox",
+        "org/jenkins-ci/plugins/elasticbox"
+    ],
+    "jenkinsci/elasticsearch-query-plugin": [
+        "org/jenkins-ci/plugins/elasticsearch-query"
+    ],
+    "jenkinsci/electricflow-plugin": [
+        "org/jenkins-ci/plugins/electricflow"
+    ],
+    "jenkinsci/eloyente-plugin": [
+        "com/technicolor/elOyente"
+    ],
+    "jenkinsci/email-aliases-plugin": [
+        "org/jenkins-ci/plugins/email-aliases"
+    ],
+    "jenkinsci/email-ext-plugin": [
+        "org/jenkins-ci/plugins/email-ext",
+        "org/jvnet/hudson/plugins/email-ext"
+    ],
+    "jenkinsci/email-ext-recipients-column-plugin": [
+        "org/jenkins-ci/plugins/email-ext-recipients-column"
+    ],
+    "jenkinsci/emailext-template-plugin": [
+        "org/jenkinsci/plugins/emailext-template"
+    ],
+    "jenkinsci/embeddable-build-status-plugin": [
+        "org/jenkins-ci/plugins/embeddable-build-status"
+    ],
+    "jenkinsci/emma-plugin": [
+        "org/jenkins-ci/plugins/emma",
+        "org/jvnet/hudson/plugins/emma"
+    ],
+    "jenkinsci/emmacoveragecolumn-plugin": [
+        "org/jenkins-ci/plugins/emmacoveragecolumn"
+    ],
+    "jenkinsci/emotional-hudson-plugin": [
+        "org/jvnet/hudson/plugins/emotional-hudson"
+    ],
+    "jenkinsci/emotional-jenkins-plugin": [
+        "org/jenkins-ci/plugins/emotional-jenkins-plugin"
+    ],
+    "jenkinsci/enhanced-old-build-discarder-plugin": [
+        "org/jenkins-ci/plugins/enhanced-old-build-discarder"
+    ],
+    "jenkinsci/envfile-plugin": [
+        "org/jenkins-ci/plugins/envfile"
+    ],
+    "jenkinsci/envinject-api-plugin": [
+        "org/jenkins-ci/plugins/envinject-api"
+    ],
+    "jenkinsci/envinject-lib": [
+        "org/jenkins-ci/lib/envinject-lib"
+    ],
+    "jenkinsci/envinject-plugin": [
+        "org/jenkins-ci/plugins/envinject"
+    ],
+    "jenkinsci/environment-labels-setter": [
+        "org/jenkins-ci/plugins/environment-labels-setter"
+    ],
+    "jenkinsci/environment-manager-tools-plugin": [
+        "com/parasoft/environment-manager"
+    ],
+    "jenkinsci/environment-script-plugin": [
+        "com/lookout/jenkins/environment-script"
+    ],
+    "jenkinsci/environment-variable-page-decoration-plugin": [
+        "org/jenkins-ci/plugins/environment-variable-page-decoration"
+    ],
+    "jenkinsci/escaped-markup-plugin": [
+        "org/jenkins-ci/plugins/escaped-markup-plugin"
+    ],
+    "jenkinsci/evergreen-plugin": [
+        "io/jenkins/plugins/essentials",
+        "io/jenkins/plugins/evergreen"
+    ],
+    "jenkinsci/exam-plugin": [
+        "org/jenkins-ci/plugins/exam"
+    ],
+    "jenkinsci/exclude-matrix-parent": [
+        "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
+    ],
+    "jenkinsci/exclusion-plugin": [
+        "org/jenkins-ci/plugins/Exclusion"
+    ],
+    "jenkinsci/exclusive-execution-plugin": [
+        "org/jenkins-ci/plugins/exclusive-execution",
+        "org/jvnet/hudson/plugins/exclusive-execution"
+    ],
+    "jenkinsci/exclusive-labels-plugin": [
+        "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
+    ],
+    "jenkinsci/experitest-cloud-plugin": [
+        "org/jenkins-ci/plugins/experitest-cloud"
+    ],
+    "jenkinsci/export-params-plugin": [
+        "org/jenkins-ci/plugins/export-params"
+    ],
+    "jenkinsci/extended-choice-parameter-plugin": [
+        "org/jenkins-ci/plugins/extended-choice-parameter"
+    ],
+    "jenkinsci/extended-read-permission-plugin": [
+        "org/jvnet/hudson/plugins/extended-read-permission"
+    ],
+    "jenkinsci/extended-security-settings-plugin": [
+        "io/jenkins/plugins/extended-security-settings"
+    ],
+    "jenkinsci/extensible-choice-parameter-plugin": [
+        "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
+    ],
+    "jenkinsci/extension-filter-plugin": [
+        "org/jenkins-ci/plugins/extension-filter"
+    ],
+    "jenkinsci/extensivetesting-plugin": [
+        "jenkins/xtc/extensivetesting"
+    ],
+    "jenkinsci/external-monitor-job-plugin": [
+        "org/jenkins-ci/plugins/external-monitor-job"
+    ],
+    "jenkinsci/external-resource-dispatcher-plugin": [
+        "com/sonyericsson/jenkins/plugins/externalresource/externalresource-dispatcher"
+    ],
+    "jenkinsci/external-scheduler-plugin": [
+        "org/jenkins-ci/plugins/external-scheduler"
+    ],
+    "jenkinsci/external-workspace-manager-plugin": [
+        "org/jenkins-ci/plugins/external-workspace-manager"
+    ],
+    "jenkinsci/extra-columns-plugin": [
+        "org/jenkins-ci/plugins/extra-columns"
+    ],
+    "jenkinsci/extra-tool-installers-plugin": [
+        "com/synopsys/arc/jenkinsci/extra-tool-installers",
+        "io/jenkins/plugins/extra-tool-installers"
+    ],
+    "jenkinsci/extras-executable-war": [
+        "org/jenkins-ci/executable-war"
+    ],
+    "jenkinsci/extras-memory-monitor": [
+        "org/jenkins-ci/memory-monitor"
+    ],
+    "jenkinsci/extreme-feedback-plugin": [
+        "org/jenkins-ci/plugins/extreme-feedback"
+    ],
+    "jenkinsci/extreme-notification-plugin": [
+        "org/jenkins-ci/plugins/extreme-notification"
+    ],
+    "jenkinsci/ez-templates-plugin": [
+        "org/jenkins-ci/plugins/ez-templates"
+    ],
+    "jenkinsci/ezwall-plugin": [
+        "org/jenkins-ci/plugins/ezwall"
+    ],
+    "jenkinsci/fabric-beta-publisher-plugin": [
+        "egor-n/fabric-beta-publisher"
+    ],
+    "jenkinsci/fail-the-build-plugin": [
+        "org/jenkins-ci/plugins/fail-the-build-plugin"
+    ],
+    "jenkinsci/failedjobdeactivator-plugin": [
+        "de/einsundeins/jenkins/plugins/failedjobdeactivator/failedJobDeactivator"
+    ],
+    "jenkinsci/fast-track-plugin": [
+        "nl/arnom/jenkins/fast-track"
+    ],
+    "jenkinsci/favorite-plugin": [
+        "org/jvnet/hudson/plugins/favorite"
+    ],
+    "jenkinsci/favorite-view-plugin": [
+        "org/jenkins-ci/plugins/favorite-view"
+    ],
+    "jenkinsci/fedora-module-build-system-plugin": [
+        "org/jenkins-ci/plugins/fedora-module-build-system"
+    ],
+    "jenkinsci/figlet-buildstep-plugin": [
+        "org/jenkins-ci/plugins/figlet-buildstep"
+    ],
+    "jenkinsci/file-leak-detector-plugin": [
+        "com/cloudbees/jenkins/plugins/file-leak-detector"
+    ],
+    "jenkinsci/file-operations-plugin": [
+        "sp/sd/file-operations"
+    ],
+    "jenkinsci/files-found-trigger-plugin": [
+        "org/jenkins-ci/plugins/files-found-trigger",
+        "org/jvnet/hudson/plugins/files-found-trigger"
+    ],
+    "jenkinsci/filesystem-list-parameter-plugin": [
+        "aendter/jenkins/plugins/filesystem-list-parameter-plugin"
+    ],
+    "jenkinsci/filesystem_scm-plugin": [
+        "hudson/plugins/filesystem_scm/filesystem_scm"
+    ],
+    "jenkinsci/findbugs-plugin": [
+        "org/jvnet/hudson/plugins/findbugs",
+        "org/jvnet/hudson/plugins/findbugs/parent"
+    ],
+    "jenkinsci/fireline-plugin": [
+        "org/jenkins-ci/plugins/plugin/fireline"
+    ],
+    "jenkinsci/fitnesse-plugin": [
+        "org/jenkins-ci/plugins/fitnesse"
+    ],
+    "jenkinsci/flaky-test-handler-plugin": [
+        "org/jenkins-ci/plugins/flaky-test-handler"
+    ],
+    "jenkinsci/flashlog-plugin": [
+        "org/jvnet/hudson/plugins/flashlog-plugin"
+    ],
+    "jenkinsci/flexdeploy-plugin": [
+        "org/jenkins-ci/plugins/flexdeploy"
+    ],
+    "jenkinsci/flexible-publish-plugin": [
+        "org/jenkins-ci/plugins/flexible-publish"
+    ],
+    "jenkinsci/flexteam-plugin": [
+        "org/jvnet/hudson/plugins/flexteam"
+    ],
+    "jenkinsci/flowdock-plugin": [
+        "com/flowdock/jenkins/jenkins-flowdock-plugin"
+    ],
+    "jenkinsci/fluentd-plugin": [
+        "org/jenkins-ci/plugins/fluentd"
+    ],
+    "jenkinsci/flyway-runner-plugin": [
+        "sp/sd/flyway-runner"
+    ],
+    "jenkinsci/fogbugz-plugin": [
+        "org/jenkins-ci/plugins/fogbugz"
+    ],
+    "jenkinsci/folder-auth-plugin": [
+        "io/jenkins/plugins/folder-auth"
+    ],
+    "jenkinsci/folder-properties-plugin": [
+        "com/mig82/folder-properties"
+    ],
+    "jenkinsci/forensics-api-plugin": [
+        "io/jenkins/plugins/forensics-api"
+    ],
+    "jenkinsci/form-element-path-plugin": [
+        "org/jenkins-ci/plugins/form-element-path"
+    ],
+    "jenkinsci/fortify-cloudscan-plugin": [
+        "org/jenkins-ci/plugins/fortify-cloudscan-jenkins-plugin"
+    ],
+    "jenkinsci/fortify-on-demand-uploader-plugin": [
+        "org/jenkins-ci/plugins/fortify-on-demand-uploader"
+    ],
+    "jenkinsci/fortify-plugin": [
+        "org/jenkins-ci/plugins/fortify"
+    ],
+    "jenkinsci/fortify360-plugin": [
+        "org/jvnet/hudson/plugins/fortify360/fortify360"
+    ],
+    "jenkinsci/frugal-testing-plugin": [
+        "io/jenkins/plugins/frugal-testing"
+    ],
+    "jenkinsci/fstrigger-plugin": [
+        "org/jenkins-ci/plugins/fstrigger"
+    ],
+    "jenkinsci/ftp-rename-plugin": [
+        "org/jenkins-ci/plugins/ftp-rename"
+    ],
+    "jenkinsci/ftppublisher-plugin": [
+        "org/jvnet/hudson/plugins/ftppublisher"
+    ],
+    "jenkinsci/fxcop-runner-plugin": [
+        "org/jenkins-ci/plugins/fxcop-runner"
+    ],
+    "jenkinsci/gallio-plugin": [
+        "org/jenkins-ci/plugins/gallio",
+        "org/jvnet/hudson/plugins/gallio"
+    ],
+    "jenkinsci/gatekeeper-plugin": [
+        "org/paylogic/GatekeeperPlugin"
+    ],
+    "jenkinsci/gatling-check-plugin": [
+        "org/jenkins-ci/plugins/gatling-check"
+    ],
+    "jenkinsci/gatling-plugin": [
+        "org/jenkins-ci/plugins/gatling"
+    ],
+    "jenkinsci/gcal-plugin": [
+        "org/jvnet/hudson/plugins/gcal"
+    ],
+    "jenkinsci/gcloud-sdk-plugin": [
+        "com/byclosure/jenkins/plugins/gcloud-sdk"
+    ],
+    "jenkinsci/gcm-notification-plugin": [
+        "org/jenkins-ci/plugins/gcm-notification"
+    ],
+    "jenkinsci/gearman-plugin": [
+        "org/jenkins-ci/plugins/gearman-plugin"
+    ],
+    "jenkinsci/gem-publisher-plugin": [
+        "net/arangamani/jenkins/gem-publisher"
+    ],
+    "jenkinsci/generic-webhook-trigger-plugin": [
+        "org/jenkins-ci/plugins/generic-webhook-trigger"
+    ],
+    "jenkinsci/genexus-plugin": [
+        "org/jenkins-ci/plugins/genexus"
+    ],
+    "jenkinsci/gerrit-code-review-plugin": [
+        "org/jenkins-ci/plugins/gerrit-code-review"
+    ],
+    "jenkinsci/gerrit-trigger-plugin": [
+        "com/sonyericsson/hudson/plugins/gerrit/gerrit-trigger"
+    ],
+    "jenkinsci/ghprb-plugin": [
+        "org/jenkins-ci/plugins/ghprb"
+    ],
+    "jenkinsci/git-automerger-plugin": [
+        "com/vinted/automerger/git-automerger"
+    ],
+    "jenkinsci/git-bisect-plugin": [
+        "org/jenkins-ci/plugins/git-bisect"
+    ],
+    "jenkinsci/git-changelog-plugin": [
+        "de/wellnerbou/jenkins/git-changelog"
+    ],
+    "jenkinsci/git-chooser-alternative-plugin": [
+        "org/jenkins-ci/plugins/git-chooser-alternative"
+    ],
+    "jenkinsci/git-client-plugin": [
+        "org/jenkins-ci/plugins/git-client",
+        "org/jenkinsci/plugins/git-client"
+    ],
+    "jenkinsci/git-forensics-plugin": [
+        "io/jenkins/plugins/git-forensics"
+    ],
+    "jenkinsci/git-notes-plugin": [
+        "org/jenkins-ci/ruby-plugins/git-notes"
+    ],
+    "jenkinsci/git-parameter-plugin": [
+        "org/jenkins-ci/plugins/git-parameter",
+        "org/jenkins-ci/tools/git-parameter"
+    ],
+    "jenkinsci/git-plugin": [
+        "org/jenkins-ci/plugins/git",
+        "org/jenkinsci/plugins/git",
+        "org/jvnet/hudson/plugins/git"
+    ],
+    "jenkinsci/git-prebuildmerge-trait-plugin": [
+        "org/jenkins-ci/plugins/git-prebuildmerge-trait"
+    ],
+    "jenkinsci/git-server-plugin": [
+        "org/jenkins-ci/plugins/git-server"
+    ],
+    "jenkinsci/git-tag-message-plugin": [
+        "org/jenkins-ci/plugins/git-tag-message"
+    ],
+    "jenkinsci/git-userContent-plugin": [
+        "org/jenkins-ci/plugins/git-userContent"
+    ],
+    "jenkinsci/gitblit-plugin": [
+        "com/tsystems/sbs/gitblit"
+    ],
+    "jenkinsci/gitbucket-plugin": [
+        "org/jenkins-ci/plugins/gitbucket"
+    ],
+    "jenkinsci/gitcolony-plugin": [
+        "com/gitcolony/jenkins/gitcolony-plugin"
+    ],
+    "jenkinsci/gitea-plugin": [
+        "org/jenkins-ci/plugins/gitea"
+    ],
+    "jenkinsci/gitee-plugin": [
+        "org/jenkins-ci/plugins/gitee"
+    ],
+    "jenkinsci/gitflow-plugin": [
+        "de/silpion/jenkins/plugins/gitflow"
+    ],
+    "jenkinsci/github-api-plugin": [
+        "org/jenkins-ci/plugins/github-api"
+    ],
+    "jenkinsci/github-autostatus-plugin": [
+        "org/jenkins-ci/plugins/github-autostatus"
+    ],
+    "jenkinsci/github-branch-source-plugin": [
+        "org/jenkins-ci/plugins/github-branch-source"
+    ],
+    "jenkinsci/github-coverage-reporter-plugin": [
+        "io/jenkins/plugins/github-coverage-reporter"
+    ],
+    "jenkinsci/github-issues-plugin": [
+        "org/jenkins-ci/plugins/github-issues"
+    ],
+    "jenkinsci/github-oauth-plugin": [
+        "org/jenkins-ci/plugins/github-oauth"
+    ],
+    "jenkinsci/github-organization-folder-plugin": [
+        "org/jenkins-ci/plugins/github-organization-folder"
+    ],
+    "jenkinsci/github-plugin": [
+        "com/coravy/hudson/plugins/github/github"
+    ],
+    "jenkinsci/github-pr-comment-build-plugin": [
+        "org/jenkins-ci/plugins/github-pr-comment-build"
+    ],
+    "jenkinsci/github-pr-coverage-status-plugin": [
+        "org/jenkins-ci/plugins/github-pr-coverage-status"
+    ],
+    "jenkinsci/github-scm-trait-notification-context-plugin": [
+        "org/jenkins-ci/plugins/github-scm-trait-notification-context"
+    ],
+    "jenkinsci/github-sqs-plugin": [
+        "com/base2services/jenkins/github-sqs-plugin"
+    ],
+    "jenkinsci/gitlab-api-plugin": [
+        "io/jenkins/plugins/gitlab-api"
+    ],
+    "jenkinsci/gitlab-branch-source-plugin": [
+        "io/jenkins/plugins/gitlab-branch-source"
+    ],
+    "jenkinsci/gitlab-hook-plugin": [
+        "org/jenkins-ci/ruby-plugins/gitlab-hook"
+    ],
+    "jenkinsci/gitlab-logo-plugin": [
+        "org/jenkins-ci/plugins/gitlab-logo"
+    ],
+    "jenkinsci/gitlab-merge-request-builder-plugin": [
+        "com/switchfly/gitlab-merge-request-jenkins"
+    ],
+    "jenkinsci/gitlab-oauth-plugin": [
+        "org/jenkins-ci/plugins/gitlab-oauth"
+    ],
+    "jenkinsci/gitlab-plugin": [
+        "com/dabsquared/gitlab-plugin",
+        "org/jenkins-ci/plugins/gitlab-plugin"
+    ],
+    "jenkinsci/gitorious-plugin": [
+        "org/jenkins-ci/plugins/gitorious"
+    ],
+    "jenkinsci/global-build-stats-plugin": [
+        "org/jenkins-ci/plugins/global-build-stats"
+    ],
+    "jenkinsci/global-post-script-plugin": [
+        "org/jenkins-ci/plugins/global-post-script"
+    ],
+    "jenkinsci/global-slack-notifier-plugin": [
+        "org/jenkins-ci/plugins/global-slack-notifier"
+    ],
+    "jenkinsci/global-variable-string-parameter-plugin": [
+        "org/jenkins-ci/plugins/global-variable-string-parameter"
+    ],
+    "jenkinsci/gnat-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/gnat",
+        "org/jenkins-ci/plugins/gnat"
+    ],
+    "jenkinsci/gogs-webhook-plugin": [
+        "org/jenkins-ci/plugins/gogs-webhook"
+    ],
+    "jenkinsci/golang-plugin": [
+        "org/jenkins-ci/plugins/golang"
+    ],
+    "jenkinsci/google-admin-sdk-plugin": [
+        "org/jenkins-ci/plugins/google-admin-sdk"
+    ],
+    "jenkinsci/google-analytics-usage-reporter-plugin": [
+        "org/jenkins-ci/plugins/google-analytics-usage-reporter"
+    ],
+    "jenkinsci/google-chat-notification-plugin": [
+        "org/jenkins-ci/plugins/google-chat-notification"
+    ],
+    "jenkinsci/google-cloud-backup-plugin": [
+        "org/jenkins-ci/plugins/google-cloud-backup"
+    ],
+    "jenkinsci/google-cloud-health-check-plugin": [
+        "org/jenkins-ci/plugins/google-cloud-health-check"
+    ],
+    "jenkinsci/google-cloudbuild-plugin": [
+        "org/jenkins-ci/plugins/google-cloudbuild"
+    ],
+    "jenkinsci/google-compute-engine-plugin": [
+        "org/jenkins-ci/plugins/google-compute-engine"
+    ],
+    "jenkinsci/google-container-registry-auth-plugin": [
+        "org/jenkins-ci/plugins/google-container-registry-auth"
+    ],
+    "jenkinsci/google-deployment-manager-plugin": [
+        "org/jenkins-ci/plugins/google-deployment-manager"
+    ],
+    "jenkinsci/google-git-notes-publisher-plugin": [
+        "org/jenkins-ci/plugins/google-git-notes-publisher"
+    ],
+    "jenkinsci/google-kubernetes-engine-plugin": [
+        "org/jenkins-ci/plugins/google-kubernetes-engine"
+    ],
+    "jenkinsci/google-login-plugin": [
+        "org/jenkins-ci/plugins/google-login"
+    ],
+    "jenkinsci/google-metadata-plugin": [
+        "org/jenkins-ci/plugins/google-metadata-plugin"
+    ],
+    "jenkinsci/google-oauth-plugin": [
+        "org/jenkins-ci/plugins/google-oauth-plugin"
+    ],
+    "jenkinsci/google-play-android-publisher-plugin": [
+        "org/jenkins-ci/plugins/google-play-android-publisher"
+    ],
+    "jenkinsci/google-storage-plugin": [
+        "org/jenkins-ci/plugins/google-storage-plugin"
+    ],
+    "jenkinsci/googleanalytics-plugin": [
+        "org/jvnet/hudson/plugins/googleanalytics"
+    ],
+    "jenkinsci/googlecode-plugin": [
+        "org/jenkins-ci/plugins/googlecode",
+        "org/jvnet/hudson/plugins/googlecode"
+    ],
+    "jenkinsci/gprbuild-plugin": [
+        "io/jenkins/plugins/gprbuild"
+    ],
+    "jenkinsci/gradle-plugin": [
+        "com/zenika/jenkins-ci/plugins/gradle",
+        "org/jenkins-ci/plugins/gradle"
+    ],
+    "jenkinsci/gradle-repo-plugin": [
+        "io/jenkins/plugins/gradle-repo"
+    ],
+    "jenkinsci/grails-plugin": [
+        "org/jvnet/hudson/plugins/grails"
+    ],
+    "jenkinsci/graphite-plugin": [
+        "org/jenkins-ci/plugins/graphiteIntegrator"
+    ],
+    "jenkinsci/graphql-server-plugin": [
+        "io/jenkins/plugins/graphql-server"
+    ],
+    "jenkinsci/gravatar-plugin": [
+        "org/jenkins-ci/plugins/gravatar"
+    ],
+    "jenkinsci/greenballs-plugin": [
+        "org/jenkins-ci/plugins/greenballs",
+        "org/jvnet/hudson/plugins/greenballs"
+    ],
+    "jenkinsci/groovy-events-listener-plugin": [
+        "org/jenkins-ci/plugins/groovy-events-listener-plugin"
+    ],
+    "jenkinsci/groovy-label-assignment-plugin": [
+        "jp/ikedam/jenkins/plugins/groovy-label-assignment"
+    ],
+    "jenkinsci/groovy-plugin": [
+        "org/jenkins-ci/plugins/groovy",
+        "org/jvnet/hudson/plugins/groovy"
+    ],
+    "jenkinsci/groovy-postbuild-plugin": [
+        "org/jvnet/hudson/plugins/groovy-postbuild"
+    ],
+    "jenkinsci/groovy-remote-control-plugin": [
+        "org/jenkinsci/plugins/groovy-remote"
+    ],
+    "jenkinsci/groovyaxis-plugin": [
+        "org/jenkins-ci/plugins/groovyaxis"
+    ],
+    "jenkinsci/growl-plugin": [
+        "org/jenkins-ci/plugins/growl"
+    ],
+    "jenkinsci/h2-api-plugin": [
+        "io/jenkins/plugins/h2-api"
+    ],
+    "jenkinsci/habitat-plugin": [
+        "com/indellient/habitat"
+    ],
+    "jenkinsci/hadoop-plugin": [
+        "org/jenkins-ci/plugins/hadoop"
+    ],
+    "jenkinsci/hall-plugin": [
+        "com/companyline/hall/jenkins/hall-jenkins"
+    ],
+    "jenkinsci/handy-uri-templates-2-api-plugin": [
+        "org/jenkins-ci/plugins/handy-uri-templates-2-api"
+    ],
+    "jenkinsci/harvest-plugin": [
+        "org/jenkins-ci/plugins/harvest"
+    ],
+    "jenkinsci/hashicorp-vault-pipeline-plugin": [
+        "io/jenkins/plugins/hashicorp-vault-pipeline"
+    ],
+    "jenkinsci/hashicorp-vault-plugin": [
+        "com/datapipe/jenkins/plugins/hashicorp-vault-plugin"
+    ],
+    "jenkinsci/hckrnews-plugin": [
+        "com/lewuathe/plugins/hckrnews"
+    ],
+    "jenkinsci/heavy-job-plugin": [
+        "org/jenkins-ci/plugins/heavy-job"
+    ],
+    "jenkinsci/helix-teamhub-plugin": [
+        "org/jenkins-ci/plugins/helix-teamhub"
+    ],
+    "jenkinsci/help-editor-plugin": [
+        "org/jenkins-ci/plugins/help-editor"
+    ],
+    "jenkinsci/hidden-parameter-plugin": [
+        "org/jenkins-ci/plugins/hidden-parameter"
+    ],
+    "jenkinsci/hipchat-plugin": [
+        "org/jvnet/hudson/plugins/hipchat"
+    ],
+    "jenkinsci/hockeyapp-plugin": [
+        "org/jenkins-ci/plugins/hockeyapp"
+    ],
+    "jenkinsci/housekeeper-plugin": [
+        "org/jenkins-ci/plugins/housekeeper"
+    ],
+    "jenkinsci/hp-operations-orchestration-plugin": [
+        "org/jenkins-ci/plugins/hp-operations-orchestration-automation-execution-plugin"
+    ],
+    "jenkinsci/hp-quality-center-plugin": [
+        "org/jenkins-ci/plugins/qc/hp-quality-center"
+    ],
+    "jenkinsci/hpe-application-automation-tools-plugin": [
+        "org/jenkins-ci/plugins/hp-application-automation-tools-plugin"
+    ],
+    "jenkinsci/hpe-network-virtualization-plugin": [
+        "org/jenkins-ci/plugins/hpe-network-virtualization"
+    ],
+    "jenkinsci/hsts-filter-plugin": [
+        "org/jenkins-ci/plugins/hsts-filter-plugin"
+    ],
+    "jenkinsci/html-audio-notifier-plugin": [
+        "jenkins/plugins/htmlaudio/html-audio-notifier"
+    ],
+    "jenkinsci/html5-notifier-plugin": [
+        "org/jenkins-ci/plugins/html5-notifier-plugin"
+    ],
+    "jenkinsci/htmlpublisher-plugin": [
+        "org/jenkins-ci/plugins/htmlpublisher",
+        "org/jvnet/hudson/plugins/htmlpublisher"
+    ],
+    "jenkinsci/htmlresource-plugin": [
+        "org/jenkins-ci/plugins/htmlresource"
+    ],
+    "jenkinsci/http-post-plugin": [
+        "org/jenkins-ci/plugins/http-post"
+    ],
+    "jenkinsci/http-request-plugin": [
+        "org/jenkins-ci/plugins/http_request"
+    ],
+    "jenkinsci/huaweicloud-credentials-plugin": [
+        "org/jenkins-ci/plugins/huaweicloud-credentials"
+    ],
+    "jenkinsci/hubot-steps-plugin": [
+        "org/jenkins-ci/plugins/hubot-steps"
+    ],
+    "jenkinsci/hue-light-plugin": [
+        "org/jenkins-ci/plugins/hue-light"
+    ],
+    "jenkinsci/hugo-plugin": [
+        "io/jenkins/plugins/hugo"
+    ],
+    "jenkinsci/humbug-plugin": [
+        "org/jenkins-ci/plugins/humbug"
+    ],
+    "jenkinsci/humio-plugin": [
+        "org/jenkins-ci/plugins/humio"
+    ],
+    "jenkinsci/hyper-build-step-plugin": [
+        "sh/hyper/plugins/hyper-build-step"
+    ],
+    "jenkinsci/hyper-commons-plugin": [
+        "sh/hyper/plugins/hyper-commons"
+    ],
+    "jenkinsci/hyper-slaves-plugin": [
+        "sh/hyper/plugins/hyper-slaves"
+    ],
+    "jenkinsci/ibm-asoc-plugin": [
+        "com/ibm/ibm-application-security"
+    ],
+    "jenkinsci/ibm-cloud-devops-plugin": [
+        "com/ibm/devops/ibm-cloud-devops"
+    ],
+    "jenkinsci/ibm-continuous-release-plugin": [
+        "com/ibm/devops/ibm-continuous-release"
+    ],
+    "jenkinsci/ibm-security-appscansource-scanner-plugin": [
+        "com/aspectsecurity/automationservices/plugins/jenkins/ibm-security-appscansource-scanner"
+    ],
+    "jenkinsci/ibm-security-appscanstandard-scanner-plugin": [
+        "appscanstandard-integration/ibm-security-appscanstandard-scanner"
+    ],
+    "jenkinsci/icedq-plugin": [
+        "com/icedq/ci/plugin/icedq"
+    ],
+    "jenkinsci/icescrum-plugin": [
+        "org/jenkins-ci/plugins/icescrum"
+    ],
+    "jenkinsci/icn-plugin-loader-plugin": [
+        "org/jenkins-ci/plugins/icn-plugin-loader"
+    ],
+    "jenkinsci/icon-shim-plugin": [
+        "org/jenkins-ci/plugins/icon-shim/icon-set",
+        "org/jenkins-ci/plugins/icon-shim/icon-shim",
+        "org/jenkins-ci/plugins/icon-shim/icon-shim-pom"
+    ],
+    "jenkinsci/icq-notification-plugin": [
+        "org/jenkins-ci/plugins/icq-notification"
+    ],
+    "jenkinsci/ifttt-build-notifier-plugin": [
+        "org/jenkins-ci/plugins/ifttt-build-notifier",
+        "org/jenkinsci/plugins/ifttt-build-notifier"
+    ],
+    "jenkinsci/image-gallery-plugin": [
+        "com/tupilabs/image_gallery/image-gallery"
+    ],
+    "jenkinsci/imagecomparison-plugin": [
+        "org/jenkins-ci/plugins/imagecomparison"
+    ],
+    "jenkinsci/impersonation-plugin": [
+        "org/jenkins-ci/plugins/impersonation"
+    ],
+    "jenkinsci/implied-labels-plugin": [
+        "org/jenkins-ci/plugins/implied-labels"
+    ],
+    "jenkinsci/in-toto-plugin": [
+        "io/jenkins/plugins/in-toto"
+    ],
+    "jenkinsci/incapptic-connect-uploader-plugin": [
+        "com/incapptic/plugins/incapptic-connect-uploader"
+    ],
+    "jenkinsci/inedo-proget-plugin": [
+        "com/inedo/proget/inedo-proget"
+    ],
+    "jenkinsci/inflectra-spira-integration-plugin": [
+        "com/inflectra/spiratest/plugins/inflectra-spira-integration"
+    ],
+    "jenkinsci/influxdb-plugin": [
+        "org/jenkins-ci/plugins/influxdb"
+    ],
+    "jenkinsci/influxdb-query-plugin": [
+        "org/joeo/plugins/influxdb-query"
+    ],
+    "jenkinsci/inline-pipeline-plugin": [
+        "org/jenkins-ci/plugins/inline-pipeline"
+    ],
+    "jenkinsci/inodes-monitor-plugin": [
+        "io/jenkins/plugins/inodes-monitor"
+    ],
+    "jenkinsci/insightappsec-plugin": [
+        "io/jenkins/plugins/insightappsec"
+    ],
+    "jenkinsci/installshield-plugin": [
+        "org/jenkins-ci/plugins/installshield"
+    ],
+    "jenkinsci/instance-identity-module": [
+        "org/jenkins-ci/modules/instance-identity"
+    ],
+    "jenkinsci/instant-messaging-parent-plugin": [
+        "org/jvnet/hudson/plugins/instant-messaging-parent"
+    ],
+    "jenkinsci/instant-messaging-plugin": [
+        "org/jvnet/hudson/plugins/instant-messaging"
+    ],
+    "jenkinsci/integrity-plugin": [
+        "org/jenkins-ci/plugins/integrity-plugin"
+    ],
+    "jenkinsci/internet-meme-plugin": [
+        "org/jenkins-ci/plugins/internetmeme"
+    ],
+    "jenkinsci/ion-deployer-plugin": [
+        "org/jenkins-ci/plugins/ion-deployer-plugin"
+    ],
+    "jenkinsci/ios-device-connector-plugin": [
+        "org/jenkins-ci/plugins/ios-device-connector"
+    ],
+    "jenkinsci/ipmessenger-plugin": [
+        "org/jenkins-ci/plugins/ipmessenger-plugin"
+    ],
+    "jenkinsci/ircbot-plugin": [
+        "org/jvnet/hudson/plugins/ircbot"
+    ],
+    "jenkinsci/ironmq-notifier-plugin": [
+        "org/jenkins-ci/plugins/ironmq-notifier"
+    ],
+    "jenkinsci/itest-plugin": [
+        "org/jenkins-ci/plugins/itest"
+    ],
+    "jenkinsci/ivy-plugin": [
+        "org/jenkins-ci/plugins/ivy",
+        "org/jvnet/hudson/plugins/ivy"
+    ],
+    "jenkinsci/ivy-report-plugin": [
+        "org/jenkins-ci/plugins/ivy-report"
+    ],
+    "jenkinsci/ivytrigger-plugin": [
+        "org/jenkins-ci/plugins/ivytrigger"
+    ],
+    "jenkinsci/jabber-plugin": [
+        "org/jvnet/hudson/plugins/jabber"
+    ],
+    "jenkinsci/jabber-server-plugin": [
+        "de/e-nexus/jabber-server-plugin"
+    ],
+    "jenkinsci/jackson-databind-plugin": [
+        "org/jenkins-ci/plugins/jackson-databind"
+    ],
+    "jenkinsci/jackson2-api-plugin": [
+        "org/jenkins-ci/plugins/jackson2-api"
+    ],
+    "jenkinsci/jacoco-plugin": [
+        "org/jenkins-ci/plugins/jacoco"
+    ],
+    "jenkinsci/japex-plugin": [
+        "org/jvnet/hudson/plugins/japex"
+    ],
+    "jenkinsci/javadoc-plugin": [
+        "org/jenkins-ci/plugins/javadoc"
+    ],
+    "jenkinsci/javancss-plugin": [
+        "org/jenkins-ci/plugins/javancss"
+    ],
+    "jenkinsci/javatest-report-plugin": [
+        "org/jenkins-ci/plugins/javatest-report",
+        "org/jvnet/hudson/plugins/javatest-report"
+    ],
+    "jenkinsci/jaxb-plugin": [
+        "io/jenkins/plugins/jaxb"
+    ],
+    "jenkinsci/jboss-plugin": [
+        "org/jenkins-ci/plugins/jboss"
+    ],
+    "jenkinsci/jbpm-workflow-plugin": [
+        "jenkins/plugins/jbpm/jbpm-embedded-plugin",
+        "jenkins/plugins/jbpm/jbpm-workflow-plugin",
+        "jenkins/plugins/jbpm/jbpm-workflow-plugin-parent"
+    ],
+    "jenkinsci/jcaptcha-plugin": [
+        "org/jenkins-ci/plugins/jcaptcha-plugin"
+    ],
+    "jenkinsci/jclouds-plugin": [
+        "org/jenkins-ci/plugins/jclouds-jenkins",
+        "org/jenkins-ci/plugins/jclouds-jenkins-parent",
+        "org/jenkins-ci/plugins/jclouds-shaded"
+    ],
+    "jenkinsci/jdcloud-codedeploy-plugin": [
+        "org/jenkins-ci/plugins/jdcloud-codedeploy"
+    ],
+    "jenkinsci/jdepend-plugin": [
+        "org/jenkins-ci/plugins/jdepend",
+        "org/jvnet/hudson/plugins/jdepend"
+    ],
+    "jenkinsci/jdependency": [
+        "io/jenkins/org/vafer/jdependency"
+    ],
+    "jenkinsci/jdk-tool-plugin": [
+        "org/jenkins-ci/plugins/jdk-tool"
+    ],
+    "jenkinsci/jenkins": [
+        "org/jenkins-ci/main/cli",
+        "org/jenkins-ci/main/jenkins-core",
+        "org/jenkins-ci/main/jenkins-parent",
+        "org/jenkins-ci/main/jenkins-war"
+    ],
+    "jenkinsci/jenkins-clone-workspace-scm-plugin": [
+        "org/jenkins-ci/plugins/clone-workspace-scm",
+        "org/jvnet/hudson/plugins/clone-workspace-scm"
+    ],
+    "jenkinsci/jenkins-cloudformation-plugin": [
+        "org/jenkins-ci/plugins/jenkins-cloudformation-plugin"
+    ],
+    "jenkinsci/jenkins-test-harness": [
+        "org/jenkins-ci/main/jenkins-test-harness"
+    ],
+    "jenkinsci/jenkins-test-harness-htmlunit": [
+        "org/jenkins-ci/main/jenkins-test-harness-htmlunit"
+    ],
+    "jenkinsci/jenkins-test-harness-tools": [
+        "org/jenkins-ci/main/jenkins-test-harness-tools"
+    ],
+    "jenkinsci/jenkins.py": [
+        "org/jenkins-ci/plugins/python-wrapper"
+    ],
+    "jenkinsci/jenkins.rb": [
+        "org/jenkins-ci/plugins/ruby-runtime",
+        "org/jenkins-ci/plugins/ruby-runtime-parent",
+        "org/jenkins-ci/ruby-runtime-parent"
+    ],
+    "jenkinsci/jenkinsfile-runner": [
+        "io/jenkins/jenkinsfile-runner/bootstrap",
+        "io/jenkins/jenkinsfile-runner/jenkinsfile-runner",
+        "io/jenkins/jenkinsfile-runner/parent",
+        "io/jenkins/jenkinsfile-runner/payload",
+        "io/jenkins/jenkinsfile-runner/payload-dependencies",
+        "io/jenkins/jenkinsfile-runner/setup",
+        "io/jenkins/jenkinsfile-runner/tests"
+    ],
+    "jenkinsci/jenkinslint-plugin": [
+        "org/jenkins-ci/plugins/jenkinslint"
+    ],
+    "jenkinsci/jenkow-plugin": [
+        "com/cisco/step/jenkins/plugins/jenkow-activiti-designer",
+        "com/cisco/step/jenkins/plugins/jenkow-plugin"
+    ],
+    "jenkinsci/jgiven-plugin": [
+        "org/jenkins-ci/plugins/jgiven"
+    ],
+    "jenkinsci/jianliao-plugin": [
+        "org/jenkins-ci/plugins/jianliao"
+    ],
+    "jenkinsci/jigomerge-plugin": [
+        "org/jenkins-ci/plugins/jigomerge"
+    ],
+    "jenkinsci/jira-ext-plugin": [
+        "org/jenkins-ci/plugins/jira-ext"
+    ],
+    "jenkinsci/jira-finder-plugin": [
+        "org/jenkins-ci/plugins/jira-finder"
+    ],
+    "jenkinsci/jira-issue-updater-plugin": [
+        "info/bluefloyd/jenkins/jenkins-jira-issue-updater"
+    ],
+    "jenkinsci/jira-plugin": [
+        "org/jenkins-ci/plugins/jira",
+        "org/jvnet/hudson/plugins/jira"
+    ],
+    "jenkinsci/jira-steps-plugin": [
+        "org/jenkins-ci/plugins/jira-steps"
+    ],
+    "jenkinsci/jmh-report-plugin": [
+        "io/morethan/jenkins/jmh-report"
+    ],
+    "jenkinsci/jms-messaging-plugin": [
+        "org/jenkins-ci/plugins/jms-messaging"
+    ],
+    "jenkinsci/jna-posix": [
+        "org/jruby/ext/posix/jna-posix"
+    ],
+    "jenkinsci/jna-posix-api-plugin": [
+        "io/jenkins/plugins/jna-posix-api"
+    ],
+    "jenkinsci/jnr-posix-api-plugin": [
+        "io/jenkins/plugins/jnr-posix-api"
+    ],
+    "jenkinsci/job-direct-mail-plugin": [
+        "org/jenkins-ci/plugins/job-direct-mail"
+    ],
+    "jenkinsci/job-dsl-plugin": [
+        "org/jenkins-ci/plugins/job-dsl"
+    ],
+    "jenkinsci/job-exporter-plugin": [
+        "org/jenkins-ci/plugins/job-exporter",
+        "org/jvnet/hudson/plugins/job-exporter"
+    ],
+    "jenkinsci/job-fan-in-plugin": [
+        "org/jenkins-ci/plugins/job-fan-in"
+    ],
+    "jenkinsci/job-import-plugin": [
+        "org/jenkins-ci/plugins/job-import-plugin"
+    ],
+    "jenkinsci/job-log-logger-plugin": [
+        "org/jenkins-ci/plugins/job-log-logger-plugin"
+    ],
+    "jenkinsci/job-node-stalker-plugin": [
+        "org/jenkins-ci/plugins/job-node-stalker"
+    ],
+    "jenkinsci/job-parameter-summary-plugin": [
+        "org/jenkins-ci/plugins/job-parameter-summary"
+    ],
+    "jenkinsci/job-poll-action-plugin": [
+        "org/jenkins-ci/plugins/job-poll-action-plugin"
+    ],
+    "jenkinsci/job-restrictions-plugin": [
+        "com/synopsys/arc/jenkinsci/plugins/job-restrictions"
+    ],
+    "jenkinsci/job-strongauth-simple-plugin": [
+        "org/jenkins-ci/plugins/job-strongauth-simple"
+    ],
+    "jenkinsci/jobConfigHistory-plugin": [
+        "org/jenkins-ci/plugins/jobConfigHistory",
+        "org/jvnet/hudson/plugins/jobConfigHistory"
+    ],
+    "jenkinsci/jobcacher-plugin": [
+        "org/jenkins-ci/plugins/jobcacher"
+    ],
+    "jenkinsci/jobcopy-builder-plugin": [
+        "jp/ikedam/jenkins/plugins/jobcopy-builder"
+    ],
+    "jenkinsci/jobdelete-builder-plugin": [
+        "org/jenkins-ci/plugins/jobdelete-builder"
+    ],
+    "jenkinsci/jobgenerator-plugin": [
+        "org/jenkins-ci/plugins/jobgenerator"
+    ],
+    "jenkinsci/jobrequeue-plugin": [
+        "org/jenkins-ci/plugins/jobrequeue"
+    ],
+    "jenkinsci/jobrevision-plugin": [
+        "org/jenkins-ci/plugins/jobrevision"
+    ],
+    "jenkinsci/jobtemplates-plugin": [
+        "com/unitedinternet/jenkins/plugins/jobtemplates/jobtemplates"
+    ],
+    "jenkinsci/jobtype-column-plugin": [
+        "org/jenkins-ci/plugins/jobtype-column",
+        "org/jvnet/hudson/plugins/jobtype-column"
+    ],
+    "jenkinsci/join-plugin": [
+        "org/jenkins-ci/plugins/join"
+    ],
+    "jenkinsci/jprt-plugin": [
+        "org/jenkins-ci/plugins/jprt",
+        "org/jvnet/hudson/plugins/jprt"
+    ],
+    "jenkinsci/jqs-monitoring-plugin": [
+        "org/jenkins-ci/plugins/jqs-monitoring"
+    ],
+    "jenkinsci/jquery-plugin": [
+        "org/jenkins-ci/plugins/jquery"
+    ],
+    "jenkinsci/jquery-ui-plugin": [
+        "org/jenkins-ci/plugins/jquery-ui"
+    ],
+    "jenkinsci/js-libs": [
+        "org/jenkins-ci/ui/ace-editor",
+        "org/jenkins-ci/ui/bootstrap",
+        "org/jenkins-ci/ui/handlebars",
+        "org/jenkins-ci/ui/jquery-detached",
+        "org/jenkins-ci/ui/momentjs",
+        "org/jenkins-ci/ui/numeraljs"
+    ],
+    "jenkinsci/jsch-plugin": [
+        "org/jenkins-ci/plugins/jsch"
+    ],
+    "jenkinsci/jsgames-plugin": [
+        "org/jenkins-ci/plugins/jsgames"
+    ],
+    "jenkinsci/jslint-jenkins-plugin": [
+        "com/boxuk/jenkins/jslint",
+        "org/jenkins-ci/plugins/jslint"
+    ],
+    "jenkinsci/jsoup-plugin": [
+        "org/jenkins-ci/plugins/jsoup"
+    ],
+    "jenkinsci/jsunit-plugin": [
+        "org/jenkins-ci/plugins/jsunit"
+    ],
+    "jenkinsci/jswidgets-plugin": [
+        "org/jenkins-ci/plugins/jswidgets",
+        "org/jvnet/hudson/plugins/jswidgets"
+    ],
+    "jenkinsci/junit-attachments-plugin": [
+        "org/jenkins-ci/plugins/junit-attachments",
+        "org/jvnet/hudson/plugins/junit-attachments"
+    ],
+    "jenkinsci/junit-plugin": [
+        "org/jenkins-ci/plugins/junit"
+    ],
+    "jenkinsci/junit-realtime-test-reporter-plugin": [
+        "org/jenkins-ci/plugins/junit-realtime-test-reporter"
+    ],
+    "jenkinsci/jwt-support-plugin": [
+        "io/jenkins/plugins/jwt-support"
+    ],
+    "jenkinsci/jx-pipelines-plugin": [
+        "org/jenkins-ci/plugins/jx-pipelines"
+    ],
+    "jenkinsci/jx-resources-plugin": [
+        "org/jenkins-ci/plugins/jx-resources"
+    ],
+    "jenkinsci/jython-plugin": [
+        "org/jvnet/hudson/plugins/jython"
+    ],
+    "jenkinsci/kafkalogs-plugin": [
+        "org/jenkins-ci/plugins/kafkalogs"
+    ],
+    "jenkinsci/kanboard-plugin": [
+        "org/jenkins-ci/plugins/kanboard"
+    ],
+    "jenkinsci/karaf-build-step-plugin": [
+        "org/jenkins-ci/plugins/karaf-build-step"
+    ],
+    "jenkinsci/karotz-plugin": [
+        "org/jenkins-ci/plugins/karotz"
+    ],
+    "jenkinsci/katalon-plugin": [
+        "org/jenkins-ci/plugins/katalon"
+    ],
+    "jenkinsci/kato-plugin": [
+        "org/jvnet/hudson/plugins/kato"
+    ],
+    "jenkinsci/keep-slave-disconnected-plugin": [
+        "org/jenkins-ci/plugins/keep-slave-disconnected"
+    ],
+    "jenkinsci/kerberos-sso-plugin": [
+        "com/sonymobile/jenkins/plugins/kerberos-sso/kerberos-sso"
+    ],
+    "jenkinsci/keyboard-shortcuts-plugin": [
+        "org/jenkins-ci/plugins/keyboard-shortcuts-plugin"
+    ],
+    "jenkinsci/kiuwan-plugin": [
+        "org/jenkins-ci/plugins/kiuwanJenkinsPlugin"
+    ],
+    "jenkinsci/klaros-testmanagement-plugin": [
+        "hudson/plugins/klaros/klaros-testmanagement"
+    ],
+    "jenkinsci/klocwork-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/klocwork",
+        "org/jenkins-ci/plugins/klocwork"
+    ],
+    "jenkinsci/kmap-plugin": [
+        "org/jenkins-ci/plugins/kmap-jenkins"
+    ],
+    "jenkinsci/koji-plugin": [
+        "org/jenkins-ci/plugins/koji"
+    ],
+    "jenkinsci/kotlin-plugin-pom": [
+        "org/jenkins-ci/plugins/kotlin-plugin"
+    ],
+    "jenkinsci/kotlin-v1-stdlib-jdk8-plugin": [
+        "org/jenkins-ci/plugins/kotlin/kotlin-v1-stdlib-jdk8"
+    ],
+    "jenkinsci/kpp-management-plugin": [
+        "sic/software/kpp-management-plugin"
+    ],
+    "jenkinsci/kryptowire-plugin": [
+        "io/jenkins/plugins/kryptowire"
+    ],
+    "jenkinsci/kubernetes-cd-plugin": [
+        "org/jenkins-ci/plugins/kubernetes-cd"
+    ],
+    "jenkinsci/kubernetes-ci-plugin": [
+        "com/elasticbox/jenkins-ci/plugins/kubernetes-ci"
+    ],
+    "jenkinsci/kubernetes-cli-plugin": [
+        "org/jenkins-ci/plugins/kubernetes-cli"
+    ],
+    "jenkinsci/kubernetes-credentials-plugin": [
+        "org/jenkinsci/plugins/kubernetes-credentials"
+    ],
+    "jenkinsci/kubernetes-credentials-provider-plugin": [
+        "com/cloudbees/jenkins/plugins/kubernetes-credentials-provider"
+    ],
+    "jenkinsci/kubernetes-pipeline-plugin": [
+        "io/fabric8/kubernetes-pipeline-project",
+        "io/fabric8/pipeline/kubernetes-pipeline-aggregator",
+        "io/fabric8/pipeline/kubernetes-pipeline-arquillian-steps",
+        "io/fabric8/pipeline/kubernetes-pipeline-core",
+        "io/fabric8/pipeline/kubernetes-pipeline-devops-steps",
+        "io/fabric8/pipeline/kubernetes-pipeline-steps"
+    ],
+    "jenkinsci/kubernetes-plugin": [
+        "org/csanchez/jenkins/plugins/kubernetes"
+    ],
+    "jenkinsci/label-linked-jobs-plugin": [
+        "org/jenkins-ci/plugins/label-linked-jobs"
+    ],
+    "jenkinsci/label-verifier-plugin": [
+        "org/jenkins-ci/plugins/label-verifier"
+    ],
+    "jenkinsci/labeled-test-groups-publisher-plugin": [
+        "org/jenkins-ci/plugins/labeled-test-groups-publisher"
+    ],
+    "jenkinsci/labelled-steps-plugin": [
+        "me/vickychijwani/jenkins/labelled-steps"
+    ],
+    "jenkinsci/labmanager-plugin": [
+        "org/jenkins-ci/plugins/labmanager",
+        "org/jvnet/hudson/plugins/labmanager"
+    ],
+    "jenkinsci/lambda-test-runner-plugin": [
+        "org/jenkins-ci/plugins/lambda-test-runner"
+    ],
+    "jenkinsci/lambdatest-automation-plugin": [
+        "org/jenkins-ci/plugins/lambdatest-automation"
+    ],
+    "jenkinsci/last-changes-plugin": [
+        "org/jenkins-ci/plugins/last-changes"
+    ],
+    "jenkinsci/lastfailureversioncolumn-plugin": [
+        "org/jvnet/hudson/plugins/lastfailureversioncolumn"
+    ],
+    "jenkinsci/lastsuccessversioncolumn-plugin": [
+        "org/jvnet/hudson/plugins/lastsuccessversioncolumn"
+    ],
+    "jenkinsci/launchd-slave-installer-module": [
+        "org/jenkins-ci/modules/launchd-slave-installer"
+    ],
+    "jenkinsci/ldap-plugin": [
+        "org/jenkins-ci/plugins/ldap"
+    ],
+    "jenkinsci/ldapemail-plugin": [
+        "com/mtvi/plateng/hudson/ldapemail"
+    ],
+    "jenkinsci/leastload-plugin": [
+        "org/jenkins-ci/plugins/leastload"
+    ],
+    "jenkinsci/lechat-plugin": [
+        "org/jvnet/hudson/plugins/lechat"
+    ],
+    "jenkinsci/leiningen-plugin": [
+        "org/jenkins-ci/plugins/leiningen-plugin"
+    ],
+    "jenkinsci/lenient-shutdown-plugin": [
+        "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
+    ],
+    "jenkinsci/lib-annotation-indexer": [
+        "org/jenkins-ci/annotation-indexer"
+    ],
+    "jenkinsci/lib-async-http-client": [
+        "com/ning/async-http-client"
+    ],
+    "jenkinsci/lib-jenkins-maven-embedder": [
+        "org/jenkins-ci/lib/lib-jenkins-maven-embedder"
+    ],
+    "jenkinsci/lib-jira-scraper": [
+        "org/jenkins-ci/jira-scraper"
+    ],
+    "jenkinsci/lib-multiline-secrets-ui": [
+        "io/jenkins/temp/jelly/multiline-secrets-ui"
+    ],
+    "jenkinsci/lib-process-utils": [
+        "org/jenkins-ci/process-utils"
+    ],
+    "jenkinsci/lib-revapi-hpi-extractor": [
+        "io/jenkins/tools/revapi-hpi-extractor"
+    ],
+    "jenkinsci/lib-support-log-formatter": [
+        "io/jenkins/lib/support-log-formatter"
+    ],
+    "jenkinsci/lib-task-reactor": [
+        "org/jenkins-ci/task-reactor"
+    ],
+    "jenkinsci/lib-test-annotations": [
+        "org/jenkins-ci/test-annotations",
+        "org/jvnet/hudson/test-annotations"
+    ],
+    "jenkinsci/lib-version-number": [
+        "org/jenkins-ci/version-number"
+    ],
+    "jenkinsci/libdtkit": [
+        "org/jenkins-ci/lib/dtkit/dtkit-frmk",
+        "org/jenkins-ci/lib/dtkit/dtkit-metrics-hudson-api",
+        "org/jenkins-ci/lib/dtkit/dtkit-metrics-model",
+        "org/jenkins-ci/lib/dtkit/dtkit-metrics-util"
+    ],
+    "jenkinsci/libvirt-slave-plugin": [
+        "hudson/plugins/libvirt/libvirt-slave",
+        "org/jenkins-ci/plugins/libvirt-slave"
+    ],
+    "jenkinsci/lifx-notifier-plugin": [
+        "org/jenkins-ci/plugins/lifx-notifier"
+    ],
+    "jenkinsci/linchpin-plugin": [
+        "io/jenkins/plugins/linchpin"
+    ],
+    "jenkinsci/linenumbers-plugin": [
+        "org/jenkins-ci/plugins/linenumbers"
+    ],
+    "jenkinsci/lingr-plugin": [
+        "org/jenkins-ci/plugins/lingr-plugin"
+    ],
+    "jenkinsci/link-column-plugin": [
+        "org/jenkins-ci/plugins/link-column"
+    ],
+    "jenkinsci/liquibase-runner-plugin": [
+        "org/jenkins-ci/plugins/liquibase-runner"
+    ],
+    "jenkinsci/list-command-plugin": [
+        "org/jenkins-ci/plugins/list-command"
+    ],
+    "jenkinsci/list-git-branches-parameter-plugin": [
+        "org/jenkins-ci/plugins/list-git-branches-parameter"
+    ],
+    "jenkinsci/literate-api": [
+        "org/jenkins-ci/literate/literate-api"
+    ],
+    "jenkinsci/literate-plugin": [
+        "org/jenkins-ci/plugins/literate"
+    ],
+    "jenkinsci/liverebel-deploy-plugin": [
+        "org/jenkins-ci/plugins/liverebel-deploy"
+    ],
+    "jenkinsci/livescreenshot-plugin": [
+        "org/jenkins-ci/plugins/livescreenshot"
+    ],
+    "jenkinsci/llvm-cov-plugin": [
+        "io/jenkins/plugins/llvm-cov"
+    ],
+    "jenkinsci/loadcomplete-plugin": [
+        "org/jenkins-ci/plugins/loadcomplete"
+    ],
+    "jenkinsci/loaderio-plugin": [
+        "io/loader/loaderio-jenkins-plugin"
+    ],
+    "jenkinsci/loadfocus-loadtest-plugin": [
+        "com/loadfocus/loadfocus-loadtest"
+    ],
+    "jenkinsci/loadimpact-plugin": [
+        "com/loadimpact/loadimpact-plugin"
+    ],
+    "jenkinsci/loadium-plugin": [
+        "com/loadium/jenkins/loadium"
+    ],
+    "jenkinsci/loadninja-plugin": [
+        "org/jenkins-ci/plugins/loadninja"
+    ],
+    "jenkinsci/locale-plugin": [
+        "io/jenkins/plugins/locale",
+        "org/jvnet/hudson/plugins/locale"
+    ],
+    "jenkinsci/localization-support-plugin": [
+        "io/jenkins/plugins/localization-support"
+    ],
+    "jenkinsci/localization-zh-cn-plugin": [
+        "org/jenkins-ci/plugins/localization-zh-cn"
+    ],
+    "jenkinsci/lockable-resources-plugin": [
+        "org/6wind/jenkins/lockable-resources"
+    ],
+    "jenkinsci/locked-files-report-plugin": [
+        "org/jvnet/hudson/plugins/locked-files-report"
+    ],
+    "jenkinsci/log-cli-plugin": [
+        "org/jenkins-ci/plugins/log-cli"
+    ],
+    "jenkinsci/log-command-plugin": [
+        "org/jenkins-ci/plugins/log-command"
+    ],
+    "jenkinsci/log-file-filter-plugin": [
+        "com/tsystems/sbs/log-file-filter"
+    ],
+    "jenkinsci/log-parser-plugin": [
+        "org/jenkins-ci/plugins/log-parser"
+    ],
+    "jenkinsci/logaction-plugin": [
+        "de/fspengler/hudson/plugin/logaction-plugin"
+    ],
+    "jenkinsci/logback-nats-appender-plugin": [
+        "org/jenkins-ci/plugins/logback-nats-appender"
+    ],
+    "jenkinsci/logentries-plugin": [
+        "org/jenkins-ci/plugins/logentries"
+    ],
+    "jenkinsci/logfilesizechecker-plugin": [
+        "org/jenkins-ci/plugins/logfilesizechecker"
+    ],
+    "jenkinsci/logging-plugin": [
+        "net/praqma/logging"
+    ],
+    "jenkinsci/login-theme-plugin": [
+        "io/jenkins/plugins/login-theme"
+    ],
+    "jenkinsci/logstash-plugin": [
+        "org/jenkins-ci/plugins/logstash"
+    ],
+    "jenkinsci/lotus-connections-plugin": [
+        "org/jenkins-ci/plugins/lotus-connections-plugin"
+    ],
+    "jenkinsci/lsf-cloud-plugin": [
+        "org/jenkins-ci/plugins/lsf-cloud"
+    ],
+    "jenkinsci/lucene-search-plugin": [
+        "org/jenkins-ci/plugins/lucene-search"
+    ],
+    "jenkinsci/m2-extra-steps-plugin": [
+        "org/jenkins-ci/plugins/m2-extra-steps",
+        "org/jvnet/hudson/plugins/m2-extra-steps"
+    ],
+    "jenkinsci/m2release-plugin": [
+        "org/jenkins-ci/plugins/m2release/m2release",
+        "org/jvnet/hudson/plugins/m2release/m2release"
+    ],
+    "jenkinsci/mabl-integration-plugin": [
+        "com/mabl/integration/jenkins/mabl-integration"
+    ],
+    "jenkinsci/mail-commander-plugin": [
+        "org/jenkins-ci/plugins/mailcommander"
+    ],
+    "jenkinsci/mail-watcher-plugin": [
+        "org/jenkins-ci/plugins/mail-watcher-plugin"
+    ],
+    "jenkinsci/mailer-plugin": [
+        "org/jenkins-ci/plugins/mailer"
+    ],
+    "jenkinsci/mailmap-resolver-plugin": [
+        "org/jenkins-ci/plugins/mailmap-resolver"
+    ],
+    "jenkinsci/maintenance-jobs-scheduler-plugin": [
+        "org/jenkins-ci/plugins/maintenance-jobs-scheduler"
+    ],
+    "jenkinsci/managed-scripts-plugin": [
+        "org/jenkinsci/plugins/managed-scripts"
+    ],
+    "jenkinsci/mansion-cloud-plugin": [
+        "com/cloudbees/jenkins/plugins/mansion-cloud"
+    ],
+    "jenkinsci/mantis-plugin": [
+        "org/jenkins-ci/plugins/mantis"
+    ],
+    "jenkinsci/mapdb-api-plugin": [
+        "org/jenkins-ci/plugins/mapdb-api"
+    ],
+    "jenkinsci/marathon-plugin": [
+        "com/mesosphere/velocity/marathon"
+    ],
+    "jenkinsci/mashup-portlets-plugin": [
+        "javagh/jenkins/mashup-portlets-plugin"
+    ],
+    "jenkinsci/mask-passwords-plugin": [
+        "org/jenkins-ci/plugins/mask-passwords",
+        "org/jvnet/hudson/plugins/mask-passwords"
+    ],
+    "jenkinsci/mathworks-polyspace-plugin": [
+        "io/jenkins/plugins/mathworks-polyspace"
+    ],
+    "jenkinsci/matlab-plugin": [
+        "org/jenkins-ci/plugins/matlab"
+    ],
+    "jenkinsci/matrix-auth-plugin": [
+        "org/jenkins-ci/plugins/matrix-auth"
+    ],
+    "jenkinsci/matrix-combinations-plugin": [
+        "org/jenkins-ci/plugins/matrix-combinations-parameter"
+    ],
+    "jenkinsci/matrix-project-plugin": [
+        "org/jenkins-ci/plugins/matrix-project"
+    ],
+    "jenkinsci/matrix-reloaded-plugin": [
+        "net/praqma/matrix-reloaded"
+    ],
+    "jenkinsci/matrixtieparent-plugin": [
+        "org/jenkins-ci/plugins/matrixtieparent"
+    ],
+    "jenkinsci/mattermost-plugin": [
+        "org/jenkins-ci/plugins/mattermost"
+    ],
+    "jenkinsci/maven-artifact-choicelistprovider-plugin": [
+        "org/jenkins-ci/plugins/maven-artifact-choicelistprovider"
+    ],
+    "jenkinsci/maven-dependency-update-trigger-plugin": [
+        "org/jenkins-ci/plugins/maven-dependency-update-trigger"
+    ],
+    "jenkinsci/maven-hpi-plugin": [
+        "org/jenkins-ci/tools",
+        "org/jenkins-ci/tools/maven-hpi-plugin"
+    ],
+    "jenkinsci/maven-hudson-dev-plugin": [
+        "org/jenkins-ci/tools",
+        "org/jenkins-ci/tools/maven-jenkins-dev-plugin"
+    ],
+    "jenkinsci/maven-info-plugin": [
+        "org/tomfolga/maven-info"
+    ],
+    "jenkinsci/maven-interceptors": [
+        "org/jenkins-ci/main/maven/maven-agent",
+        "org/jenkins-ci/main/maven/maven-interceptor",
+        "org/jenkins-ci/main/maven/maven-modules",
+        "org/jenkins-ci/main/maven/maven3-agent",
+        "org/jenkins-ci/main/maven/maven3-interceptor",
+        "org/jenkins-ci/main/maven/maven3-interceptor-commons",
+        "org/jenkins-ci/main/maven/maven31-agent",
+        "org/jenkins-ci/main/maven/maven31-interceptor",
+        "org/jenkins-ci/main/maven/maven32-agent",
+        "org/jenkins-ci/main/maven/maven32-interceptor",
+        "org/jenkins-ci/main/maven/maven33-agent",
+        "org/jenkins-ci/main/maven/maven33-interceptor",
+        "org/jenkins-ci/main/maven/maven35-agent",
+        "org/jenkins-ci/main/maven/maven35-interceptor"
+    ],
+    "jenkinsci/maven-invoker-plugin": [
+        "org/jenkins-ci/plugins/maven-invoker-plugin"
+    ],
+    "jenkinsci/maven-metadata-plugin": [
+        "eu/markov/jenkins/plugin/mvnmeta/maven-metadata-plugin"
+    ],
+    "jenkinsci/maven-plugin": [
+        "org/jenkins-ci/main/maven-plugin",
+        "org/jvnet/hudson/main/maven-plugin"
+    ],
+    "jenkinsci/maven-release-cascade-plugin": [
+        "com/barchart/jenkins/maven-release-cascade"
+    ],
+    "jenkinsci/maven-repo-cleaner-plugin": [
+        "org/jenkins-ci/plugins/maven-repo-cleaner"
+    ],
+    "jenkinsci/maven-snapshot-check-plugin": [
+        "org/jenkins-ci/plugins/maven-snapshot-check"
+    ],
+    "jenkinsci/mber-plugin": [
+        "org/jenkins-ci/plugins/mber"
+    ],
+    "jenkinsci/mdt-deployment-plugin": [
+        "org/jenkins-ci/plugins/mdt-deployment"
+    ],
+    "jenkinsci/mdtool-plugin": [
+        "org/jenkins-ci/plugins/mdtool"
+    ],
+    "jenkinsci/meliora-testlab-plugin": [
+        "org/jenkins-ci/plugins/meliora-testlab"
+    ],
+    "jenkinsci/memory-map-plugin": [
+        "net/praqma/memory-map"
+    ],
+    "jenkinsci/mentor-questa-vrm-plugin": [
+        "com/mentor/questa/vrm/jenkins/mentor-questa-vrm"
+    ],
+    "jenkinsci/mercurial-plugin": [
+        "org/jenkins-ci/plugins/mercurial",
+        "org/jvnet/hudson/plugins/mercurial"
+    ],
+    "jenkinsci/mesos-plugin": [
+        "org/jenkins-ci/plugins/mesos"
+    ],
+    "jenkinsci/metadata-plugin": [
+        "com/sonyericsson/hudson/plugins/metadata/metadata"
+    ],
+    "jenkinsci/metrics-datadog-plugin": [
+        "io/jenkins/plugins/metrics-datadog"
+    ],
+    "jenkinsci/metrics-diskusage-plugin": [
+        "org/jenkins-ci/plugins/metrics-diskusage"
+    ],
+    "jenkinsci/metrics-ganglia-plugin": [
+        "org/jenkins-ci/plugins/metrics-ganglia"
+    ],
+    "jenkinsci/metrics-graphite-plugin": [
+        "org/jenkins-ci/plugins/metrics-graphite"
+    ],
+    "jenkinsci/metrics-plugin": [
+        "org/jenkins-ci/plugins/metrics"
+    ],
+    "jenkinsci/micro-focus-performance-center-integration-plugin": [
+        "org/jenkins-ci/plugins/micro-focus-performance-center-integration"
+    ],
+    "jenkinsci/microdocs-integration-plugin": [
+        "com/maxxton/microdocs-integration"
+    ],
+    "jenkinsci/minio-storage-plugin": [
+        "org/jenkins-ci/plugins/minio-storage"
+    ],
+    "jenkinsci/misra-compliance-report-generator-plugin": [
+        "io/jenkins/plugins/misra-compliance-report-generator"
+    ],
+    "jenkinsci/mission-control-view-plugin": [
+        "tech/andrey/jenkins/mission-control-view"
+    ],
+    "jenkinsci/mktmpio-plugin": [
+        "org/jenkins-ci/plugins/mktmpio"
+    ],
+    "jenkinsci/mock-load-builder-plugin": [
+        "org/jenkins-ci/plugins/mock-load-builder"
+    ],
+    "jenkinsci/mock-security-realm-plugin": [
+        "org/jenkins-ci/plugins/mock-security-realm"
+    ],
+    "jenkinsci/mock-slave-plugin": [
+        "org/jenkinci/plugins/mock-slave",
+        "org/jenkins-ci/plugins/mock-slave"
+    ],
+    "jenkinsci/modernstatus-plugin": [
+        "org/jenkins-ci/plugins/modernstatus"
+    ],
+    "jenkinsci/mongodb-document-upload-plugin": [
+        "org/jenkins-ci/plugins/mongodb-document-upload"
+    ],
+    "jenkinsci/mongodb-plugin": [
+        "org/jenkins-ci/plugins/mongodb"
+    ],
+    "jenkinsci/monitor-pro-plugin": [
+        "org/jenkins-ci/plugins/monitor-pro"
+    ],
+    "jenkinsci/monitor-remote-job-plugin": [
+        "org/ukiuni/monitor-remote-job-plugin/monitor-remote-job"
+    ],
+    "jenkinsci/monitoring-plugin": [
+        "org/jvnet/hudson/plugins/monitoring"
+    ],
+    "jenkinsci/mq-notifier-plugin": [
+        "com/sonymobile/jenkins/plugins/mq/mq-notifier"
+    ],
+    "jenkinsci/mqtt-notification-plugin": [
+        "jenkins/plugins/mqtt-notification-plugin"
+    ],
+    "jenkinsci/msbuild-plugin": [
+        "org/jenkins-ci/plugins/msbuild"
+    ],
+    "jenkinsci/msginject-plugin": [
+        "org/jenkins-ci/plugins/msginject"
+    ],
+    "jenkinsci/mstest-plugin": [
+        "org/jvnet/hudson/plugins/mstest"
+    ],
+    "jenkinsci/mstestrunner-plugin": [
+        "org/jenkins-ci/plugins/mstestrunner"
+    ],
+    "jenkinsci/mttr-plugin": [
+        "org/jenkins-ci/plugins/mttr"
+    ],
+    "jenkinsci/multi-branch-priority-sorter-plugin": [
+        "io/jenkins/plugins/multi-branch-priority-sorter"
+    ],
+    "jenkinsci/multi-branch-project-plugin": [
+        "com/github/mjdetullio/jenkins/plugins/multi-branch-project-plugin"
+    ],
+    "jenkinsci/multi-module-tests-publisher-plugin": [
+        "org/jenkins-ci/plugins/multi-module-tests-publisher"
+    ],
+    "jenkinsci/multi-slave-config-plugin": [
+        "com/sonyericsson/hudson/plugins/multi-slave-config-plugin/multi-slave-config-plugin"
+    ],
+    "jenkinsci/multibranch-build-strategy-extension-plugin": [
+        "igalg/jenkins/plugins/multibranch-build-strategy-extension"
+    ],
+    "jenkinsci/multibranch-job-tear-down-plugin": [
+        "com/fuzzpro/jenkins-plugins/multibranch-job-tear-down"
+    ],
+    "jenkinsci/multibranch-scan-webhook-trigger-plugin": [
+        "igalg/jenkins/plugins/multibranch-scan-webhook-trigger"
+    ],
+    "jenkinsci/multiple-scms-plugin": [
+        "org/jenkins-ci/plugins/multiple-scms"
+    ],
+    "jenkinsci/myappci-plugin": [
+        "io/jenkins/plugins/myappci"
+    ],
+    "jenkinsci/mypeople-plugin": [
+        "org/jenkins-ci/plugins/mypeople"
+    ],
+    "jenkinsci/mysql-api-plugin": [
+        "io/jenkins/plugins/mysql-api"
+    ],
+    "jenkinsci/myst-plugin": [
+        "com/rubiconred/jenkins/myst-plugin"
+    ],
+    "jenkinsci/naginator-plugin": [
+        "org/jenkins-ci/plugins/naginator"
+    ],
+    "jenkinsci/nant-plugin": [
+        "org/jenkins-ci/plugins/nant"
+    ],
+    "jenkinsci/negotiatesso-plugin": [
+        "org/jenkins-ci/plugins/NegotiateSSO"
+    ],
+    "jenkinsci/neoload-plugin": [
+        "org/jenkins-ci/plugins/neoload-jenkins-plugin"
+    ],
+    "jenkinsci/nerrvana-plugin": [
+        "com/deepshiftlabs/nerrvana/nerrvana-plugin",
+        "org/jenkins-ci/plugins/nerrvana-plugin"
+    ],
+    "jenkinsci/nested-view-plugin": [
+        "org/jenkins-ci/plugins/nested-view"
+    ],
+    "jenkinsci/netio-plugin": [
+        "org/jenkins-ci/plugins/netio-plugin"
+    ],
+    "jenkinsci/netsparker-cloud-scan-plugin": [
+        "org/jenkins-ci/plugins/netsparker-cloud-scan"
+    ],
+    "jenkinsci/network-monitor-plugin": [
+        "org/jvnet/hudson/plugins/network-monitor"
+    ],
+    "jenkinsci/neuvector-vulnerability-scanner-plugin": [
+        "io/jenkins/plugins/neuvector-vulnerability-scanner"
+    ],
+    "jenkinsci/newrelic-deployment-notifier-plugin": [
+        "org/jenkins-ci/plugins/newrelic-deployment-notifier"
+    ],
+    "jenkinsci/newrelic-insights-plugin": [
+        "org/jenkins-ci/plugins/newrelic-insights"
+    ],
+    "jenkinsci/next-build-number-plugin": [
+        "org/jenkins-ci/plugins/next-build-number"
+    ],
+    "jenkinsci/next-executions-plugin": [
+        "org/jenkins-ci/plugins/next-executions"
+    ],
+    "jenkinsci/nexus-artifact-uploader-plugin": [
+        "sp/sd/nexus-artifact-uploader"
+    ],
+    "jenkinsci/nexus-platform-plugin": [
+        "org/sonatype/nexus/ci/nexus-jenkins-plugin"
+    ],
+    "jenkinsci/nirmata-plugin": [
+        "io/jenkins/plugins/nirmata"
+    ],
+    "jenkinsci/nis-notification-lamp-plugin": [
+        "jenkins/plugins/nis-notification-lamp",
+        "org/jenkins-ci/plugins/nis-notification-lamp"
+    ],
+    "jenkinsci/no-agent-job-purge-plugin": [
+        "org/jenkins-ci/plugins/no-agent-job-purge"
+    ],
+    "jenkinsci/node-iterator-api-plugin": [
+        "org/jenkins-ci/plugins/node-iterator-api"
+    ],
+    "jenkinsci/nodejs-plugin": [
+        "org/jenkins-ci/plugins/nodejs"
+    ],
+    "jenkinsci/nodelabelparameter-plugin": [
+        "org/jenkins-ci/plugins/nodelabelparameter"
+    ],
+    "jenkinsci/nodenamecolumn-plugin": [
+        "org/jenkins-ci/plugins/nodenamecolumn"
+    ],
+    "jenkinsci/nodepool-agents-plugin": [
+        "org/jenkins-ci/plugins/nodepool-agents"
+    ],
+    "jenkinsci/nomad-plugin": [
+        "org/jenkins-ci/plugins/nomad"
+    ],
+    "jenkinsci/non-dynamic-hello-world-plugin": [
+        "io/jenkins/plugins/non-dynamic-hello-world"
+    ],
+    "jenkinsci/notification-plugin": [
+        "com/tikalk/hudson/plugins/notification"
+    ],
+    "jenkinsci/nouvola-divecloud-plugin": [
+        "org/jenkins-ci/plugins/nouvola-divecloud"
+    ],
+    "jenkinsci/nowsecure-auto-security-test-plugin": [
+        "io/jenkins/plugins/nowsecure-auto-security-test"
+    ],
+    "jenkinsci/nsiqcollector-plugin": [
+        "org/jvnet/hudson/plugins/nsiqcollector"
+    ],
+    "jenkinsci/nuget-plugin": [
+        "org/jenkins-ci/plugins/nuget"
+    ],
+    "jenkinsci/nunit-plugin": [
+        "org/jenkins-ci/plugins/nunit",
+        "org/jvnet/hudson/plugins/nunit"
+    ],
+    "jenkinsci/nutanix-calm-plugin": [
+        "org/jenkins-ci/plugins/nutanix-calm"
+    ],
+    "jenkinsci/nvm-wrapper-plugin": [
+        "org/jenkins-ci/plugins/nvm-wrapper"
+    ],
+    "jenkinsci/oauth-credentials": [
+        "org/jenkins-ci/plugins/oauth-credentials"
+    ],
+    "jenkinsci/octoperf-plugin": [
+        "org/jenkinsci/plugins/octoperf"
+    ],
+    "jenkinsci/octopusdeploy-plugin": [
+        "hudson/plugins/octopusdeploy/octopusdeploy"
+    ],
+    "jenkinsci/offlineonfailure-plugin": [
+        "org/jenkins-ci/plugins/offlineonfailure-plugin"
+    ],
+    "jenkinsci/oic-auth-plugin": [
+        "org/jenkins-ci/plugins/oic-auth"
+    ],
+    "jenkinsci/one-shot-executor-plugin": [
+        "org/jenkins-ci/plugins/one-shot-executor"
+    ],
+    "jenkinsci/onesky-plugin": [
+        "org/jenkins-ci/plugins/onesky"
+    ],
+    "jenkinsci/ontrack-plugin": [
+        "org/jenkins-ci/plugins/ontrack"
+    ],
+    "jenkinsci/open-stf-plugin": [
+        "org/jenkins-ci/plugins/open-stf"
+    ],
+    "jenkinsci/openJDK-native-plugin": [
+        "org/jenkinsci/plugins/openjdk_native/openJDK-native-plugin"
+    ],
+    "jenkinsci/openedge-plugin": [
+        "io/jenkins/plugins/openedge"
+    ],
+    "jenkinsci/openid-plugin": [
+        "org/jenkins-ci/plugins/openid"
+    ],
+    "jenkinsci/openid4java-plugin": [
+        "org/jenkins-ci/plugins/openid4java"
+    ],
+    "jenkinsci/openshift-client-plugin": [
+        "com/openshift/jenkins/plugins/openshift-client"
+    ],
+    "jenkinsci/openshift-deployer-plugin": [
+        "org/jenkins-ci/plugins/openshift-deployer"
+    ],
+    "jenkinsci/openshift-login-plugin": [
+        "org/openshift/jenkins/openshift-login"
+    ],
+    "jenkinsci/openshift-pipeline-plugin": [
+        "com/openshift/jenkins/openshift-pipeline"
+    ],
+    "jenkinsci/openshift-sync-plugin": [
+        "io/fabric8/jenkins/plugins/openshift-sync"
+    ],
+    "jenkinsci/openstack-cloud-plugin": [
+        "org/jenkins-ci/plugins/openstack-cloud"
+    ],
+    "jenkinsci/openstack-heat-plugin": [
+        "org/jenkins-ci/plugins/openstack-heat"
+    ],
+    "jenkinsci/opsgenie-plugin": [
+        "org/jenkins-ci/plugins/opsgenie"
+    ],
+    "jenkinsci/optional-plugin-helper-module": [
+        "org/jenkins-ci/modules/optional-plugin-helper"
+    ],
+    "jenkinsci/oracle-cloud-infrastructure-compute-classic-plugin": [
+        "org/jenkins-ci/plugins/oracle-cloud-infrastructure-compute-classic"
+    ],
+    "jenkinsci/oracle-cloud-infrastructure-compute-plugin": [
+        "org/jenkins-ci/plugins/oracle-cloud-infrastructure-compute"
+    ],
+    "jenkinsci/osf-builder-suite-for-sfcc-credentials-plugin": [
+        "org/jenkins-ci/plugins/osf-builder-suite-for-sfcc-credentials"
+    ],
+    "jenkinsci/osf-builder-suite-for-sfcc-data-import-plugin": [
+        "org/jenkins-ci/plugins/osf-builder-suite-for-sfcc-data-import"
+    ],
+    "jenkinsci/osf-builder-suite-for-sfcc-deploy-plugin": [
+        "org/jenkins-ci/plugins/osf-builder-suite-for-sfcc-deploy"
+    ],
+    "jenkinsci/osf-builder-suite-standalone-sonar-linter-plugin": [
+        "org/jenkins-ci/plugins/osf-builder-suite-standalone-sonar-linter"
+    ],
+    "jenkinsci/osf-builder-suite-xml-linter-plugin": [
+        "org/jenkins-ci/plugins/osf-builder-suite-xml-linter"
+    ],
+    "jenkinsci/oslc-cm-plugin": [
+        "org/jenkins-ci/plugins/oslc-cm"
+    ],
+    "jenkinsci/outbound-webhook-plugin": [
+        "org/jenkins-ci/plugins/outbound-webhook"
+    ],
+    "jenkinsci/overops-query-plugin": [
+        "org/overops/plugins/overops-query"
+    ],
+    "jenkinsci/owl-reporter-plugin": [
+        "com/atlantbh/jenkins/owl-reporter"
+    ],
+    "jenkinsci/ownership-plugin": [
+        "com/synopsys/jenkinsci/ownership"
+    ],
+    "jenkinsci/p4-plugin": [
+        "org/jenkins-ci/plugins/p4"
+    ],
+    "jenkinsci/paaslane-plugin": [
+        "com/cloudtp/jenkins/paaslane-estimate"
+    ],
+    "jenkinsci/packagecloud-plugin": [
+        "org/jenkins-ci/plugins/packagecloud"
+    ],
+    "jenkinsci/packageversion-plugin": [
+        "org/lilicurroad/jenkins/packageversion"
+    ],
+    "jenkinsci/packer-plugin": [
+        "biz/neustar/jenkins/plugins/packer"
+    ],
+    "jenkinsci/pagerduty-plugin": [
+        "org/jenkins-ci/plugins/pagerduty"
+    ],
+    "jenkinsci/pam-auth-plugin": [
+        "org/jenkins-ci/plugins/pam-auth"
+    ],
+    "jenkinsci/pangolin-testrail-connector-plugin": [
+        "org/jenkins-ci/plugins/pangolin-testrail-connector"
+    ],
+    "jenkinsci/parallel-test-executor-plugin": [
+        "org/jenkins-ci/plugins/parallel-test-executor"
+    ],
+    "jenkinsci/parallels-desktop-plugin": [
+        "com/parallels/parallels-desktop"
+    ],
+    "jenkinsci/parameter-pool-plugin": [
+        "org/jenkins-ci/plugins/parameter-pool"
+    ],
+    "jenkinsci/parameter-separator-plugin": [
+        "org/jenkins-ci/plugins/parameter-separator"
+    ],
+    "jenkinsci/parameterized-remote-trigger-plugin": [
+        "org/jenkins-ci/plugins/Parameterized-Remote-Trigger"
+    ],
+    "jenkinsci/parameterized-scheduler-plugin": [
+        "org/jenkins-ci/plugins/parameterized-scheduler"
+    ],
+    "jenkinsci/parameterized-trigger-plugin": [
+        "org/jenkins-ci/plugins/parameterized-trigger"
+    ],
+    "jenkinsci/parasoft-findings-plugin": [
+        "com/parasoft/parasoft-findings"
+    ],
+    "jenkinsci/partyparrotstatus-plugin": [
+        "org/jenkins-ci/plugins/partyparrotstatus"
+    ],
+    "jenkinsci/patch-parameter-plugin": [
+        "org/jenkins-ci/plugins/patch-parameter"
+    ],
+    "jenkinsci/pathignore-plugin": [
+        "org/jenkins-ci/ruby-plugins/pathignore"
+    ],
+    "jenkinsci/pegdown-formatter-plugin": [
+        "org/jenkins-ci/plugins/pegdown-formatter"
+    ],
+    "jenkinsci/pendingchanges-plugin": [
+        "org/jenkins-ci/plugins/pending-changes"
+    ],
+    "jenkinsci/people-redirector-plugin": [
+        "com/cisco/step/jenkins/plugins/people-redirector"
+    ],
+    "jenkinsci/percentage-du-node-column-plugin": [
+        "org/jenkins-ci/plugins/percentage-du-node-column"
+    ],
+    "jenkinsci/perfectomobile-plugin": [
+        "org/jenkins-ci/plugins/perfectomobile"
+    ],
+    "jenkinsci/perforce-plugin": [
+        "org/jvnet/hudson/plugins/perforce"
+    ],
+    "jenkinsci/performance-plugin": [
+        "org/jenkins-ci/plugins/performance",
+        "org/jvnet/hudson/plugins/performance"
+    ],
+    "jenkinsci/performance-signature-dynatrace-plugin": [
+        "de/tsystems/mms/apm/performance-signature-dynatrace",
+        "de/tsystems/mms/apm/performance-signature-dynatracesaas",
+        "de/tsystems/mms/apm/performance-signature-parent-pom",
+        "de/tsystems/mms/apm/performance-signature-ui",
+        "de/tsystems/mms/apm/performance-signature-viewer"
+    ],
+    "jenkinsci/perfpublisher-plugin": [
+        "org/jenkins-ci/plugins/perfpublisher"
+    ],
+    "jenkinsci/periodic-reincarnation-plugin": [
+        "org/jenkins-ci/plugins/periodic-reincarnation"
+    ],
+    "jenkinsci/periodicbackup-plugin": [
+        "org/jenkins-ci/plugins/periodicbackup"
+    ],
+    "jenkinsci/permissive-script-security-plugin": [
+        "org/jenkins-ci/plugins/permissive-script-security"
+    ],
+    "jenkinsci/persistent-build-queue-plugin": [
+        "org/jenkins-ci/plugins/persistent-build-queue-plugin"
+    ],
+    "jenkinsci/persistent-parameter-plugin": [
+        "org/jenkins-ci/plugins/persistent-parameter"
+    ],
+    "jenkinsci/persona-plugin": [
+        "org/jenkins-ci/plugins/persona"
+    ],
+    "jenkinsci/phabricator-k8s-plugin": [
+        "io/jenkins/plugins/phabricator-k8s"
+    ],
+    "jenkinsci/phabricator-plugin": [
+        "org/jenkins-ci/plugins/phabricator-plugin"
+    ],
+    "jenkinsci/phing-plugin": [
+        "org/jenkins-ci/plugins/phing",
+        "org/jvnet/hudson/plugins/phing"
+    ],
+    "jenkinsci/phoenix-autotest-plugin": [
+        "com/surenpi/jenkins/phoenix-autotest"
+    ],
+    "jenkinsci/php-builtin-web-server-plugin": [
+        "org/jenkins-ci/plugins/php-builtin-web-server"
+    ],
+    "jenkinsci/php-plugin": [
+        "org/jenkins-ci/plugins/php"
+    ],
+    "jenkinsci/piketec-tpt-plugin": [
+        "com/piketec/jenkins/plugins/piketec-tpt"
+    ],
+    "jenkinsci/pipeline-aggregator-view-plugin": [
+        "com/paul8620/jenkins/plugins/pipeline-aggregator-view"
+    ],
+    "jenkinsci/pipeline-aws-plugin": [
+        "de/taimos/pipeline-aws"
+    ],
+    "jenkinsci/pipeline-bamboo-plugin": [
+        "com/logmein/pipeline-bamboo"
+    ],
+    "jenkinsci/pipeline-build-step-plugin": [
+        "org/jenkins-ci/plugins/pipeline-build-step"
+    ],
+    "jenkinsci/pipeline-classpath-step-plugin": [
+        "cprice404/pipeline-classpath"
+    ],
+    "jenkinsci/pipeline-cloudwatch-logs-plugin": [
+        "io/jenkins/plugins/pipeline-cloudwatch-logs"
+    ],
+    "jenkinsci/pipeline-config-history-plugin": [
+        "org/jenkins-ci/plugins/pipeline-config-history"
+    ],
+    "jenkinsci/pipeline-dependency-walker-plugin": [
+        "org/jenkins-ci/plugins/pipeline-dependency-walker"
+    ],
+    "jenkinsci/pipeline-deploymon-plugin": [
+        "de/taimos/pipeline-deploymon"
+    ],
+    "jenkinsci/pipeline-editor-plugin": [
+        "org/jenkins-ci/plugins/pipeline-editor"
+    ],
+    "jenkinsci/pipeline-giphy-api-plugin": [
+        "org/jenkins-ci/plugins/pipeline-giphy-api"
+    ],
+    "jenkinsci/pipeline-github-lib-plugin": [
+        "org/jenkins-ci/plugins/pipeline-github-lib"
+    ],
+    "jenkinsci/pipeline-github-plugin": [
+        "org/jenkins-ci/plugins/pipeline-github"
+    ],
+    "jenkinsci/pipeline-githubnotify-step-plugin": [
+        "org/jenkins-ci/plugins/pipeline-githubnotify-step"
+    ],
+    "jenkinsci/pipeline-gitstatuswrapper-plugin": [
+        "org/jenkins-ci/plugins/pipeline-gitstatuswrapper"
+    ],
+    "jenkinsci/pipeline-graph-analysis-plugin": [
+        "org/jenkins-ci/plugins/pipeline-graph-analysis"
+    ],
+    "jenkinsci/pipeline-input-step-plugin": [
+        "org/jenkins-ci/plugins/pipeline-input-step"
+    ],
+    "jenkinsci/pipeline-maven-plugin": [
+        "org/jenkins-ci/plugins/pipeline-maven",
+        "org/jenkins-ci/plugins/pipeline-maven-parent",
+        "org/jenkins-ci/plugins/pipeline-maven-spy"
+    ],
+    "jenkinsci/pipeline-milestone-step-plugin": [
+        "org/jenkins-ci/plugins/pipeline-milestone-step"
+    ],
+    "jenkinsci/pipeline-model-definition-plugin": [
+        "org/jenkins-ci/lib/pipeline-model-json-shaded",
+        "org/jenkinsci/plugins/pipeline-model-api",
+        "org/jenkinsci/plugins/pipeline-model-declarative-agent",
+        "org/jenkinsci/plugins/pipeline-model-definition",
+        "org/jenkinsci/plugins/pipeline-model-extensions",
+        "org/jenkinsci/plugins/pipeline-model-parent",
+        "org/jenkinsci/plugins/pipeline-stage-tags-metadata"
+    ],
+    "jenkinsci/pipeline-multibranch-defaults-plugin": [
+        "org/jenkins-ci/plugins/pipeline-multibranch-defaults"
+    ],
+    "jenkinsci/pipeline-npm-plugin": [
+        "org/jenkins-ci/plugins/pipeline-npm"
+    ],
+    "jenkinsci/pipeline-stage-step-plugin": [
+        "org/jenkins-ci/plugins/pipeline-stage-step"
+    ],
+    "jenkinsci/pipeline-stage-view-plugin": [
+        "org/jenkins-ci/plugins/pipeline-stage-view/parent-pom",
+        "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-rest-api",
+        "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-stage-view"
+    ],
+    "jenkinsci/pipeline-timeline-plugin": [
+        "io/jenkins/plugins/pipeline-timeline"
+    ],
+    "jenkinsci/pipeline-utility-steps-plugin": [
+        "org/jenkins-ci/plugins/pipeline-utility-steps"
+    ],
+    "jenkinsci/pitmutation-plugin": [
+        "org/jenkins-ci/plugins/pitmutation"
+    ],
+    "jenkinsci/piwikanalytics-plugin": [
+        "org/jenkins-ci/plugins/piwikanalytics"
+    ],
+    "jenkinsci/plain-credentials-plugin": [
+        "org/jenkins-ci/plugins/plain-credentials"
+    ],
+    "jenkinsci/plasticscm-mergebot-plugin": [
+        "org/jenkins-ci/plugins/plasticscm-mergebot"
+    ],
+    "jenkinsci/plasticscm-plugin": [
+        "org/jenkins-ci/plugins/plasticscm-plugin",
+        "org/jvnet/hudson/plugins/plasticscm-plugin"
+    ],
+    "jenkinsci/platformlabeler-plugin": [
+        "org/jvnet/hudson/plugins/platformlabeler"
+    ],
+    "jenkinsci/play-plugin": [
+        "org/jenkins-ci/plugins/play-autotest-plugin",
+        "org/jvnet/hudson/plugins/play-autotest-plugin"
+    ],
+    "jenkinsci/plot-plugin": [
+        "org/jenkins-ci/plugins/plot"
+    ],
+    "jenkinsci/plugin-compat-tester": [
+        "org/jenkins-ci/tests/plugins-compat-tester",
+        "org/jenkins-ci/tests/plugins-compat-tester-aggregator",
+        "org/jenkins-ci/tests/plugins-compat-tester-cli",
+        "org/jenkins-ci/tests/plugins-compat-tester-gae",
+        "org/jenkins-ci/tests/plugins-compat-tester-gae-client",
+        "org/jenkins-ci/tests/plugins-compat-tester-model"
+    ],
+    "jenkinsci/plugin-installation-manager-tool": [
+        "io/jenkins/plugin-management/jenkins-plugin-management-parent-pom",
+        "io/jenkins/plugin-management/plugin-management-cli",
+        "io/jenkins/plugin-management/plugin-management-library"
+    ],
+    "jenkinsci/plugin-pom": [
+        "org/jenkins-ci/plugins/plugin",
+        "org/jvnet/hudson/plugins/plugin"
+    ],
+    "jenkinsci/plugin-usage-plugin": [
+        "org/jenkins-ci/plugins/plugin-usage-plugin"
+    ],
+    "jenkinsci/pmd-plugin": [
+        "org/jvnet/hudson/plugins/pmd"
+    ],
+    "jenkinsci/polarion-plugin": [
+        "org/jvnet/hudson/plugins/polarion"
+    ],
+    "jenkinsci/policycenter-gate-validator-plugin": [
+        "com/parasoft/policycenter-gate-validator"
+    ],
+    "jenkinsci/poll-mailbox-trigger-plugin": [
+        "org/jenkins-ci/plugins/poll-mailbox-trigger-plugin"
+    ],
+    "jenkinsci/pollscm-plugin": [
+        "org/jenkins-ci/plugins/pollscm"
+    ],
+    "jenkinsci/pom": [
+        "org/jenkins-ci/jenkins"
+    ],
+    "jenkinsci/pom2config-plugin": [
+        "org/jenkins-ci/plugins/pom2config"
+    ],
+    "jenkinsci/port-allocator-plugin": [
+        "org/jenkins-ci/plugins/port-allocator",
+        "org/jvnet/hudson/plugins/port-allocator"
+    ],
+    "jenkinsci/post-completed-build-result-plugin": [
+        "org/terracotta/jenkins/plugins/post-completed-build-result"
+    ],
+    "jenkinsci/postbuild-task-plugin": [
+        "org/jvnet/hudson/plugins/postbuild-task"
+    ],
+    "jenkinsci/postbuildscript-plugin": [
+        "org/jenkins-ci/plugins/postbuildscript"
+    ],
+    "jenkinsci/postgresql-api-plugin": [
+        "io/jenkins/plugins/postgresql-api"
+    ],
+    "jenkinsci/powershell-plugin": [
+        "org/jenkins-ci/plugins/powershell"
+    ],
+    "jenkinsci/pre-scm-buildstep-plugin": [
+        "org/jenkins-ci/plugins/preSCMbuildstep"
+    ],
+    "jenkinsci/pretested-integration-plugin": [
+        "org/jenkins-ci/plugins/pretested-integration"
+    ],
+    "jenkinsci/priority-sorter-plugin": [
+        "hudson/queueSorter/PrioritySorter",
+        "org/jenkins-ci/plugins/PrioritySorter"
+    ],
+    "jenkinsci/probely-security-plugin": [
+        "io/jenkins/plugins/probely-security"
+    ],
+    "jenkinsci/proc-cleaner-plugin": [
+        "org/jenkins-ci/plugins/proc-cleaner-plugin",
+        "org/jenkinsci/plugins/proccleaner/proc-cleaner-plugin"
+    ],
+    "jenkinsci/progress-bar-column-plugin": [
+        "org/jenkins-ci/plugins/progress-bar-column-plugin"
+    ],
+    "jenkinsci/project-build-times-plugin": [
+        "org/jenkins-ci/plugins/project-build-times"
+    ],
+    "jenkinsci/project-description-setter-plugin": [
+        "org/jenkins-ci/plugins/project-description-setter"
+    ],
+    "jenkinsci/project-stats-plugin": [
+        "org/jenkins-ci/plugins/project-stats-plugin"
+    ],
+    "jenkinsci/prometheus-plugin": [
+        "org/jenkins-ci/plugins/prometheus"
+    ],
+    "jenkinsci/promoted-builds-plugin": [
+        "org/jenkins-ci/plugins/promoted-builds",
+        "org/jvnet/hudson/plugins/promoted-builds"
+    ],
+    "jenkinsci/promoted-builds-simple-plugin": [
+        "org/jenkins-ci/plugins/promoted-builds-simple"
+    ],
+    "jenkinsci/protecode-sc-plugin": [
+        "com/synopsys/protecode-sc"
+    ],
+    "jenkinsci/proxmox-plugin": [
+        "org/jenkins-ci/plugins/proxmox"
+    ],
+    "jenkinsci/prqa-plugin": [
+        "com/programmingresearch/prqa-plugin",
+        "net/praqma/prqa-plugin"
+    ],
+    "jenkinsci/publish-over-cifs-plugin": [
+        "org/jenkins-ci/plugins/publish-over-cifs"
+    ],
+    "jenkinsci/publish-over-dropbox-plugin": [
+        "org/jenkins-ci/plugins/publish-over-dropbox"
+    ],
+    "jenkinsci/publish-over-ftp-plugin": [
+        "org/jenkins-ci/plugins/publish-over-ftp",
+        "org/jvnet/hudson/plugins/publish-over-ftp"
+    ],
+    "jenkinsci/publish-over-plugin": [
+        "org/jenkins-ci/plugins/publish-over"
+    ],
+    "jenkinsci/publish-over-ssh-plugin": [
+        "org/jenkins-ci/plugins/publish-over-ssh",
+        "org/jvnet/hudson/plugins/publish-over-ssh"
+    ],
+    "jenkinsci/publish-to-bitbucket-plugin": [
+        "org/jenkins-ci/plugins/publish-to-bitbucket"
+    ],
+    "jenkinsci/pubsub-light-module": [
+        "org/jenkins-ci/plugins/pubsub-light"
+    ],
+    "jenkinsci/pucm-plugin": [
+        "org/jvnet/hudson/plugins/PUCM"
+    ],
+    "jenkinsci/puppet-enterprise-pipeline-plugin": [
+        "org/jenkins-ci/plugins/workflow/puppet-enterprise-pipeline"
+    ],
+    "jenkinsci/puppet-plugin": [
+        "org/jenkins-ci/plugins/puppet"
+    ],
+    "jenkinsci/pureload-plugin": [
+        "org/jenkins-ci/plugins/pureload"
+    ],
+    "jenkinsci/purge-build-queue-plugin": [
+        "org/jenkins-ci/plugins/purge-build-queue-plugin"
+    ],
+    "jenkinsci/purge-job-history-plugin": [
+        "org/jenkins-ci/plugins/purge-job-history"
+    ],
+    "jenkinsci/pview-plugin": [
+        "de/fspengler/hudson/pview/hudson-pview-plugin"
+    ],
+    "jenkinsci/pwauth-plugin": [
+        "org/jvnet/hudson/plugins/pwauth"
+    ],
+    "jenkinsci/pyenv-pipeline-plugin": [
+        "org/jenkins-ci/plugins/pyenv-pipeline"
+    ],
+    "jenkinsci/pyenv-plugin": [
+        "org/jenkins-ci/ruby-plugins/pyenv"
+    ],
+    "jenkinsci/qaconsole-test-automation-reporter-plugin": [
+        "com/qaconsole/qaconsole-test-automation-reporter-plugin"
+    ],
+    "jenkinsci/qc-plugin": [
+        "org/jenkins-ci/plugins/qc",
+        "org/jvnet/hudson/plugins/qc"
+    ],
+    "jenkinsci/qftest-plugin": [
+        "org/jenkins-ci/plugins/qftest"
+    ],
+    "jenkinsci/qmetry-for-jira-test-management-plugin": [
+        "org/jenkins-ci/plugins/qmetry-for-jira-test-management"
+    ],
+    "jenkinsci/qmetry-test-management-plugin": [
+        "org/jenkins-ci/plugins/qmetry-test-management"
+    ],
+    "jenkinsci/qrebel-plugin": [
+        "org/jenkins-ci/plugins/qrebel"
+    ],
+    "jenkinsci/qtest-plugin": [
+        "com/qasymphony/ci/jenkins/qtest"
+    ],
+    "jenkinsci/quality-gates-plugin": [
+        "org/jenkins-ci/plugins/quality-gates",
+        "org/jenkins-ci/plugins/quality-gates-main"
+    ],
+    "jenkinsci/qualityclouds-plugin": [
+        "io/jenkins/plugins/qualityclouds"
+    ],
+    "jenkinsci/quamotion-cloud-plugin": [
+        "io/jenkins/plugins/quamotion-cloud"
+    ],
+    "jenkinsci/quayio-trigger-plugin": [
+        "org/jenkins-ci/plugins/quayio-trigger"
+    ],
+    "jenkinsci/queue-cleanup-plugin": [
+        "org/jenkins-ci/plugins/queue-cleanup"
+    ],
+    "jenkinsci/r-plugin": [
+        "org/biouno/r/r"
+    ],
+    "jenkinsci/r7insight-log-forwarder-plugin": [
+        "org/jenkins-ci/plugins/r7insight-log-forwarder"
+    ],
+    "jenkinsci/rabbitmq-build-trigger-plugin": [
+        "org/jenkins-ci/plugins/rabbitmq-build-trigger"
+    ],
+    "jenkinsci/rabbitmq-consumer-plugin": [
+        "org/jenkins-ci/plugins/rabbitmq-consumer"
+    ],
+    "jenkinsci/rabbitmq-publisher-plugin": [
+        "org/jenkins-ci/plugins/rabbitmq-publisher"
+    ],
+    "jenkinsci/rad-builder-plugin": [
+        "org/jvnet/hudson/plugins/rad-builder"
+    ],
+    "jenkinsci/radargun-plugin": [
+        "org/jenkins-ci/plugins/radargun"
+    ],
+    "jenkinsci/radargun-reporting-plugin": [
+        "org/jenkins-ci/plugins/radargun-reporting"
+    ],
+    "jenkinsci/radiatorview-plugin": [
+        "org/jenkins-ci/plugins/radiatorviewplugin"
+    ],
+    "jenkinsci/rake-plugin": [
+        "org/jenkins-ci/plugins/rake"
+    ],
+    "jenkinsci/rally-plugin": [
+        "org/jenkins-ci/plugins/rally-plugin"
+    ],
+    "jenkinsci/rancher-plugin": [
+        "org/jenkins-ci/plugins/rancher"
+    ],
+    "jenkinsci/random-job-builder-plugin": [
+        "org/jenkins-ci/plugins/random-job-builder"
+    ],
+    "jenkinsci/random-string-parameter-plugin": [
+        "org/jenkins-ci/plugins/random-string-parameter"
+    ],
+    "jenkinsci/ranorex-integration-plugin": [
+        "org/jenkins-ci/plugins/ranorex-integration"
+    ],
+    "jenkinsci/rapid7-insightvm-container-assessment-plugin": [
+        "org/jenkins-ci/plugins/rapid7-insightvm-container-assessment"
+    ],
+    "jenkinsci/rapiddeploy-plugin": [
+        "org/jenkins-ci/plugins/rapiddeploy-jenkins"
+    ],
+    "jenkinsci/rb-plugin": [
+        "org/jenkins-ci/plugins/rb"
+    ],
+    "jenkinsci/rbenv-plugin": [
+        "org/jenkins-ci/ruby-plugins/rbenv"
+    ],
+    "jenkinsci/read-only-configurations-plugin": [
+        "org/jenkins-ci/plugins/read-only-configurations"
+    ],
+    "jenkinsci/readonly-parameter-plugin": [
+        "org/jenkins-ci/plugins/readonly-parameters"
+    ],
+    "jenkinsci/rebuild-plugin": [
+        "com/sonyericsson/hudson/plugins/rebuild/rebuild"
+    ],
+    "jenkinsci/recipe-plugin": [
+        "org/jenkins-ci/plugins/recipe"
+    ],
+    "jenkinsci/redgate-sql-ci-plugin": [
+        "com/redgate/plugins/redgatesqlci/redgate-sql-ci"
+    ],
+    "jenkinsci/redmine-metrics-report-plugin": [
+        "io/jenkins/plugins/redmine-metrics-report"
+    ],
+    "jenkinsci/redmine-plugin": [
+        "org/jenkins-ci/plugins/redmine"
+    ],
+    "jenkinsci/refit-plugin": [
+        "com/googlecode/refit/jenkins/refit"
+    ],
+    "jenkinsci/regression-report-plugin": [
+        "org/jenkins-ci/plugins/regression-report-plugin"
+    ],
+    "jenkinsci/release-helper-plugin": [
+        "org/jenkins-ci/plugins/release-helper"
+    ],
+    "jenkinsci/release-plugin": [
+        "org/jenkins-ci/plugins/release",
+        "org/jvnet/hudson/plugins/release"
+    ],
+    "jenkinsci/relution-plugin": [
+        "org/jenkins-ci/plugins/relution-publisher"
+    ],
+    "jenkinsci/remote-file-plugin": [
+        "io/jenkins/plugins/remote-file"
+    ],
+    "jenkinsci/remote-jobs-view-plugin": [
+        "com/sap/jenkinsci/remote-jobs-view-plugin"
+    ],
+    "jenkinsci/remote-terminal-access-plugin": [
+        "org/jenkins-ci/plugins/remote-terminal-access"
+    ],
+    "jenkinsci/remoting": [
+        "org/jenkins-ci/main/remoting",
+        "org/jvnet/hudson/main/remoting"
+    ],
+    "jenkinsci/remoting-kafka-plugin": [
+        "io/jenkins/plugins/remoting-kafka/kafka-client-lib",
+        "io/jenkins/plugins/remoting-kafka/remoting-kafka",
+        "io/jenkins/plugins/remoting-kafka/remoting-kafka-agent",
+        "io/jenkins/plugins/remoting-kafka/remoting-kafka-plugin"
+    ],
+    "jenkinsci/repo-plugin": [
+        "org/jenkins-ci/plugins/repo"
+    ],
+    "jenkinsci/report-info-plugin": [
+        "org/jenkins-ci/plugins/report-info"
+    ],
+    "jenkinsci/reportportal-plugin": [
+        "org/jenkins-ci/plugins/reportportal"
+    ],
+    "jenkinsci/repository-connector-plugin": [
+        "org/jenkins-ci/plugins/repository-connector",
+        "org/jvnet/hudson/plugins/repository-connector"
+    ],
+    "jenkinsci/requests-plugin": [
+        "org/jenkins-ci/plugins/requests"
+    ],
+    "jenkinsci/resource-disposer-plugin": [
+        "org/jenkins-ci/plugins/resource-disposer"
+    ],
+    "jenkinsci/results-cache-plugin": [
+        "com/king/jenkins/plugins/results-cache"
+    ],
+    "jenkinsci/reverse-proxy-auth-plugin": [
+        "org/jenkins-ci/plugins/reverse-proxy-auth-plugin"
+    ],
+    "jenkinsci/rhnpush-plugin": [
+        "org/jenkins-ci/plugins/rhnpush-plugin"
+    ],
+    "jenkinsci/rich-text-publisher-plugin": [
+        "org/jenkins-ci/plugins/rich-text-publisher-plugin"
+    ],
+    "jenkinsci/rigor-optimization-plugin": [
+        "org/jenkins-ci/plugins/rigor-optimization"
+    ],
+    "jenkinsci/robot-plugin": [
+        "org/jenkins-ci/plugins/robot",
+        "org/jvnet/hudson/plugins/robot"
+    ],
+    "jenkinsci/role-strategy-plugin": [
+        "org/jenkins-ci/plugins/role-strategy",
+        "org/jvnet/hudson/plugins/role-strategy"
+    ],
+    "jenkinsci/rpi-build-status-plugin": [
+        "net/sleepymouse/jenkins/plugins/rpi-build-status"
+    ],
+    "jenkinsci/rpmsign-plugin": [
+        "org/jenkins-ci/plugins/rpmsign-plugin"
+    ],
+    "jenkinsci/rqm-plugin": [
+        "net/praqma/rqm-plugin"
+    ],
+    "jenkinsci/rrod-plugin": [
+        "org/jenkins-ci/plugins/rrod"
+    ],
+    "jenkinsci/rubyMetrics-plugin": [
+        "org/jenkins-ci/plugins/rubyMetrics"
+    ],
+    "jenkinsci/run-condition-extras-plugin": [
+        "com/synopsys/arc/jenkinsci/plugins/run-condition-extras",
+        "org/jenkins-ci/plugins/run-condition-extras"
+    ],
+    "jenkinsci/run-condition-plugin": [
+        "org/jenkins-ci/plugins/run-condition"
+    ],
+    "jenkinsci/run-selector-plugin": [
+        "org/jenkins-ci/plugins/run-selector"
+    ],
+    "jenkinsci/rundeck-plugin": [
+        "org/jenkins-ci/plugins/rundeck"
+    ],
+    "jenkinsci/runscope-plugin": [
+        "com/runscope/jenkins/runscope"
+    ],
+    "jenkinsci/rusalad-plugin": [
+        "org/jenkins-ci/plugins/rusalad-plugin"
+    ],
+    "jenkinsci/rvm-plugin": [
+        "org/jenkins-ci/ruby-plugins/rvm"
+    ],
+    "jenkinsci/s3-plugin": [
+        "org/jenkins-ci/plugins/s3"
+    ],
+    "jenkinsci/saferestart-plugin": [
+        "org/jenkins-ci/plugins/saferestart"
+    ],
+    "jenkinsci/sahagin-plugin": [
+        "org/jenkins-ci/plugins/sahagin"
+    ],
+    "jenkinsci/salesforce-migration-assistant-plugin": [
+        "org/jenkins-ci/plugins/salesforce-migration-assistant-plugin"
+    ],
+    "jenkinsci/saltstack-plugin": [
+        "org/jenkins-ci/plugins/saltstack"
+    ],
+    "jenkinsci/sametime-plugin": [
+        "org/jenkins-ci/plugins/sametime"
+    ],
+    "jenkinsci/saml-plugin": [
+        "org/jenkins-ci/plugins/saml"
+    ],
+    "jenkinsci/sasunit-plugin": [
+        "org/jenkins-ci/plugins/sasunit-plugin"
+    ],
+    "jenkinsci/sauce-ondemand-plugin": [
+        "org/jenkins-ci/plugins/sauce-ondemand",
+        "org/jvnet/hudson/plugins/sauce-ondemand"
+    ],
+    "jenkinsci/sbt-plugin": [
+        "org/jenkins-ci/plugins/sbt",
+        "org/jvnet/hudson/plugins/sbt"
+    ],
+    "jenkinsci/sbuild-plugin": [
+        "org/jenkins-ci/plugins/SBuild"
+    ],
+    "jenkinsci/scala-junit-name-decoder-plugin": [
+        "org/jenkins-ci/plugins/scala-junit-name-decoder"
+    ],
+    "jenkinsci/scaleway-cloud-plugin": [
+        "com/github/segator/jenkins/scaleway-cloud"
+    ],
+    "jenkinsci/schedule-build-plugin": [
+        "org/jenkins-ci/plugins/schedule-build"
+    ],
+    "jenkinsci/scm-api-plugin": [
+        "org/jenkins-ci/plugins/scm-api"
+    ],
+    "jenkinsci/scm-filter-aged-refs-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-scm-filter-aged-refs",
+        "org/jenkins-ci/plugins/github-scm-filter-aged-refs",
+        "org/jenkins-ci/plugins/scm-filter-aged-refs-parent"
+    ],
+    "jenkinsci/scm-filter-branch-pr-plugin": [
+        "org/jenkins-ci/plugins/scm-filter-branch-pr"
+    ],
+    "jenkinsci/scm-filter-jira-validator-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-scm-filter-jira-validator",
+        "org/jenkins-ci/plugins/github-scm-filter-jira-validator",
+        "org/jenkins-ci/plugins/scm-filter-jira-validator-parent"
+    ],
+    "jenkinsci/scm-httpclient-plugin": [
+        "com/meowlomo/jenkins/scm-httpclient"
+    ],
+    "jenkinsci/scm-sqs-plugin": [
+        "io/relution/jenkins/scm-sqs"
+    ],
+    "jenkinsci/scm-sync-configuration-plugin": [
+        "org/jenkins-ci/plugins/scm-sync-configuration",
+        "org/jvnet/hudson/plugins/scm-sync-configuration"
+    ],
+    "jenkinsci/scm-trait-commit-skip-plugin": [
+        "org/jenkins-ci/plugins/bitbucket-scm-trait-commit-skip",
+        "org/jenkins-ci/plugins/github-scm-trait-commit-skip",
+        "org/jenkins-ci/plugins/scm-trait-commit-skip-parent"
+    ],
+    "jenkinsci/scm2job-plugin": [
+        "org/jenkins-ci/plugins/scm2job"
+    ],
+    "jenkinsci/scmskip-plugin": [
+        "net/plavcak/jenkins/scmskip"
+    ],
+    "jenkinsci/scons-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/scons"
+    ],
+    "jenkinsci/scoring-load-balancer-plugin": [
+        "jp/ikedam/jenkins/plugins/scoring-load-balancer"
+    ],
+    "jenkinsci/scoverage-plugin": [
+        "org/jenkins-ci/plugins/scoverage"
+    ],
+    "jenkinsci/scp-plugin": [
+        "org/jvnet/hudson/plugins/scp"
+    ],
+    "jenkinsci/script-realm-plugin": [
+        "org/jvnet/hudson/plugins/script-realm"
+    ],
+    "jenkinsci/script-scm-plugin": [
+        "com/cwctravel/script-scm",
+        "org/jenkins-ci/plugins/script-scm"
+    ],
+    "jenkinsci/script-security-plugin": [
+        "org/jenkins-ci/plugins/script-security"
+    ],
+    "jenkinsci/scripted-cloud-plugin": [
+        "org/jenkins-ci/plugins/scripted-cloud-plugin"
+    ],
+    "jenkinsci/scriptler-plugin": [
+        "org/jenkins-ci/plugins/scriptler",
+        "org/jvnet/hudson/plugins/scriptler"
+    ],
+    "jenkinsci/scripttrigger-plugin": [
+        "org/jenkins-ci/plugins/scripttrigger"
+    ],
+    "jenkinsci/sdelements-plugin": [
+        "io/jenkins/plugins/sdelements"
+    ],
+    "jenkinsci/search-all-results-plugin": [
+        "org/jenkins-ci/plugins/search-all-results-plugin"
+    ],
+    "jenkinsci/secondary-timestamper-plugin": [
+        "org/jenkins-ci/plugins/secondary-timestamper-plugin"
+    ],
+    "jenkinsci/secret-plugin": [
+        "org/jenkins-ci/plugins/secret"
+    ],
+    "jenkinsci/sectioned-view-plugin": [
+        "org/jenkins-ci/plugins/sectioned-view",
+        "org/jvnet/hudson/plugins/sectioned-view"
+    ],
+    "jenkinsci/secure-requester-whitelist-plugin": [
+        "org/jenkins-ci/plugins/secure-requester-whitelist"
+    ],
+    "jenkinsci/security-inspector-plugin": [
+        "org/jenkins-ci/plugins/security-inspector"
+    ],
+    "jenkinsci/seed-plugin": [
+        "org/jenkins-ci/plugins/seed"
+    ],
+    "jenkinsci/selected-tests-executor-plugin": [
+        "org/jenkins-ci/plugins/selected-tests-executor"
+    ],
+    "jenkinsci/selection-tasks-plugin-plugin": [
+        "org/jvnet/hudson/plugins/selection-tasks-plugin"
+    ],
+    "jenkinsci/selenium-aes-plugin": [
+        "org/jvnet/hudson/plugins/selenium-aes"
+    ],
+    "jenkinsci/selenium-axis-plugin": [
+        "org/jenkins-ci/plugins/selenium-axis"
+    ],
+    "jenkinsci/selenium-builder-plugin": [
+        "org/jenkins-ci/plugins/selenium-builder"
+    ],
+    "jenkinsci/selenium-plugin": [
+        "org/jenkins-ci/plugins/selenium"
+    ],
+    "jenkinsci/seleniumrc-plugin-plugin": [
+        "org/jvnet/hudson/plugins/seleniumrc-plugin"
+    ],
+    "jenkinsci/semantic-versioning-plugin": [
+        "org/jenkins-ci/plugins/semantic-versioning-plugin"
+    ],
+    "jenkinsci/send-stacktrace-to-eclipse-plugin": [
+        "org/jenkins-ci/plugins/send-stacktrace-to-eclipse-plugin"
+    ],
+    "jenkinsci/sensedia-api-platform-plugin": [
+        "org/jenkins-ci/plugins/sensedia-api-platform"
+    ],
+    "jenkinsci/sentry-plugin": [
+        "io/jenkins/plugins/sentry"
+    ],
+    "jenkinsci/serenity-plugin": [
+        "org/jenkins-ci/plugins/serenity"
+    ],
+    "jenkinsci/service-fabric-plugin": [
+        "org/jenkins-ci/plugins/service-fabric"
+    ],
+    "jenkinsci/service-now-plugin": [
+        "org/jenkins-ci/plugins/service-now"
+    ],
+    "jenkinsci/setenv-plugin": [
+        "org/jenkins-ci/plugins/setenv"
+    ],
+    "jenkinsci/sge-cloud-plugin": [
+        "io/jenkins/plugins/sge-cloud-plugin"
+    ],
+    "jenkinsci/shared-objects-plugin": [
+        "org/jenkins-ci/plugins/shared-objects"
+    ],
+    "jenkinsci/shared-workspace-plugin": [
+        "org/jenkins-ci/plugins/shared-workspace"
+    ],
+    "jenkinsci/shell-script-scm-plugin": [
+        "ssscm/SSSCM"
+    ],
+    "jenkinsci/shelve-project-plugin-plugin": [
+        "org/jenkins-ci/plugins/shelve-project-plugin"
+    ],
+    "jenkinsci/shiningpanda-plugin": [
+        "org/jenkins-ci/plugins/shiningpanda"
+    ],
+    "jenkinsci/short-workspace-path-plugin": [
+        "org/jenkins-ci/plugins/short-workspace-path"
+    ],
+    "jenkinsci/sicci-for-xcode-plugin": [
+        "org/jvnet/hudson/plugins/sicci_for_xcode"
+    ],
+    "jenkinsci/sidebar-link-plugin": [
+        "org/jenkins-ci/plugins/sidebar-link",
+        "org/jvnet/hudson/plugins/sidebar-link"
+    ],
+    "jenkinsci/sidebar-update-notification-plugin": [
+        "com/exxeta/jenkins/plugins/sidebar-update-notification"
+    ],
+    "jenkinsci/signal-killer": [
+        "hudson/plugins/signal_killer/signal-killer"
+    ],
+    "jenkinsci/silk-performer-plugin": [
+        "org/jenkins-ci/plugins/silk-performer-plugin"
+    ],
+    "jenkinsci/simple-build-for-pipeline-plugin": [
+        "org/jenkins-ci/plugins/simple-build-for-pipeline"
+    ],
+    "jenkinsci/simple-parameterized-builds-report-plugin": [
+        "org/jenkins-ci/plugins/simple-parameterized-builds-report"
+    ],
+    "jenkinsci/simple-pull-request-job-plugin": [
+        "io/jenkins/plugins/simple-pull-request-job"
+    ],
+    "jenkinsci/simple-theme-plugin": [
+        "org/codefirst/jenkins/simplethemeplugin/simple-theme-plugin",
+        "org/jenkins-ci/plugins/simple-theme-plugin"
+    ],
+    "jenkinsci/simple-travis-runner-plugin": [
+        "org/jenkins-ci/plugins/simple-travis-runner"
+    ],
+    "jenkinsci/simpleclearcase-plugin": [
+        "jenkins/plugins/simpleclearcase"
+    ],
+    "jenkinsci/simpleupdatesite-plugin": [
+        "org/jenkins-ci/plugins/simpleupdatesite"
+    ],
+    "jenkinsci/sinatra-chef-builder-plugin": [
+        "org/jenkins-ci/plugins/sinatra-chef-builder"
+    ],
+    "jenkinsci/singleuseslave-plugin": [
+        "org/jenkins-ci/ruby-plugins/singleuseslave"
+    ],
+    "jenkinsci/sitemonitor-plugin": [
+        "org/jvnet/hudson/plugins/sitemonitor"
+    ],
+    "jenkinsci/skip-certificate-check-plugin": [
+        "org/jenkins-ci/plugins/skip-certificate-check"
+    ],
+    "jenkinsci/skip-notifications-trait-plugin": [
+        "org/jenkins-ci/plugins/skip-notifications-trait"
+    ],
+    "jenkinsci/skype-im-plugin": [
+        "org/jenkins-ci/plugins/skype-notifier"
+    ],
+    "jenkinsci/skytap-cloud-plugin": [
+        "org/jenkins-ci/plugins/skytap"
+    ],
+    "jenkinsci/slack-plugin": [
+        "org/jenkins-ci/plugins/slack"
+    ],
+    "jenkinsci/slack-uploader-plugin": [
+        "org/jenkins-ci/plugins/slack-uploader"
+    ],
+    "jenkinsci/sladiator-plugin": [
+        "org/jenkins-ci/plugins/sladiator-notifier"
+    ],
+    "jenkinsci/slave-installer-module": [
+        "org/jenkins-ci/modules/slave-installer"
+    ],
+    "jenkinsci/slave-prerequisites-plugin": [
+        "org/jenkins-ci/plugins/slave-prerequisites"
+    ],
+    "jenkinsci/slave-proxy-plugin": [
+        "org/jenkins-ci/plugins/slave-proxy"
+    ],
+    "jenkinsci/slave-setup-plugin": [
+        "org/jenkins-ci/plugins/slave-setup"
+    ],
+    "jenkinsci/slave-squatter-plugin": [
+        "org/jenkins-ci/plugins/slave-squatter"
+    ],
+    "jenkinsci/slave-status-plugin": [
+        "org/jvnet/hudson/plugins/slave-status"
+    ],
+    "jenkinsci/sloccount-plugin": [
+        "hudson/plugins/sloccount/sloccount"
+    ],
+    "jenkinsci/smalltest-plugin": [
+        "com/smalltest/smalltest"
+    ],
+    "jenkinsci/smart-jenkins-plugin": [
+        "org/jenkins-ci/plugins/smart-jenkins"
+    ],
+    "jenkinsci/smartfrog-plugin": [
+        "org/jenkins-ci/plugins/smartfrog-plugin"
+    ],
+    "jenkinsci/sms-plugin": [
+        "com/hoiio/jenkins/sms"
+    ],
+    "jenkinsci/snowglobe-plugin": [
+        "com/nirima/snowglobe/jenkins/snowglobe"
+    ],
+    "jenkinsci/snsnotify-plugin": [
+        "org/jenkins-ci/plugins/snsnotify"
+    ],
+    "jenkinsci/snyk-security-scanner-plugin": [
+        "io/snyk/plugins/snyk-security-scanner"
+    ],
+    "jenkinsci/soapui-pro-functional-testing-plugin": [
+        "org/jenkins-ci/plugins/soapui-pro-functional-testing"
+    ],
+    "jenkinsci/sofy-ai-plugin": [
+        "io/jenkins/plugins/sofy-ai"
+    ],
+    "jenkinsci/sonar-gerrit-plugin": [
+        "org/jenkins-ci/plugins/sonar-gerrit"
+    ],
+    "jenkinsci/sonar-quality-gates-plugin": [
+        "org/jenkins-ci/plugins/sonar-quality-gates"
+    ],
+    "jenkinsci/sonargraph-integration-plugin": [
+        "org/jenkins-ci/plugins/sonargraph-integration"
+    ],
+    "jenkinsci/sonargraph-plugin": [
+        "org/jenkins-ci/plugins/sonargraph-plugin"
+    ],
+    "jenkinsci/sonarqube-generic-coverage-plugin": [
+        "io/jenkins/plugins/sonarqube-generic-coverage"
+    ],
+    "jenkinsci/sonarqube-plugin": [
+        "org/jenkins-ci/plugins/sonar",
+        "org/jvnet/hudson/plugins/sonar"
+    ],
+    "jenkinsci/sounds-plugin": [
+        "org/jenkins-ci/plugins/sounds",
+        "org/jvnet/hudson/plugins/sounds"
+    ],
+    "jenkinsci/sourcemonitor-plugin": [
+        "com/thalesgroup/hudson/plugins/sourcemonitor"
+    ],
+    "jenkinsci/splunk-devops-plugin": [
+        "com/splunk/splunkins/pom",
+        "com/splunk/splunkins/splunk-devops",
+        "com/splunk/splunkins/splunk-devops-extend",
+        "com/splunk/splunkins/splunk-devops-shaded"
+    ],
+    "jenkinsci/spoonscript-plugin": [
+        "org/jenkinsci/plugins/spoonscript/spoonscript"
+    ],
+    "jenkinsci/spotinst-plugin": [
+        "org/jenkins-ci/plugins/spotinst"
+    ],
+    "jenkinsci/spring-initalzr-plugin": [
+        "org/jenkins-ci/plugins/spring-initalzr"
+    ],
+    "jenkinsci/sqlplus-script-runner-plugin": [
+        "org/jenkins-ci/plugins/sqlplus-script-runner"
+    ],
+    "jenkinsci/squashtm-publisher-plugin": [
+        "org/jenkins-ci/plugins/squashtm-publisher"
+    ],
+    "jenkinsci/sra-deploy-plugin": [
+        "com/urbancode/ds/jenkins/plugins/sra-deploy"
+    ],
+    "jenkinsci/srcclr-installer-plugin": [
+        "com/srcclr/jenkins/srcclr-installer"
+    ],
+    "jenkinsci/sse-gateway-plugin": [
+        "org/jenkins-ci/plugins/sse-gateway"
+    ],
+    "jenkinsci/ssh-agent-plugin": [
+        "org/jenkins-ci/plugins/ssh-agent"
+    ],
+    "jenkinsci/ssh-cli-auth-module": [
+        "org/jenkins-ci/modules/ssh-cli-auth"
+    ],
+    "jenkinsci/ssh-credentials-plugin": [
+        "org/jenkins-ci/plugins/ssh-credentials"
+    ],
+    "jenkinsci/ssh-plugin": [
+        "org/jenkins-ci/plugins/ssh",
+        "org/jvnet/hudson/plugins/ssh"
+    ],
+    "jenkinsci/ssh-slaves-plugin": [
+        "org/jenkins-ci/plugins/ssh-slaves"
+    ],
+    "jenkinsci/ssh-steps-plugin": [
+        "org/jenkins-ci/plugins/ssh-steps"
+    ],
+    "jenkinsci/sshProcess-check-plugin": [
+        "org/jenkins-ci/plugins/terminate-ssh-processes-plugin"
+    ],
+    "jenkinsci/sshd-module": [
+        "org/jenkins-ci/modules/sshd"
+    ],
+    "jenkinsci/stackhammer-plugin": [
+        "org/cloudsmith/hammer/jenkins/stackhammer",
+        "org/jenkins-ci/plugins/stackhammer"
+    ],
+    "jenkinsci/stackify-deployment-recorder-plugin": [
+        "org/jenkins-ci/plugins/stackify-deployment-recorder"
+    ],
+    "jenkinsci/starteam-plugin": [
+        "hudson/plugins/starteam"
+    ],
+    "jenkinsci/started-by-envvar-plugin": [
+        "org/jenkins-ci/plugins/started-by-envvar"
+    ],
+    "jenkinsci/startup-trigger-plugin": [
+        "org/jenkins-ci/plugins/startup-trigger-plugin",
+        "org/jvnet/hudson/plugins/startup-trigger-plugin"
+    ],
+    "jenkinsci/stash-branch-parameters-plugin": [
+        "org/jenkins-ci/plugins/StashBranchParameter"
+    ],
+    "jenkinsci/stash-pullrequest-builder-plugin": [
+        "org/jenkins-ci/plugins/stash-pullrequest-builder"
+    ],
+    "jenkinsci/stashnotifier-plugin": [
+        "org/jenkins-ci/plugins/stashNotifier"
+    ],
+    "jenkinsci/statistics-gatherer-plugin": [
+        "org/jenkins/plugins/statistics/gatherer/statistics-gatherer"
+    ],
+    "jenkinsci/statusmonitor-plugin": [
+        "org/jvnet/hudson/plugins/statusmonitor"
+    ],
+    "jenkinsci/stepcounter-plugin": [
+        "org/jenkins-ci/plugins/stepcounter"
+    ],
+    "jenkinsci/stoplightio-report-plugin": [
+        "com/arkea/satd/stoplightio-report"
+    ],
+    "jenkinsci/storable-configs-plugin-plugin": [
+        "org/jvnet/hudson/plugins/storable-configs-plugin"
+    ],
+    "jenkinsci/strawboss-plugin": [
+        "org/jenkins-ci/plugins/strawboss"
+    ],
+    "jenkinsci/strict-crumb-issuer-plugin": [
+        "org/jenkins-ci/plugins/strict-crumb-issuer"
+    ],
+    "jenkinsci/structs-plugin": [
+        "org/jenkins-ci/plugins/structs",
+        "org/jenkins-ci/plugins/structs-parent",
+        "org/jenkins-ci/symbol-annotation"
+    ],
+    "jenkinsci/subversion-plugin": [
+        "org/jenkins-ci/plugins/subversion",
+        "org/jvnet/hudson/plugins/subversion"
+    ],
+    "jenkinsci/summary_report-plugin": [
+        "org/jenkins-ci/plugins/summary_report"
+    ],
+    "jenkinsci/sumologic-publisher-plugin": [
+        "org/jenkins-ci/plugins/sumologic-publisher"
+    ],
+    "jenkinsci/support-core-plugin": [
+        "org/jenkins-ci/plugins/support-core"
+    ],
+    "jenkinsci/suppress-stack-trace-plugin": [
+        "org/jenkins-ci/plugins/suppress-stack-trace"
+    ],
+    "jenkinsci/svn-partial-release-mgr-plugin": [
+        "org/jenkins-ci/plugins/svn-partial-release-mgr"
+    ],
+    "jenkinsci/svn-revert-plugin": [
+        "org/jenkins-ci/plugins/svn-revert-plugin"
+    ],
+    "jenkinsci/svn-tag-plugin": [
+        "org/jenkins-ci/plugins/svn-tag"
+    ],
+    "jenkinsci/svncompat13-plugin": [
+        "org/jvnet/hudson/plugins/svncompat13"
+    ],
+    "jenkinsci/svncompat14-plugin": [
+        "org/jvnet/hudson/plugins/svncompat14"
+    ],
+    "jenkinsci/svnmerge-plugin": [
+        "org/jenkins-ci/plugins/svnmerge"
+    ],
+    "jenkinsci/swamp-plugin": [
+        "org/continuousassurance/swamp/jenkins/swamp"
+    ],
+    "jenkinsci/swarm-plugin": [
+        "org/jenkins-ci/plugins/swarm",
+        "org/jenkins-ci/plugins/swarm-client",
+        "org/jenkins-ci/plugins/swarm-plugin",
+        "org/jvnet/hudson/plugins/swarm",
+        "org/jvnet/hudson/plugins/swarm-client",
+        "org/jvnet/hudson/plugins/swarm-plugin"
+    ],
+    "jenkinsci/sweagle-plugin": [
+        "io/jenkins/plugins/sweagle"
+    ],
+    "jenkinsci/synergy_scm-plugin": [
+        "org/jenkins-ci/plugins/synergy",
+        "org/jvnet/hudson/plugins/synergy"
+    ],
+    "jenkinsci/synopsys-coverity-plugin": [
+        "org/jenkins-ci/plugins/synopsys-coverity"
+    ],
+    "jenkinsci/sysdig-secure-plugin": [
+        "org/jenkins-ci/plugins/sysdig-secure"
+    ],
+    "jenkinsci/syslog-logger-plugin": [
+        "org/jenkins-ci/plugins/syslog-logger"
+    ],
+    "jenkinsci/systemd-slave-installer-module": [
+        "org/jenkins-ci/modules/systemd-slave-installer"
+    ],
+    "jenkinsci/systemloadaverage-monitor-plugin": [
+        "org/jvnet/hudson/plugins/systemloadaverage-monitor"
+    ],
+    "jenkinsci/tag-cloud-plugin": [
+        "org/jenkins-ci/plugins/jenkins-tag-cloud-plugin"
+    ],
+    "jenkinsci/tag-profiler-plugin": [
+        "org/jenkins-ci/plugins/tag-profiler"
+    ],
+    "jenkinsci/tanaguru-plugin": [
+        "org/tanaguru/jenkins/tanaguru"
+    ],
+    "jenkinsci/tap-plugin": [
+        "org/tap4j/tap"
+    ],
+    "jenkinsci/tasks-plugin": [
+        "org/jvnet/hudson/plugins/tasks"
+    ],
+    "jenkinsci/tattletale-plugin": [
+        "org/jenkins-ci/plugins/tattletale-plugin"
+    ],
+    "jenkinsci/tcl-plugin": [
+        "org/jenkins-ci/plugins/tcl"
+    ],
+    "jenkinsci/team-views-plugin": [
+        "com/sonymobile/jenkins/plugins/teamviews/team-views"
+    ],
+    "jenkinsci/teamconcert-git-plugin": [
+        "org/jenkins-ci/plugins/teamconcert-git"
+    ],
+    "jenkinsci/teamconcert-plugin": [
+        "org/jenkins-ci/plugins/teamconcert"
+    ],
+    "jenkinsci/telegram-notifications-plugin": [
+        "org/jenkins-ci/plugins/telegram-notifications"
+    ],
+    "jenkinsci/telerik-appbuilder-plugin": [
+        "com/telerik/plugins/telerik-appbuilder-plugin"
+    ],
+    "jenkinsci/template-project-plugin": [
+        "org/jenkins-ci/plugins/template-project"
+    ],
+    "jenkinsci/template-workflows-plugin": [
+        "org/jenkins/plugin/templateWorkflows/template-workflows"
+    ],
+    "jenkinsci/templating-engine-plugin": [
+        "org/jenkins-ci/plugins/templating-engine"
+    ],
+    "jenkinsci/tepco-epuw-plugin": [
+        "org/jenkins-ci/plugins/tepco-epuw"
+    ],
+    "jenkinsci/tepco-plugin": [
+        "org/jenkins-ci/plugins/tepco"
+    ],
+    "jenkinsci/terminal-plugin": [
+        "org/jenkins-ci/plugins/terminal",
+        "org/jvnet/hudson/plugins/terminal"
+    ],
+    "jenkinsci/test-results-analyzer-plugin": [
+        "org/jenkins-ci/plugins/test-results-analyzer"
+    ],
+    "jenkinsci/test-stability-plugin": [
+        "de/esailors/jenkins/test-stability"
+    ],
+    "jenkinsci/testInProgress-plugin": [
+        "org/jenkins-ci/plugins/testInProgress",
+        "org/jenkins-ci/plugins/testInProgress-client",
+        "org/jenkins-ci/plugins/testInProgress-server"
+    ],
+    "jenkinsci/testabilityexplorer-plugin": [
+        "org/jenkins-ci/plugins/testabilityexplorer"
+    ],
+    "jenkinsci/testcomplete-plugin": [
+        "org/jenkins-ci/plugins/TestComplete"
+    ],
+    "jenkinsci/testcomplete-xunit-plugin": [
+        "org/jenkins-ci/plugins/testcomplete-xunit"
+    ],
+    "jenkinsci/testcomplete11-xunit-plugin": [
+        "org/jenkins-ci/plugins/testcomplete11-xunit"
+    ],
+    "jenkinsci/testdroid-run-in-cloud-plugin": [
+        "testdroid/testdroid-run-in-cloud"
+    ],
+    "jenkinsci/testein-plugin": [
+        "com/testein/testein"
+    ],
+    "jenkinsci/testfairy-plugin": [
+        "org/jenkins-ci/plugins/TestFairy"
+    ],
+    "jenkinsci/testflight-plugin": [
+        "org/jenkins-ci/plugins/testflight"
+    ],
+    "jenkinsci/testingbot-plugin": [
+        "testingbot/testingbot"
+    ],
+    "jenkinsci/testinium-plugin": [
+        "com/testinium/jenkins/testinium"
+    ],
+    "jenkinsci/testlink-plugin": [
+        "org/jenkins-ci/plugins/testlink",
+        "org/jvnet/hudson/plugins/testlink"
+    ],
+    "jenkinsci/testng-plugin-plugin": [
+        "org/jenkins-ci/plugins/testng-plugin",
+        "org/jvnet/hudson/plugins/testng-plugin"
+    ],
+    "jenkinsci/testodyssey-execution-plugin": [
+        "com/ekatechserv/testodyssey-execution"
+    ],
+    "jenkinsci/testopia-plugin": [
+        "jenkins/plugins/testopia/testopia"
+    ],
+    "jenkinsci/testproject-plugin": [
+        "org/jenkins-ci/plugins/testproject"
+    ],
+    "jenkinsci/testquality-updater-plugin": [
+        "org/jenkins-ci/plugins/testquality-updater"
+    ],
+    "jenkinsci/teststudio-plugin": [
+        "org/jenkins-ci/plugins/teststudio"
+    ],
+    "jenkinsci/teststudioapitesting-plugin": [
+        "org/jenkins-ci/plugins/teststudioapitesting"
+    ],
+    "jenkinsci/teststudiomobiletesting-plugin": [
+        "org/jenkins-ci/plugins/teststudiomobiletesting"
+    ],
+    "jenkinsci/testswarm-plugin": [
+        "com/javaclimber/jenkins/testswarmplugin/jenkins-testswarm-plugin"
+    ],
+    "jenkinsci/testweaver-plugin": [
+        "org/jenkins-ci/plugins/testweaver"
+    ],
+    "jenkinsci/text-file-operations-plugin": [
+        "com/etas/jenkins/plugins/text-file-operations"
+    ],
+    "jenkinsci/text-finder-plugin": [
+        "org/jenkins-ci/plugins/text-finder",
+        "org/jvnet/hudson/plugins/text-finder"
+    ],
+    "jenkinsci/text-finder-run-condition-plugin": [
+        "org/jenkins-ci/plugins/text-finder-run-condition"
+    ],
+    "jenkinsci/tfs-plugin": [
+        "org/jenkins-ci/plugins/tfs",
+        "org/jenkins-ci/plugins/tfs-parent",
+        "org/jenkins-ci/plugins/tfs-sdk"
+    ],
+    "jenkinsci/themis-plugin": [
+        "org/jenkins-ci/plugins/themis"
+    ],
+    "jenkinsci/thin-backup-plugin": [
+        "org/jvnet/hudson/plugins/thinBackup"
+    ],
+    "jenkinsci/thread-dump-action-plugin": [
+        "org/jenkins-ci/plugins/thread-dump-action-plugin"
+    ],
+    "jenkinsci/threadfix-plugin": [
+        "me/automationdomination/threadfix",
+        "org/jenkins-ci/plugins/threadfix"
+    ],
+    "jenkinsci/throttle-concurrent-builds-plugin": [
+        "org/jenkins-ci/plugins/throttle-concurrents",
+        "org/jvnet/hudson/plugins/throttle-concurrents"
+    ],
+    "jenkinsci/thucydides-plugin": [
+        "net/thucydides/jenkins/thucydides"
+    ],
+    "jenkinsci/tibco-builder-plugin": [
+        "org/jenkins-ci/plugins/tibco-builder"
+    ],
+    "jenkinsci/tikal-multijob-plugin": [
+        "org/jenkins-ci/plugins/jenkins-multijob-plugin"
+    ],
+    "jenkinsci/timestamper-plugin": [
+        "org/jenkins-ci/plugins/timestamper",
+        "org/jvnet/hudson/plugins/timestamper"
+    ],
+    "jenkinsci/tinfoil-security-plugin": [
+        "com/tinfoilsecurity/plugins/tinfoil-scan"
+    ],
+    "jenkinsci/tm4j-automation-plugin": [
+        "com/adaptavist/tm4j-automation"
+    ],
+    "jenkinsci/tmpcleaner-plugin": [
+        "org/jenkins-ci/plugins/tmpcleaner"
+    ],
+    "jenkinsci/token-macro-plugin": [
+        "org/jenkins-ci/plugins/token-macro"
+    ],
+    "jenkinsci/toolenv-plugin": [
+        "org/jenkins-ci/plugins/toolenv"
+    ],
+    "jenkinsci/trac-plugin": [
+        "org/jenkins-ci/plugins/trac",
+        "org/jvnet/hudson/plugins/trac"
+    ],
+    "jenkinsci/trac-publisher-plugin": [
+        "org/jenkins-ci/plugins/trac-publisher-plugin"
+    ],
+    "jenkinsci/tracking-git-plugin": [
+        "org/jenkins-ci/plugins/tracking-git"
+    ],
+    "jenkinsci/tracking-svn-plugin": [
+        "org/jvnet/hudson/plugins/tracking-svn"
+    ],
+    "jenkinsci/transifex-plugin": [
+        "com/gurkensalat/jenkins-ci/plugins/transifex"
+    ],
+    "jenkinsci/translation-plugin": [
+        "org/jenkins-ci/plugins/translation"
+    ],
+    "jenkinsci/travis-yml-plugin": [
+        "org/jenkins-ci/ruby-plugins/travis-yml"
+    ],
+    "jenkinsci/trial-balloon-plugin": [
+        "org/jenkins-ci/plugins/trial-balloon"
+    ],
+    "jenkinsci/tricentis-ci-plugin": [
+        "io/jenkins/plugins/tricentis-ci"
+    ],
+    "jenkinsci/trilead-api-plugin": [
+        "org/jenkins-ci/plugins/trilead-api"
+    ],
+    "jenkinsci/trilead-ssh2": [
+        "org/jenkins-ci/trilead-ssh2",
+        "org/jvnet/hudson/trilead-ssh2"
+    ],
+    "jenkinsci/tuleap-git-branch-source-plugin": [
+        "org/jenkins-ci/plugins/tuleap-git-branch-source"
+    ],
+    "jenkinsci/tusarnotifier-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/tusarnotifier"
+    ],
+    "jenkinsci/tuxdroid-plugin": [
+        "org/jvnet/hudson/plugins/tuxdroid"
+    ],
+    "jenkinsci/twilio-notifier-plugin": [
+        "com/twilio/jenkins/TwilioNotifier"
+    ],
+    "jenkinsci/twitter-plugin": [
+        "org/jenkins-ci/plugins/twitter"
+    ],
+    "jenkinsci/ui-samples-plugin": [
+        "org/jenkins-ci/main/ui-samples-plugin",
+        "org/jvnet/hudson/main/ui-samples-plugin"
+    ],
+    "jenkinsci/ui-test-capture-plugin": [
+        "org/jenkins-ci/plugins/ui-test-capture"
+    ],
+    "jenkinsci/uipath-automation-package-plugin": [
+        "org/jenkins-ci/plugins/uipath-automation-package"
+    ],
+    "jenkinsci/uithemes-plugin": [
+        "org/jenkins-ci/plugins/uithemes/uithemes-pom",
+        "org/jenkins-ci/plugins/uithemes/uithemes-processor"
+    ],
+    "jenkinsci/unicorn-plugin": [
+        "si/nej/hudson/plugins/unicorn"
+    ],
+    "jenkinsci/unique-id-plugin": [
+        "org/jenkins-ci/plugins/unique-id"
+    ],
+    "jenkinsci/unity3d-plugin": [
+        "org/jenkins-ci/plugins/unity3d-plugin"
+    ],
+    "jenkinsci/unleash-plugin": [
+        "com/itemis/jenkins/plugins/unleash"
+    ],
+    "jenkinsci/unreliable-slave-plugin": [
+        "jenkinsci/unreliable-slave-plugin"
+    ],
+    "jenkinsci/update-sites-manager-plugin": [
+        "jp/ikedam/jenkins/plugins/update-sites-manager"
+    ],
+    "jenkinsci/updatebot-plugin": [
+        "org/jenkins-ci/plugins/updatebot"
+    ],
+    "jenkinsci/upload-pgyer-plugin": [
+        "ren/helloworld/upload-pgyer"
+    ],
+    "jenkinsci/upstart-slave-installer-module": [
+        "org/jenkins-ci/modules/upstart-slave-installer"
+    ],
+    "jenkinsci/upstream-downstream-view-plugin": [
+        "org/jenkins-ci/plugins/upstream-downstream-view"
+    ],
+    "jenkinsci/uptime-plugin": [
+        "org/jenkins-ci/plugins/uptime"
+    ],
+    "jenkinsci/urbancode-velocity-plugin": [
+        "com/ibm/devops/urbancode-velocity"
+    ],
+    "jenkinsci/url-auth-sso-plugin": [
+        "cf/pgmann/plugins/url-auth-sso"
+    ],
+    "jenkinsci/url-change-trigger-plugin": [
+        "com/redfin/hudson/url-change-trigger"
+    ],
+    "jenkinsci/urltrigger-plugin": [
+        "org/jenkins-ci/plugins/urltrigger"
+    ],
+    "jenkinsci/usemango-runner-plugin": [
+        "it/infuse/jenkins/usemango-runner"
+    ],
+    "jenkinsci/user1st-utester-plugin": [
+        "io/jenkins/plugins/user1st-utester"
+    ],
+    "jenkinsci/utplsql-plugin": [
+        "hudson/plugins/utplsql/utplsql",
+        "org/jenkins-ci/plugins/utplsql"
+    ],
+    "jenkinsci/vaddy-plugin": [
+        "org/jenkins-ci/plugins/vaddy-plugin"
+    ],
+    "jenkinsci/vagrant-plugin": [
+        "org/jenkins-ci/plugins/vagrant",
+        "org/jenkins-ci/ruby-plugins/vagrant"
+    ],
+    "jenkinsci/valgrind-plugin": [
+        "org/jenkins-ci/plugins/valgrind",
+        "org/jenkinsci/plugins/valgrind/valgrind"
+    ],
+    "jenkinsci/variables-replace-plugin": [
+        "com/jeeday/jenkins/variables-replace-plugin"
+    ],
+    "jenkinsci/variant-plugin": [
+        "org/jenkins-ci/plugins/variant"
+    ],
+    "jenkinsci/vault-scm-plugin": [
+        "org/jenkins-ci/plugins/vault-scm-plugin"
+    ],
+    "jenkinsci/vboxwrapper-plugin": [
+        "org/jenkins-ci/plugins/vboxwrapper"
+    ],
+    "jenkinsci/vectorcast-coverage-plugin": [
+        "org/jenkins-ci/plugins/vectorcast-coverage"
+    ],
+    "jenkinsci/vectorcast-execution-plugin": [
+        "org/jenkins-ci/plugins/vectorcast-execution"
+    ],
+    "jenkinsci/veracode-scanner-plugin": [
+        "org/jenkins-ci/plugins/veracode-scanner"
+    ],
+    "jenkinsci/versioncolumn-plugin": [
+        "org/jenkins-ci/plugins/versioncolumn"
+    ],
+    "jenkinsci/versionnumber-plugin": [
+        "org/jvnet/hudson/tools/versionnumber"
+    ],
+    "jenkinsci/vertx-plugin": [
+        "org/bravo5/jenkins/plugins/vertx"
+    ],
+    "jenkinsci/vessel-plugin": [
+        "org/jenkins-ci/plugins/vessel"
+    ],
+    "jenkinsci/viber-notification-plugin": [
+        "org/jenkins-ci/plugins/viber-notification"
+    ],
+    "jenkinsci/view-cloner-plugin": [
+        "org/jenkins-ci/plugins/view-cloner"
+    ],
+    "jenkinsci/view-job-filters-plugin": [
+        "org/jenkins-ci/plugins/view-job-filters",
+        "org/jvnet/hudson/plugins/view-job-filters"
+    ],
+    "jenkinsci/view26-plugin": [
+        "org/jenkins-ci/plugins/view26"
+    ],
+    "jenkinsci/viewVC-plugin": [
+        "org/jenkins-ci/plugins/viewVC",
+        "org/jvnet/hudson/plugins/viewVC"
+    ],
+    "jenkinsci/views-containing-job-plugin": [
+        "com/oneandone/access/views-containing-job"
+    ],
+    "jenkinsci/violation-columns-plugin": [
+        "org/jenkins-ci/plugins/violation-columns"
+    ],
+    "jenkinsci/violation-comments-to-github-plugin": [
+        "org/jenkins-ci/plugins/violation-comments-to-github"
+    ],
+    "jenkinsci/violation-comments-to-gitlab-plugin": [
+        "org/jenkins-ci/plugins/violation-comments-to-gitlab"
+    ],
+    "jenkinsci/violation-comments-to-stash-plugin": [
+        "org/jenkins-ci/plugins/violation-comments-to-stash"
+    ],
+    "jenkinsci/violations-plugin": [
+        "org/jenkins-ci/plugins/violations",
+        "org/jvnet/hudson/plugins/violations"
+    ],
+    "jenkinsci/virtualbox-plugin": [
+        "org/jenkins-ci/plugins/virtualbox",
+        "org/jenkins-ci/plugins/virtualbox-parent"
+    ],
+    "jenkinsci/visual-basic-6-plugin": [
+        "org/jenkins-ci/plugins/visual-basic-6"
+    ],
+    "jenkinsci/visualworks-store-plugin": [
+        "org/jenkins-ci/plugins/visualworks-store"
+    ],
+    "jenkinsci/vmanager-plugin": [
+        "org/jenkins-ci/plugins/vmanager-plugin"
+    ],
+    "jenkinsci/vmware-vrealize-automation-plugin": [
+        "com/inkysea/vmware/vra/vmware-vrealize-automation-plugin"
+    ],
+    "jenkinsci/vmware-vrealize-codestream-plugin": [
+        "com/vmware/vcac/vmware-vrealize-codestream"
+    ],
+    "jenkinsci/vmware-vrealize-orchestrator-plugin": [
+        "org/jenkins-ci/plugins/vmware-vrealize-orchestrator"
+    ],
+    "jenkinsci/vncrecorder-plugin": [
+        "org/jenkins-ci/plugins/vncrecorder"
+    ],
+    "jenkinsci/vncviewer-plugin": [
+        "org/jenkins-ci/plugins/vncviewer"
+    ],
+    "jenkinsci/vs-code-metrics-plugin": [
+        "org/jenkins-ci/plugins/vs-code-metrics"
+    ],
+    "jenkinsci/vsphere-cloud-plugin": [
+        "org/jenkins-ci/plugins/vsphere-cloud"
+    ],
+    "jenkinsci/vss-plugin": [
+        "org/jenkins-ci/plugins/vss"
+    ],
+    "jenkinsci/vstestrunner-plugin": [
+        "org/jenkins-ci/plugins/vstestrunner"
+    ],
+    "jenkinsci/walldisplay-plugin": [
+        "org/jenkins-ci/plugins/jenkinswalldisplay"
+    ],
+    "jenkinsci/walti-plugin": [
+        "org/jenkins-ci/plugins/walti"
+    ],
+    "jenkinsci/waptpro-plugin": [
+        "org/jenkins-ci/plugins/waptpro"
+    ],
+    "jenkinsci/warnings-ng-plugin": [
+        "io/jenkins/plugins/warnings-ng"
+    ],
+    "jenkinsci/warnings-plugin": [
+        "org/jvnet/hudson/plugins/warnings"
+    ],
+    "jenkinsci/warrior-plugin": [
+        "org/jenkins-ci/plugins/warrior"
+    ],
+    "jenkinsci/was-builder-plugin": [
+        "org/jenkins-ci/plugins/was-builder"
+    ],
+    "jenkinsci/webhook-eventsource-plugin": [
+        "io/jenkins/plugins/webhook-eventsource"
+    ],
+    "jenkinsci/webhook-step-plugin": [
+        "org/jenkins-ci/plugins/webhook-step"
+    ],
+    "jenkinsci/webload-plugin": [
+        "hudson/plugins/webload"
+    ],
+    "jenkinsci/weblogic-deployer-plugin": [
+        "org/jenkins-ci/plugins/weblogic-deployer-plugin"
+    ],
+    "jenkinsci/websocket-plugin": [
+        "org/codefirst/jenkins/wsnotifier/websocket"
+    ],
+    "jenkinsci/websphere-deployer-plugin": [
+        "org/jenkins-ci/plugins/websphere-deployer"
+    ],
+    "jenkinsci/weibo-plugin": [
+        "org/jenkins-ci/plugins/weibo"
+    ],
+    "jenkinsci/whitesource-plugin": [
+        "org/jenkins-ci/plugins/whitesource"
+    ],
+    "jenkinsci/wildfly-deployer-plugin": [
+        "org/jenkins-ci/plugins/wildfly-deployer"
+    ],
+    "jenkinsci/windocks-start-container-plugin": [
+        "org/jenkins-ci/plugins/windocks-start-container"
+    ],
+    "jenkinsci/windows-azure-storage-plugin": [
+        "org/jenkins-ci/plugins/windows-azure-storage"
+    ],
+    "jenkinsci/windows-exe-runner-plugin": [
+        "org/jenkins-ci/plugins/windows-exe-runner"
+    ],
+    "jenkinsci/windows-slave-installer-module": [
+        "org/jenkins-ci/modules/windows-slave-installer"
+    ],
+    "jenkinsci/windows-slaves-plugin": [
+        "org/jenkins-ci/plugins/windows-slaves"
+    ],
+    "jenkinsci/winrm-client-plugin": [
+        "com/spcow/plugins/winrm-client"
+    ],
+    "jenkinsci/winstone": [
+        "org/jenkins-ci/winstone"
+    ],
+    "jenkinsci/wix-plugin": [
+        "org/jenkins-ci/plugins/wix"
+    ],
+    "jenkinsci/workflow-aggregator-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-aggregator"
+    ],
+    "jenkinsci/workflow-api-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-api"
+    ],
+    "jenkinsci/workflow-basic-steps-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
+    ],
+    "jenkinsci/workflow-cps-global-lib-http-plugin": [
+        "com/amadeus/jenkins/plugins/workflow-cps-global-lib-http"
+    ],
+    "jenkinsci/workflow-cps-global-lib-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-cps-global-lib"
+    ],
+    "jenkinsci/workflow-cps-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-cps"
+    ],
+    "jenkinsci/workflow-durable-task-step-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-durable-task-step"
+    ],
+    "jenkinsci/workflow-job-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-job"
+    ],
+    "jenkinsci/workflow-multibranch-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-multibranch"
+    ],
+    "jenkinsci/workflow-remote-loader-plugin": [
+        "org/jenkins-ci/plugins/workflow-remote-loader"
+    ],
+    "jenkinsci/workflow-scm-step-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-scm-step"
+    ],
+    "jenkinsci/workflow-step-api-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-step-api"
+    ],
+    "jenkinsci/workflow-support-plugin": [
+        "org/jenkins-ci/plugins/workflow/workflow-support"
+    ],
+    "jenkinsci/working-hours-plugin": [
+        "org/jenkins-ci/plugins/working-hours"
+    ],
+    "jenkinsci/workplace-plugin": [
+        "jenkins/plugins/elanceodesk/workplace-notifier"
+    ],
+    "jenkinsci/writable-filesystem-monitor": [
+        "org/jenkins-ci/plugins/writable-filesystem-monitor"
+    ],
+    "jenkinsci/ws-cleanup-plugin": [
+        "org/jenkins-ci/plugins/ws-cleanup",
+        "org/jvnet/hudson/plugins/ws-cleanup"
+    ],
+    "jenkinsci/ws-execution-manager-plugin": [
+        "org/jenkins-ci/plugins/ws-execution-manager"
+    ],
+    "jenkinsci/ws-ws-replacement-plugin": [
+        "org/jenkins-ci/plugins/ws-ws-replacement"
+    ],
+    "jenkinsci/wsclean-plugin": [
+        "de/jamba/hudson/plugin/wsclean/hudson-wsclean-plugin"
+    ],
+    "jenkinsci/wso2id-oauth-plugin": [
+        "org/jenkins-ci/plugins/wso2id-oauth"
+    ],
+    "jenkinsci/wwpass-plugin": [
+        "org/jenkins-ci/plugins/wwpass-plugin"
+    ],
+    "jenkinsci/xcode-plugin": [
+        "org/jenkins-ci/plugins/xcode-plugin"
+    ],
+    "jenkinsci/xfpanel-plugin": [
+        "org/jenkins-ci/plugins/xfpanel"
+    ],
+    "jenkinsci/xframe-filter-plugin": [
+        "org/jenkins-ci/plugins/xframe-filter-plugin"
+    ],
+    "jenkinsci/xframium-plugin": [
+        "org/jenkins-ci/plugins/xframium"
+    ],
+    "jenkinsci/xldeploy-plugin": [
+        "com/xebialabs/deployit/ci/deployit-plugin"
+    ],
+    "jenkinsci/xlrelease-plugin": [
+        "com/xebialabs/ci/xlrelease-plugin"
+    ],
+    "jenkinsci/xlrelease-var-setter-plugin": [
+        "com/arkea/satd/xlrelease-var-setter"
+    ],
+    "jenkinsci/xltestview-plugin": [
+        "com/xebialabs/xlt/ci/xltestview-plugin"
+    ],
+    "jenkinsci/xooa-plugin": [
+        "io/jenkins/plugins/xooa"
+    ],
+    "jenkinsci/xpath-config-viewer-plugin": [
+        "org/jenkins-ci/plugins/xpath-config-viewer"
+    ],
+    "jenkinsci/xpdev-plugin": [
+        "com/cloudbees/jenkins/plugins/xpdev"
+    ],
+    "jenkinsci/xshell-plugin": [
+        "org/jenkins-ci/plugins/xshell",
+        "org/jvnet/hudson/plugins/xshell"
+    ],
+    "jenkinsci/xtrigger-lib": [
+        "org/jenkins-ci/lib/xtrigger-lib"
+    ],
+    "jenkinsci/xtrigger-plugin": [
+        "org/jenkins-ci/plugins/xtrigger"
+    ],
+    "jenkinsci/xunit-plugin": [
+        "com/thalesgroup/jenkins-ci/plugins/xunit",
+        "org/jenkins-ci/plugins/xunit"
+    ],
+    "jenkinsci/xvfb-plugin": [
+        "org/jenkins-ci/plugins/xvfb"
+    ],
+    "jenkinsci/xvnc-plugin": [
+        "org/jenkins-ci/plugins/xvnc"
+    ],
+    "jenkinsci/yaml-axis-plugin": [
+        "org/jenkins-ci/plugins/yaml-axis"
+    ],
+    "jenkinsci/yaml-project-plugin": [
+        "org/jenkins-ci/plugins/yaml-project"
+    ],
+    "jenkinsci/yammer-plugin": [
+        "org/jenkins-ci/ruby-plugins/yammer"
+    ],
+    "jenkinsci/yandex-metrica-plugin": [
+        "org/jenkins-ci/plugins/yandex-metrica"
+    ],
+    "jenkinsci/yet-another-build-visualizer-plugin": [
+        "com/axis/system/jenkins/plugins/downstream/yet-another-build-visualizer"
+    ],
+    "jenkinsci/youtrack-plugin": [
+        "org/jenkins-ci/plugins/youtrack-plugin"
+    ],
+    "jenkinsci/zanata-plugin": [
+        "org/jenkins-ci/plugins/zanata"
+    ],
+    "jenkinsci/zap-pipeline-plugin": [
+        "com/vrondakis/zap/zap-pipeline"
+    ],
+    "jenkinsci/zap-plugin": [
+        "org/jenkins-ci/plugins/zap"
+    ],
+    "jenkinsci/zapper-plugin": [
+        "org/jenkins-ci/plugins/zapper"
+    ],
+    "jenkinsci/zaproxy-plugin": [
+        "fr/novia/zaproxy"
+    ],
+    "jenkinsci/zentimestamp-plugin": [
+        "org/jenkins-ci/plugins/zentimestamp"
+    ],
+    "jenkinsci/zephyr-enterprise-test-management-plugin": [
+        "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
+    ],
+    "jenkinsci/zephyr-for-jira-test-management-plugin": [
+        "org/jenkins-ci/plugins/zephyr-for-jira-test-management"
+    ],
+    "jenkinsci/zoom-plugin": [
+        "io/jenkins/plugins/zoom"
+    ],
+    "jenkinsci/zos-connector-plugin": [
+        "org/jenkins-ci/plugins/zos-connector"
+    ],
+    "jenkinsci/zubhium-plugin": [
+        "org/jenkins-ci/plugins/zubhium"
+    ],
+    "jenkinsci/zulip-plugin": [
+        "org/jenkins-ci/plugins/zulip"
+    ],
+    "stapler/stapler": [
+        "org/kohsuke/stapler/stapler",
+        "org/kohsuke/stapler/stapler-groovy",
+        "org/kohsuke/stapler/stapler-jelly",
+        "org/kohsuke/stapler/stapler-jrebel",
+        "org/kohsuke/stapler/stapler-jruby",
+        "org/kohsuke/stapler/stapler-jsp",
+        "org/kohsuke/stapler/stapler-parent"
+    ]
+}
