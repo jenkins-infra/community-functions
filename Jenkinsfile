@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent { label 'docker' }
+    agent { label 'docker&&linux' }
 
     stages {
         stage('Prepare Dependencies') {
