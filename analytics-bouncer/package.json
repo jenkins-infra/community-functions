@@ -17,11 +17,10 @@
   },
   "homepage": "https://github.com/jenkins-infra/community-functions#readme",
   "devDependencies": {
+    "keen-tracking": "^4.4.1",
     "mocha": "^4.0.1",
     "mocha-multi-reporters": "^1.1.7",
     "simple-mock": "^0.8.0"
   },
-  "dependencies": {
-    "keen-tracking": "^1.4.0"
-  }
+  "dependencies": {}
 }

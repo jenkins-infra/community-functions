@@ -1,8 +1,6 @@
 /*
  * This module has a few functions which help process Pipeline related metadata
  */
-const { URL } = require('url');
-
 module.exports = {
   /*
    * takes in a JSON object expected to be returned by JSON API
@@ -14,11 +12,16 @@ module.exports = {
   processBuildMetadata: (metadata) => {
     let response = {};
     if (metadata.actions) {
-      metadata.actions.forEach((action) => {
-        if (action._class === 'jenkins.scm.api.SCMRevisionAction') {
+      for (const action of metadata.actions) {
+        if (action._class === 'jenkins.scm.api.SCMRevisionAction' && action.revision) {
           response.hash = action.revision.hash || action.revision.pullHash;
+          return response
         }
-      });
+        if (action._class === 'hudson.plugins.git.util.BuildDetails' && action.build && action.build.revision) {
+          response.hash = action.build.revision.SHA1;
+          return response
+        }
+      }
     }
     return response;
   },
