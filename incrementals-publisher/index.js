@@ -215,7 +215,7 @@ class IncrementalsPlugin {
     let entries = [];
     this.context.log.info('Downloaded file size', fs.statSync(archivePath).size);
     try {
-      await this.permissions.verify(this.context.log, repoPath, archivePath, entries, perms, folderMetadataParsed.owner, folderMetadataParsed.repo, buildMetadataParsed.hash);
+      await this.permissions.verify(this.context.log, repoPath, archivePath, entries, perms, buildMetadataParsed.hash);
     } catch (err) {
       this.context.log.error('Invalid archive');
       this.context.log.error(err);
