@@ -15,7 +15,7 @@ module.exports = {
     return fetch(PERMISSIONS_URL);
   },
 
-  verify: async (log, target, archive, entries, permsResponse, owner, repo, hash) => {
+  verify: async (log, target, archive, entries, permsResponse, hash) => {
     const permissions = await permsResponse.json();
     return new Promise((resolve, reject) => {
       const applicable = permissions[target];
@@ -59,7 +59,7 @@ module.exports = {
             if (tag !== hash) {
               this.emit('error', new Error('Wrong commit hash in /project/scm/tag'));
               return
-            } else if (!url.match('^https?://github[.]com/' + owner + '/' + repo + '([.]git)?(/.*)?$')) {
+            } else if (!url.match('^https?://github[.]com/.+$')) {
               this.emit('error', new Error('Wrong URL in /project/scm/url'));
               return
             } else if (expectedPath !== entry.name) {

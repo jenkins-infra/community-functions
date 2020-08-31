@@ -25,13 +25,11 @@ describe('The Permissions helpers', function() {
         path.resolve('./test/fixtures-bad-scm-url-archive.zip'),
         entries,
         perms,
-        folderMetadataParsed.owner,
-        folderMetadataParsed.repo,
         buildMetadataParsed.hash
       ),
       {
         name: 'Error',
-        message: 'ZIP error: Error: Wrong URL in /project/scm/url'
+        message: 'ZIP error: Error: Missing <url> section in <scm> of io/jenkins/tools/bom/bom/2.176.1-rc41.149af85f094d/bom-2.176.1-rc41.149af85f094d.pom'
       }
     )
   })
